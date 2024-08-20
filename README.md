@@ -126,4 +126,4 @@ GPF also makes developing SOs easy in a number of ways:
 
 Finally, GPF handles deployment for you by including a stack management panel from inside of Unity.  Developers can easily spin up a stack for their branch and test multiplayer functionality with others.
 
-[Get Started Now!](https://github.com/launch-it-labs/gameplumbingframework/wiki)
+[Get Started Now!](https://github.com/launch-it-labs/gameplumbingframework/wiki/Quick-Install)
