@@ -1,10 +1,11 @@
-Game Plumbing Framework (GPF) is a server-authoritative framework for building Unity games. It empowers game developers with a backend infrastructure and a reactive user interface. It solves all foreseeable hard problems that come with developing production software in Unity. 
+Game Plumbing Framework (GPF) is a server-authoritative framework for building games as well as any other high performance, realtime app in C#. It empowers game and app developers with a backend infrastructure and a reactive user interface so devs can focus on game logic by inheriting the infrastructure.  We call this style of coding "infraless". GPF has integrated support with Unity but should be able to be made to work with other C# frontends (eg. Godot Mono, Stride3D, Unreal with UnrealCLR, Blazor (WebAssembly), Xamarin (MAUI), Avalonia)
 
 GPF is composed of:
 
 1. A server authoritative construct called ServerObject
-2. A global data store where all render-able data lives called the DataStore
+2. A global data store where all render-able data lives in the client called the DataStore that GPF automatically keeps in sync with the world state (which is determined on the server).
 3. Highly reusable UI components that subscribe to and draw data from the datastore, called ViewBindings.
+4. A test framework for developing ServerObjects.
 
 # ServerObjects Primer
 
@@ -53,7 +54,7 @@ The implementation of your `SO` determines what state it encompasses and how tha
 
 Once the SO is working, our `ViewBindings` let you simply hook the `SOs` fields up to UI, usually without needing to write any extra code.
 
-`SO's` are simple to write. Our `CoinLeaderboardSO` below ([see Single-player+leaderboard demo](https://docs.gameplumbers.com/leaderboard_walkthrough) ) was developed and tested in about 2 hours and only required 50 lines of code.
+`SO's` are simple to write. Our `CoinLeaderboardSO` below ([see Single-player+leaderboard demo]([https://docs.gameplumbers.com/leaderboard_walkthrough](https://github.com/launch-it-labs/gameplumbingframework/wiki/leaderboard_walkthrough) ) was developed and tested in about 2 hours and only required 50 lines of code.
 
 Here state is comprised of a `Dictionary` called `scores`. `scores` will be persisted and synced to all relevant clients for you automatically. Notice the functions named `Handler` handle messages by updating state and/or sending messages.
 
