@@ -54,7 +54,7 @@ The implementation of your `SO` determines what state it encompasses and how tha
 
 Once the SO is working, our `ViewBindings` let you simply hook the `SOs` fields up to UI, usually without needing to write any extra code.
 
-`SO's` are simple to write. Our `CoinLeaderboardSO` below ([see Single-player+leaderboard demo]([https://docs.gameplumbers.com/leaderboard_walkthrough](https://github.com/launch-it-labs/gameplumbingframework/wiki/leaderboard_walkthrough) ) was developed and tested in about 2 hours and only required 50 lines of code.
+`SO's` are simple to write. Our `CoinLeaderboardSO` below ([see Single-player+leaderboard demo](https://github.com/launch-it-labs/gameplumbingframework/wiki/leaderboard_walkthrough) was developed and tested in about 2 hours and only required 50 lines of code.
 
 Here state is comprised of a `Dictionary` called `scores`. `scores` will be persisted and synced to all relevant clients for you automatically. Notice the functions named `Handler` handle messages by updating state and/or sending messages.
 
@@ -126,4 +126,4 @@ GPF also makes developing SOs easy in a number of ways:
 
 Finally, GPF handles deployment for you by including a stack management panel from inside of Unity.  Developers can easily spin up a stack for their branch and test multiplayer functionality with others.
 
-[Get Started Now!](/quick_start)
+[Get Started Now!](https://github.com/launch-it-labs/gameplumbingframework/wiki)
