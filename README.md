@@ -66,46 +66,114 @@ The `CoinLeaderboardSO` ([Single-player+leaderboard demo](https://github.com/lau
 In this example, the state consists of a `Dictionary` called `scores`, which GPF automatically persists and syncs to all relevant clients. The `Handler` functions update the state and/or send messages.
 
 ```csharp
+// This class is not [Syncable]
+// Even with the id, users cannot access its contents
+// No Handlers will have the [FromClient] on them
 [Register("coin_leaderboard")]
 public class CoinLeaderboardSO : ServerObject
 {
-    public const int TOP_SCORE_RETURN_LENGTH = 3;
-
-    public override SOID ID { get; set; }
-
-    public Dictionary<string, Tuple<string, int>> scores = new Dictionary<string, Tuple<string, int>>();
-
-    public class TopScores : ServerObjectMessage
-    {
-        public Tuple<string, int>[] scores;
-    }
-
-    public class SendScore : ServerObjectMessage
+    [ExpandData]
+    public class LeaderboardRow
     {
         public string username;
         public int score;
     }
-    void Handler(SendScore message)
+
+    // Use the same SOID to create a singleton
+    public static readonly SOID<CoinLeaderboardSO> MainSoid = new("main");
+
+    public const int TOP_SCORE_RETURN_LENGTH = 3;
+
+    public const float MAX_UPDATE_RATE = 0.3f;
+
+    public Dictionary<SOID<CoinPlayerSO>, LeaderboardRow> scores = new();
+
+    public bool scoresChanged;
+
+    public DateTime lastSendTime;
+
+    public bool waitingForRefresh;
+
+    public class SendScore : ServerObjectMessage, ITimeStampReceiver
     {
-        scores[message.evt.source] = new Tuple<string, int>(message.username, message.score);
-        var topScores = FindTopScores();
-        Send(message.evt.source, new TopScores { scores = topScores });
+        public string Username { get; set; }
+        public int Score { get; set; }
+
+        public DateTime timestamp { get; set; }
     }
 
-    public class GetTopScores : ServerObjectMessage {}
-    void Handler(GetTopScores message)
+    // Add or update a user's score and username
+    private void Handler(SendScore message)
     {
-        var topScores = FindTopScores();
-        Send(message.evt.source, new TopScores { scores = topScores });
+        this.scores[message.Source.GetSOID()] = new LeaderboardRow { username = message.Username, score = message.Score };
+        this.scoresChanged = true;
+        this.SendScoresToView(message.timestamp);
     }
 
-    Tuple<string, int>[] FindTopScores()
-    {
-        var count = TOP_SCORE_RETURN_LENGTH < scores.Count ? TOP_SCORE_RETURN_LENGTH : scores.Count;
 
-        var topScores = scores.OrderByDescending(entry => entry.Value.Item2).Take(count).ToArray();
-        var result = new Tuple<string, int>[count];
-        for (int i = 0; i < topScores.Length; i++)
+    public class Refresh : ServerObjectMessage, ITimeStampReceiver
+    {
+        public DateTime timestamp { get; set; }
+    }
+    // Send the scores to the view after a delay, this allows for rate limiting and prevents flooding users with updates
+    private void Handler(Refresh message)
+    {
+        this.waitingForRefresh = false;
+        this.UpdateView(message.timestamp);
+    }
+
+    /// <summary>
+    /// This SO is not syncable. Players see the scores through a separate, sysncable, view SO
+    /// This allows us to rate limit the updates that get sent to players
+    /// It also allows us to keep player secret data hidden
+    /// </summary>
+    private void SendScoresToView(DateTime timestamp)
+    {
+        // Limit the rate that we update the viewable LeaderBoard to conserve bandwidth
+        var secondsSinceLastUpdate = (timestamp - this.lastSendTime).TotalSeconds;
+        if (secondsSinceLastUpdate >= MAX_UPDATE_RATE)
+        {
+            this.UpdateView(timestamp);
+        }
+        else
+        {
+            this.RefreshAfterDelay();
+        }
+    }
+
+    /// <summary>
+    /// Calculated the latest top scores and update all the player's top scores views
+    /// </summary>
+    private void UpdateView(DateTime timestamp)
+    {
+        // Send the top scores to the view
+        var topScores = this.FindTopScores();
+        var topScoresSoid = new SOID<CoinTopScoresSO>(this.Id);
+        this.Send(topScoresSoid, new CoinTopScoresSO.SetTopScores { Scores = topScores });
+        this.lastSendTime = timestamp;
+        this.scoresChanged = false;
+    }
+
+    /// <summary>
+    /// To prevent flooding, we want to limit how frequently we update the top score view
+    /// Schedule a refresh for later, or wait for the refresh if it is already scheduled
+    /// </summary>
+    private void RefreshAfterDelay()
+    {
+        if (!this.waitingForRefresh && this.scoresChanged)
+        {
+            this.Send(this.Id, new Refresh(), MAX_UPDATE_RATE);
+            this.waitingForRefresh = true;
+        }
+    }
+
+    private LeaderboardRow[] FindTopScores()
+    {
+        var count = TOP_SCORE_RETURN_LENGTH < this.scores.Count ? TOP_SCORE_RETURN_LENGTH : this.scores.Count;
+
+        var topScores = this.scores.OrderByDescending(entry => entry.Value.score).Take(count).ToArray();
+        var result = new LeaderboardRow[count];
+        for (var i = 0; i < topScores.Length; i++)
         {
             result[i] = topScores[i].Value;
         }
