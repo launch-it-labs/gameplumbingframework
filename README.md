@@ -1,24 +1,30 @@
-Game Plumbing Framework (GPF) is a server-authoritative framework for building games as well as any other high performance, realtime app in C#. It empowers game and app developers with a backend infrastructure and a reactive user interface so devs can focus on game logic by inheriting the infrastructure.  We call this style of coding "infraless". GPF has integrated support with Unity but should be able to be made to work with other C# frontends (eg. Godot Mono, Stride3D, Unreal with UnrealCLR, Blazor (WebAssembly), Xamarin (MAUI), Avalonia)
+# Game Plumbing Framework (GPF)
 
-GPF is composed of:
+**Game Plumbing Framework (GPF)** is a server-authoritative framework for building games and high-performance, real-time applications in C#. It empowers developers with a backend infrastructure and a reactive user interface, allowing them to focus on game logic by inheriting the infrastructure. We call this coding style **"infraless."** 
 
-1. A server authoritative construct called ServerObject
-2. A global data store where all render-able data lives in the client called the DataStore that GPF automatically keeps in sync with the world state (which is determined on the server).
-3. Highly reusable UI components that subscribe to and draw data from the datastore, called ViewBindings.
-4. A test framework for developing ServerObjects.
+GPF has integrated support with Unity but can be adapted to work with other C# frontends such as Godot Mono, Stride3D, Unreal with UnrealCLR, Blazor (WebAssembly), Xamarin (MAUI), and Avalonia.
 
-# ServerObjects Primer
+## Key Components of GPF
 
-<center>
-  <Video videoTitle="server_development" youtubeID="IFlMi8HI8vE" />
-</center>
+1. **ServerObject:** A server-authoritative construct that manages a portion of the game state.
+2. **DataStore:** A global data store where all renderable data resides on the client. GPF automatically synchronizes the DataStore with the world state determined on the server.
+3. **ViewBindings:** Highly reusable UI components that subscribe to and draw data from the DataStore.
+4. **Test Framework:** A robust framework for developing and testing ServerObjects.
+
+## ServerObjects Primer
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=IFlMi8HI8vE" target="_blank">
+    <img src="https://img.youtube.com/vi/IFlMi8HI8vE/0.jpg" alt="Server Development Video">
+  </a>
+</p>
 
 Building a game can be broken down into two fundamental responsibilities:
 
-- Managing game state
-- Managing UI
+- **Managing Game State**
+- **Managing UI**
 
-Within a synchronous, server authoritative architecture, the sequence can be broken down further:
+Within a synchronous, server-authoritative architecture, the sequence can be further broken down:
 
 ```mermaid
     graph TD;
@@ -35,28 +41,29 @@ Within a synchronous, server authoritative architecture, the sequence can be bro
         --> id7([7.Game state pushed to clients])
   end
 ```
+All the "backend" functionality is encapsulated in a construct we call a `ServerObject` (SO). When you extend `ServerObject`, you create an object that manages a portion of the game state.
 
-We have packed up all of the "backend" functionality in a construct we call a `ServerObject`, or `SO`.
+### Examples of ServerObjects
 
-When you extend `ServerObject` you are creating an object that manages a portion of the game state.
+Some components you might write as an SO include:
 
-Examples of components you might write as an `SO` include:
+- **Player Account**
+- **Leaderboard**
+- **Matchmaker**
+- **Match**
 
-- The player's account
-- A leaderboard
-- A matchmaker
-- A match
+The implementation of your SO determines what state it manages and how that state is updated. To customize an SO, you need to:
 
-The implementation of your `SO` determines what state it encompasses and how that state gets updated. To customize how this works for your SO, you need to:
+- Define the SO fields representing the state you want to manage.
+- Handle messages by updating those fields, sending messages to other SOs, or both.
 
-- Give the SO fields that represent the state you want to manage
-- Handle messages by updating those fields, sending messages to other `SOs`, or both
+Once the SO is functioning, our `ViewBindings` let you easily connect SO fields to the UI, often without needing to write additional code.
 
-Once the SO is working, our `ViewBindings` let you simply hook the `SOs` fields up to UI, usually without needing to write any extra code.
+### Example: CoinLeaderboardSO
 
-`SO's` are simple to write. Our `CoinLeaderboardSO` below ([see Single-player+leaderboard demo](https://github.com/launch-it-labs/gameplumbingframework/wiki/leaderboard_walkthrough) was developed and tested in about 2 hours and only required 50 lines of code.
+The `CoinLeaderboardSO` ([Single-player+leaderboard demo](https://github.com/launch-it-labs/gameplumbingframework/wiki/leaderboard_walkthrough)) was developed and tested in about 2 hours, requiring only 50 lines of code.
 
-Here state is comprised of a `Dictionary` called `scores`. `scores` will be persisted and synced to all relevant clients for you automatically. Notice the functions named `Handler` handle messages by updating state and/or sending messages.
+In this example, the state consists of a `Dictionary` called `scores`, which GPF automatically persists and syncs to all relevant clients. The `Handler` functions update the state and/or send messages.
 
 ```csharp
 [Register("coin_leaderboard")]
@@ -106,7 +113,6 @@ public class CoinLeaderboardSO : ServerObject
     }
 }
 ```
-
 # Conclusion 
 
 When writing SOs, developers focus can focus on server authoritative logic because GPF automatically handles: 
