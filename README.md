@@ -15,6 +15,8 @@ GPF has integrated support with Unity but can be adapted to work with other C# f
 
 [![Server Development Video](https://img.youtube.com/vi/IFlMi8HI8vE/0.jpg)](https://www.youtube.com/watch?v=IFlMi8HI8vE)
 
+Click the image above to watch the ServerObject primer video on YouTube.
+
 Building a game can be broken down into two fundamental responsibilities:
 
 - **Managing Game State**
