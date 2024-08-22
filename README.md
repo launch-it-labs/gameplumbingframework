@@ -13,13 +13,7 @@ GPF has integrated support with Unity but can be adapted to work with other C# f
 
 ## ServerObjects Primer
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=IFlMi8HI8vE" target="_blank">
-    <img src="https://img.youtube.com/vi/IFlMi8HI8vE/0.jpg" alt="Server Development Video" style="position:relative; width:420px; height:345px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="Play Button" style="position:absolute; top:50%; left:50%; width:100px; height:100px; transform:translate(-50%, -50%); opacity:0.7;">
-  </a>
-</p>
-
+[![Server Development Video](https://img.youtube.com/vi/IFlMi8HI8vE/0.jpg)](https://www.youtube.com/watch?v=IFlMi8HI8vE)
 
 Building a game can be broken down into two fundamental responsibilities:
 
