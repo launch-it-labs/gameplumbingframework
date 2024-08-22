@@ -15,7 +15,6 @@ GPF has integrated support with Unity but can be adapted to work with other C# f
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=IFlMi8HI8vE" target="_blank">
-    <img src="https://img.youtube.com/vi/IFlMi8HI8vE/0.jpg" alt="Server Development Video">
   </a>
 </p>
 
