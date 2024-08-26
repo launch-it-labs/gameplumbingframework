@@ -59,7 +59,7 @@ Once the SO is functioning, our `ViewBindings` let you easily connect SO fields 
 
 ### Example: CoinLeaderboardSO
 
-The `CoinLeaderboardSO` ([Single-player+leaderboard demo](https://github.com/launch-it-labs/gameplumbingframework/wiki/leaderboard_walkthrough)) was developed and tested in about 2 hours, requiring only 50 lines of code.
+The `CoinLeaderboardSO` [Coin Flipper/ Leaderboard](https://github.com/launch-it-labs/gameplumbingframework/wiki/Coin-Flipper-Leaderboard-Walkthrough) was developed and tested in about 2 hours, requiring only 50 lines of code.
 
 In this example, the state consists of a `Dictionary` called `scores`, which GPF automatically persists and syncs to all relevant clients. The `Handler` functions update the state and/or send messages.
 
