@@ -12,7 +12,7 @@ GPF has integrated support with Unity but can be adapted to work with other C# f
 4. **Test Framework:** A robust framework for developing and testing ServerObjects.
 
 ## ServerObjects Primer
-Click the image below to watch the ServerObject primer video on YouTube.
+_Click the image below to watch the ServerObject primer video on YouTube._
 
 [![Server Development Video](https://img.youtube.com/vi/IFlMi8HI8vE/0.jpg)](https://www.youtube.com/watch?v=IFlMi8HI8vE)
 
