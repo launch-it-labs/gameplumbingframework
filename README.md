@@ -63,7 +63,7 @@ The `CoinLeaderboardSO` [Coin Flipper/ Leaderboard](https://github.com/launch-it
 In this example, the state consists of a `Dictionary` called `scores`, which GPF automatically persists and syncs to all relevant clients. The `Handler` functions update the state and/or send messages.
 
 ```csharp
-// This class is not [Syncable]
+// This class is not [Syncable] because the client should not have a copy of this class.
 // Even with the id, users cannot access its contents
 // No Handlers will have the [FromClient] on them
 [Register("coin_leaderboard")]
