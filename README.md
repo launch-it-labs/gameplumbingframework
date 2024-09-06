@@ -4,6 +4,8 @@
 
 GPF has integrated support with Unity but can be adapted to work with other C# frontends such as Godot Mono, Stride3D, Unreal with UnrealCLR, Blazor (WebAssembly), Xamarin (MAUI), and Avalonia.
 
+GPF is not a BAAS, you host your data where ever you want, we just made the whole process as easy as possible.
+
 ## Key Components of GPF
 
 1. **ServerObject:** A server-authoritative construct that manages a portion of the game state.
