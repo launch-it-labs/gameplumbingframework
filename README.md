@@ -14,9 +14,11 @@ GPF is not a BAAS, you host your data where ever you want, we just made the whol
 4. **Test Framework:** A robust framework for developing and testing ServerObjects.
 
 ## ServerObjects Primer
+<!--
+@TODO: Update Video
 _Click the image below to watch the ServerObject primer video on YouTube._
 [![Server Development Video](https://img.youtube.com/vi/IFlMi8HI8vE/0.jpg)](https://www.youtube.com/watch?v=IFlMi8HI8vE)
-
+-->
 
 Building a game can be broken down into two fundamental responsibilities:
 
