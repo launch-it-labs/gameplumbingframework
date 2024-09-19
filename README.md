@@ -2,6 +2,8 @@
 
 **Game Plumbing Framework (GPF)** is a server-authoritative framework for building games and high-performance, real-time applications in C#. It empowers developers with a backend infrastructure and a reactive user interface, allowing them to focus on game logic by inheriting the infrastructure. We call this coding style **"infraless."** and it typically results in the reduction of 80% of code, thereby significantly reducing engineering cost, time to market, and code complexity.
 
+Every Backend built ontop of GPF will automatically be consistent, horizontally scalable and all communication is low latency.  Building a backend that accomplishes just 2 of these 3 requirements costs over a million dollars, but with GPF it can be one at less than one tenth the cost.
+
 GPF has integrated support with Unity but can be adapted to work with other C# frontends such as Godot Mono, Stride3D, Unreal with UnrealCLR, Blazor (WebAssembly), Xamarin (MAUI), and Avalonia.
 
 GPF is not a BAAS, you host your data where ever you want, we just made the whole process as easy as possible.
