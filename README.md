@@ -205,6 +205,6 @@ Finally, GPF handles deployment for you by including a stack management panel fr
 
 [Component Overview](https://github.com/launch-it-labs/gameplumbingframework/wiki/Major-GPF-Components/)
 
-[Get Started Now!](https://github.com/launch-it-labs/gameplumbingframework/wiki/HelloWorld-Tutorial-part-1-%E2%80%90-Implementing-ServerObjects/)
+[Get Started Now!](https://github.com/launch-it-labs/gameplumbingframework/wiki/Quick-Start-part-1)
 
 [Jump on our Discord](https://discord.gg/bvPwWrwPDq)
