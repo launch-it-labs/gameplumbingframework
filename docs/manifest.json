@@ -1,0 +1,2754 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/imank/projects/gpf/unity/Assets/GamePlumbing/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ConnectionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ConnectionInfo.html",
+          "hash": "X09Q1KFqah0khsbV3+MgPH3hRZ8VV6Q2qkTZbVSvTqU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Data.NodeInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Data.NodeInfo.html",
+          "hash": "N8c0C01cbOT8S2+eG0x0sfpjfwzHrJQq9VDo42eiCaM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Data.html",
+          "hash": "RXI6bNYFDHEHtKdOibZOlRdn9iA8iGmOB2EB+EctYrg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.DataStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.DataStore.html",
+          "hash": "Uh10YDhsWEelWmZXHNBB/cyE3ZNNMo1eRiJnyyjQ/2U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.DeployEnv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.DeployEnv.html",
+          "hash": "uwL+RMbjyXQheC9I4i1Xhcy3Q8yYDcGmHTKLZaqZNtM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Exceptions.SessionMessageException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Exceptions.SessionMessageException.html",
+          "hash": "6ZZk6ujLy19c/yLy2tXaqVp+WOkukZd/81oASpff8C4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Exceptions.SyncException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Exceptions.SyncException.html",
+          "hash": "EUu0rvMxGtNk8tUVmACEEPYwK0khEmvTBbRw+LkRlZs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Exceptions.UnsyncException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Exceptions.UnsyncException.html",
+          "hash": "hvTPSwRA3bOiaSX7r9MUQ87wOoZZ4zBdw22CWvj5NpQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Exceptions.UpdateException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Exceptions.UpdateException.html",
+          "hash": "mxTRKyuDetv9H6CZuRTcV/uFb4InX3mGduRWhH6ucAc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Exceptions.html",
+          "hash": "ybaCOpid2jAMTfn5jeNydbdegHcGpm5ppeTAgSl7iQk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldIs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldIs.html",
+          "hash": "6HE3+1nRUwe21qcnkKdPkiTud7Ygc49TB+XGC6fkVvA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.Equal-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.Equal-1.html",
+          "hash": "5EATVGdU8+0vIcnjBZyWVK64rnzWZuNhSXrIbSW87Xs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.EqualToItemIn-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.EqualToItemIn-1.html",
+          "hash": "h7HVQ7Jw5gEMePNX4VXohCPDilbAM8hN3I0O2JHkkPE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.FieldOperationHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.FieldOperationHelper.html",
+          "hash": "cTx4ByrcjByAELWaSfTkbSR/YWxZaz4TNXZCdL81WeY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.IFieldOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.IFieldOperation.html",
+          "hash": "UJlT3w3SN57YlkPxYyzFD+D9m5f/OPBIKkOKxp1om7k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.Initialized.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.Initialized.html",
+          "hash": "n7yQb2/+uEVoKYDoMlSYD4PmWZ32mIq98Z0fdeA8Dd4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.NotEqual-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.NotEqual-1.html",
+          "hash": "bia9UeqGNq0U7Fw5kpXsRGvO7NPim933/INcPrqMOYk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.WithCount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.WithCount.html",
+          "hash": "hwEphIn4H2uODnol1wu4vgtukY0TyxUEyrsiHRx3Kms="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.FieldOperations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.FieldOperations.html",
+          "hash": "pvoX4He19tXatgRj7mtXBsr676EeLZoaiOluNZ9Tzww="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.GPFPlayerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.GPFPlayerSettings.html",
+          "hash": "2ZTEz5W5lJr7oczA3hMG0oGawj8QqWL1iKOBRO/Tysk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.GPFProjectSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.GPFProjectSettings.html",
+          "hash": "Qb4g7wFOrUEHLYOq9JMvHLvoBWyJLrsYE8Ngh5gvNAQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.IAuthClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.IAuthClient.html",
+          "hash": "YdJeYH7QdMgXOAbFUtzVGBfKAQrIRLoQSOMhEH+WSpo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.IUriProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.IUriProvider.html",
+          "hash": "4bXAR6BDScT6ZTsGt3ISHkeiejrYUoZ+GJghPjw1VMc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.AWSConfigs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.AWSConfigs.html",
+          "hash": "pMLDcja+TkTz16pL096jYvCBTZrXdzY1yFX/0qmFN7I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.AliasedUpdateDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.AliasedUpdateDownMsg.html",
+          "hash": "iM/ZAUs3XVb6fQbWbLJWe96YTtYzz1FPd6xK9k6htQ8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.AllowedExceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.AllowedExceptions.html",
+          "hash": "6Fz3+N/9bfpelmxiTlEFWJQeIjwxGmI4JLs52Zqd8ZY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.AuthDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.AuthDownMsg.html",
+          "hash": "SlSUt4wmrvtcyLMJpbumJptk2uWBzA0/vcgbQGVTewM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.AuthUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.AuthUpMsg.html",
+          "hash": "WGjx0ua7jTA2/HYUfHqwMI7XBMDyxm2j0IKW8fU8HOA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.BindUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.BindUpMsg.html",
+          "hash": "aDEnzPoB81M1VJP4HLBKykrsFoN+jQUjrRSlK00hToc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.DownCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.DownCommand.html",
+          "hash": "3zm17eRyn6MSX+Tcj5bHQ2Gs09HK2e9t3PUCC0IIPUE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.DownCommandType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.DownCommandType.html",
+          "hash": "LPTYPmjsMcResN26gOp3We5hGSClnm5TkLj55VqnX+I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.ExceptionAtServerSideDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.ExceptionAtServerSideDownMsg.html",
+          "hash": "JBqaVEHh0C1qYJFC6fMduZyKfmVM7YDqxuAWUchxWnA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.ExceptionUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.ExceptionUpMsg.html",
+          "hash": "Lnz4Z6NIP7VjTwKtscWFeyOmBBbL+HFMcJLcPHqaoio="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.FastUpdateDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.FastUpdateDownMsg.html",
+          "hash": "ijcJyWsz4sQej2r/Co1XqooaXS/WEPirh3rSKjGdV30="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.FastUpdateUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.FastUpdateUpMsg.html",
+          "hash": "tPV7fUnNtTsXmOF4H2Ta8FwSeYMmMI+qAKO2w8VQxgA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.GpfPinnedCertificatePolicy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.GpfPinnedCertificatePolicy.html",
+          "hash": "6smyC+fn4fsT7w+Ox6ao26je9i3gNsSbaLacMuI6jik="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.GpfSslPinning.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.GpfSslPinning.html",
+          "hash": "eqqX0rN+Sx9IluzhGvC/nstR2GHpHPrT2e7xDs4LjLo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.IDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.IDownMsg.html",
+          "hash": "WMS0aPeOmm6g5WevTJxz6kOIKloLRDuKmYNHxH2UMI4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.IUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.IUpMsg.html",
+          "hash": "P0RDraioLczP880Ap1d9knByOfp6mrmm8+x+WpWjmJE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.IWebSocket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.IWebSocket.html",
+          "hash": "e2hPmPP1bEWrNCdSnamP7udkB313JCks0MbMCcwVFHM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.InvalidArgumentSocketException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.InvalidArgumentSocketException.html",
+          "hash": "zRaYq9qggjMpzqz1vmUuml1bDrOQDfAZZ0U2zPMnouo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.NetworkConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.NetworkConstants.html",
+          "hash": "CQVW651z5/qt76RZbGNacmLcqY3RefS5C7XpVBzcKNo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.PrepareMessageTypes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.PrepareMessageTypes.html",
+          "hash": "4juwyi5l4NPhn9wv8aNjm1sOuG7TC7MG9TrsElQqItE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SOIDAliases.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SOIDAliases.html",
+          "hash": "iN02oa6l7kdw6oBJivk+eJ3d2Sqf/sxcVuGOYMeKhEM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SessionErrorDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SessionErrorDownMsg.html",
+          "hash": "OrPL01p4y5VKq4Ul9Yg2TDV3n8w2WAXY4Hjv9cz+0DY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SessionUpdateDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SessionUpdateDownMsg.html",
+          "hash": "ztohSlAt9XeYxYbSKKDKxoTFf66Y91rLKz8FykyZrUI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SessionUpdateUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SessionUpdateUpMsg.html",
+          "hash": "UgQYjWkn7irwgfBpPwrUUbiYTyjR8n2SJKWaIGI4O8A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SimulatedDisruption.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SimulatedDisruption.html",
+          "hash": "zjUV/nC6D+gCTwKY/xuOBUX5S++mOAL03Ud3blZ5CLE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SimulatedIrrecoverableSocketException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SimulatedIrrecoverableSocketException.html",
+          "hash": "9wCVugFv5QCcyyALzWXZbK3trZYzLviS7HFTPxUKBMQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SimulatedRecoverableSocketException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SimulatedRecoverableSocketException.html",
+          "hash": "NhMmTNVfJAYUVpN7OTgLrKSDrfxwqHwK8UX4dYhdw0Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.SyncDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.SyncDownMsg.html",
+          "hash": "2/pswnUdUXdXOXFlu6SuJ5H0HMHElicIPk2jTEMZrgw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.UnsubDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.UnsubDownMsg.html",
+          "hash": "uP5UNRl4vPd6q/si25bfhhUZ0qdOGCp94Xr4uiibH5U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.UnsubscribeUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.UnsubscribeUpMsg.html",
+          "hash": "8cRTVlH/hM/+8RK1lA7tPnwNUsxIUc9/C2yTYdhWjgg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.UpCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.UpCommand.html",
+          "hash": "uPVns66yFQFbh+HPcdzp7TioQDebM0oufmzE2EaH5r4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.UpCommandType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.UpCommandType.html",
+          "hash": "Pqu53gBWFfRgRRpxHtWA4MaFUOupsT/cwazlBHjF0N8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.UpdateDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.UpdateDownMsg.html",
+          "hash": "u6YfPBjZmSrX5R5ZcfMeWyN2WrmChe/pT4DLXUxLKHE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.UpdateUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.UpdateUpMsg.html",
+          "hash": "PIiKds1RrmIQPpTm+H+cGqlkLR5yFgKLkb32Fdo5qgY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.UpdateWithSyncDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.UpdateWithSyncDownMsg.html",
+          "hash": "ALwef7412oPn7N6iwbqwDAfYXatu86s45pxzPJoN8kI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.Utility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.Utility.html",
+          "hash": "DC6Yn6ZXK3BiCEfcLeoINByJx4fp64iU5rhM+VbIUfY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.VersionDownMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.VersionDownMsg.html",
+          "hash": "gV8z9Datl9DTcR3LQM5/zufCocgoSVYH94sYlmzzg6Y="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.VersionUpMsg.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.VersionUpMsg.html",
+          "hash": "UdVho1qoRZv+pDsixqbSP5nx+viwiaI6VhnI6wmpexM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebGLSocket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebGLSocket.html",
+          "hash": "rhCaq4b0ydcqy2xpeAiKMDr5T+0y1xBwfzNUTuvZNoQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebGLSocketFactory.OnCloseCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebGLSocketFactory.OnCloseCallback.html",
+          "hash": "PNODtyU5k8/zYjsKRrsuDWJ09ANQD9Iz4alJsWl/Pbw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebGLSocketFactory.OnErrorCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebGLSocketFactory.OnErrorCallback.html",
+          "hash": "xP2wKeSSTP8XYU9++KxUfpsh0pk2S/59rSET9Sv+sVE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebGLSocketFactory.OnMessageCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebGLSocketFactory.OnMessageCallback.html",
+          "hash": "WTdIVKwHzr95QJ2S/6lQQ3/uatfKQBy7L9xFQ2IwIRY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebGLSocketFactory.OnOpenCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebGLSocketFactory.OnOpenCallback.html",
+          "hash": "qaaKieu8rbfWl9MaW4s8yrPJX39C5vNgH4ub7uZtjxY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebGLSocketFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebGLSocketFactory.html",
+          "hash": "AjwmhMzhvfCrBA/hS0HYdD58KEYVhX9qQ00mZEjjjAQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocket.html",
+          "hash": "9ZBuf3FqMZGs/EUdQdaLvtMWjynXwq8vEXHUNxRdeBM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketCloseCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketCloseCode.html",
+          "hash": "RiemLTlXC/y61Z+4hVdpsc9UYtXeUS07Z730V6mVtlU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketCloseEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketCloseEventHandler.html",
+          "hash": "wh/N0Zc65CdxaLBB3H5YMtqNuFrbhJbrm8NOqj9r7J8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketErrorEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketErrorEventHandler.html",
+          "hash": "qD289SeJS7kLo1lRK+vVLkuERrMVF0HHMX6tWff+k6A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketException.html",
+          "hash": "AenODr380WGcU23dfsIeKExcvj3FhJB6N14XN2m0Vm0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketFactory.html",
+          "hash": "jeuh+5m4yZBHOsSwZjexLtexTFIjNMkuU/LJZfcPbA4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketHelpers.html",
+          "hash": "LOyYWK6qBYXVUz5n0kcQL0IpCoDC+kKH/ohzubjoeXk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketMessageEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketMessageEventHandler.html",
+          "hash": "jKQUeSb+e8yCbQRg8cR43f/Pamq3raJdmL00QgJpg1Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketOpenEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketOpenEventHandler.html",
+          "hash": "Edrm82dI4vuXcHaYaQxaWcQhg2heKF4k9e/aHdnOwXE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.WebSocketState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.WebSocketState.html",
+          "hash": "2f8i9BLdugdJQbhjy34orgAlKTNm0hkVqhzWX5zB9yI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Networking.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Networking.html",
+          "hash": "Ip8XkN8o6T5WwcekyeAmipR3uJtwelaGQaVVDZQdC+8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Platform.html",
+          "hash": "1KiyN3vr5vtZ+O/mOpddEzp5X+/KA5wnZjNTdMFKuQo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.RuntimeSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.RuntimeSettings.html",
+          "hash": "rRyvxs3Cx/+cNtemHONZA8brrR7xnH2aB77Oz6u2pwE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.SaveTracesCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.SaveTracesCommand.html",
+          "hash": "3K8uE8e3vqrIfod28+lVUU4v97I4GxkrwW4LUgJN3uo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.AccessResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.AccessResult.html",
+          "hash": "KxfPy9ds+4UrJhs4B0+9Vxgs2g1hq99lG+h1jmM4NJU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ApplyHooksResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ApplyHooksResult.html",
+          "hash": "5uSS6Gtv9p6vHbLyWQgAXUXy4pLMn2OVYClbUNNIBPs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Auth.JoseHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Auth.JoseHeader.html",
+          "hash": "urqE0CZb/io1xQtRy6l/wgVxzqmjnsusqkmKzgR8XfQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Auth.JsonWebToken.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Auth.JsonWebToken.html",
+          "hash": "IqCkmt7b6JXvp70nEhmapF3LpTCP9B5DUcHLbwXr1Yo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Auth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Auth.html",
+          "hash": "BYFKRKtYDwfY5eA4BNu/ppvPPJQ+AUSqDqQ044QXoiw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.AuthContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.AuthContext.html",
+          "hash": "BbqOzKWJw59E87Lk3srWOnqMY61pen0Sw8SjETVEJNI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.AuthServerConfigs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.AuthServerConfigs.html",
+          "hash": "u9dcDja0r7LsmU5cBlMyoDtA9cOJPvhDCKL/8xuvkyQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.BaseSOID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.BaseSOID.html",
+          "hash": "SJNeElrjeanhXM8JWlwpQuXLmahgImvnX9abfZYUjlI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ClientSessionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ClientSessionAttribute.html",
+          "hash": "x6j4RSlL6pxiDb6gwkxQamALOFkmwVI2KE76QW7fFII="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.DataStoreIgnoreAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.DataStoreIgnoreAttribute.html",
+          "hash": "gvb6/Jk0UYszY+yZCq66uefyOGP0lIoqTzwDu74DMIc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.DataStorePathAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.DataStorePathAttribute.html",
+          "hash": "zN/BtMd66TjMD1BYPLGDRNRgvq+KbGjJBohB+U8uaGA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ExpandDataAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ExpandDataAttribute.html",
+          "hash": "DNfJlrWRO3wCdDKzuCuErgDbr+yiKo0DznOFBbgsbQ8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.FromClientAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.FromClientAttribute.html",
+          "hash": "vdaVAeQZXCiGMa+OlY1crM6kC4PMv5FJ9XnuEijH464="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HandlerDoesNotAcceptClientMessagesException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HandlerDoesNotAcceptClientMessagesException.html",
+          "hash": "7bBlKwwrLSSqHBR+uJX59nOQMYHetGp3XAw32rgDlns="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HookAlteredStateException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HookAlteredStateException.html",
+          "hash": "x3E4m8xn25eE6L+ltkxX5xjRr266HVxokovcXQv0agE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HookContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HookContext.html",
+          "hash": "3eA2GkaENUWkHsZH+HhE/bvZaMfhfPnmXhcdc+NgvD0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HookContextNoInputSOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HookContextNoInputSOs.html",
+          "hash": "LZEnjvMNxFHXrqm5VZQ4oSFrswZYIImHyOpXlhKF6oQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HookInputSOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HookInputSOs.html",
+          "hash": "47yRTwsz3nK+UjlNPc8LPPJFIN76OvjZ0G73DofQcbw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HookMissingInputSOsException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HookMissingInputSOsException.html",
+          "hash": "lN0E7g3XpcXgCXXRKon2fLHSPamGDq84x6Pep9UiqE4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HookPrediction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HookPrediction.html",
+          "hash": "rIYoqhvaFGUJToFIfj5FTv+LiSvoyWTST96V0QEHHBc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.HookSecurity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.HookSecurity.html",
+          "hash": "9KQnLSU/5kF2QsSf7Qn2sUkDgymb/IJe/K+ZnOxy/QE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IAuthServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IAuthServer.html",
+          "hash": "3iseANtzZkGCb+va2a62ILoDW7BjCIzLK6ijuMG5etU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IDataStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IDataStore.html",
+          "hash": "p6abUc9QD6jMB5xaHvE1ZBWCaY5lQp0+QbH+LPY9Xi8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IGPFLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IGPFLogger.html",
+          "hash": "u0ZYX63bHT64VGeRkG1nIBSboSegfD6u0HHCbwP0zQc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IHookContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IHookContext.html",
+          "hash": "aYGUC9kFON5hfxihF9NV67kM11fk0DRL4HmNuGQYpUk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IMessageHookInputProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IMessageHookInputProvider.html",
+          "hash": "f5iaCGhSzEuafgQI8OXB9vgcD1diTWWWzzFkGGLpMlo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ISetVariablesInDataStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ISetVariablesInDataStore.html",
+          "hash": "BqCViOltgybjEKa+IAjFGQPqTLVxP9D/Oo2mkOYU4ZI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ITimeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ITimeService.html",
+          "hash": "gsNLp5yYHihKgnOaMK/9V+gQTwh0jZ+vNfVqeAj1shg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ITimeStampReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ITimeStampReceiver.html",
+          "hash": "Rgl7rfydKKfubEgUvj3ADKFG63w1tP6XSQ/asdkHAgM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IdAffix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IdAffix.html",
+          "hash": "6rmcZILajOyLIDWxSaLoqcxMZrfyO/DXSX/jlB3kn08="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IdPrefix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IdPrefix.html",
+          "hash": "we21TTRkrkajWxfaoCfU0QNQ+ECV64dMJo54IfMXPiE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.IdSuffix.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.IdSuffix.html",
+          "hash": "USD1A5ShfcD1/heSOBg/4sGU1wWBFsLE+D/qLeZ2jfc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.InitContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.InitContext.html",
+          "hash": "7FxPelHxMo1bIHaHDqeB99s7YfBUSn9R0rSmpEeKWEg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Internal.DeterministicSuffixGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html",
+          "hash": "rph5p+5Ar/Mum6u/1q4Ey+01ivxluF25yloQFfbxhxc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html",
+          "hash": "5s5LoFVqISDdJ+c/LJKsIVr4ds5bArGv6wYcML3O8Ls="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Internal.SecureSuffixGenerator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Internal.SecureSuffixGenerator.html",
+          "hash": "K0PxjzXUOYdhThcdLvckxVJ3BNy/u8KJK1fR4TUY6Eg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Internal.SoidJsonSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Internal.SoidJsonSerializer.html",
+          "hash": "G829Mcm8lllHeUX0i2cpW8KD18T/LiFGthRLSzbGIXM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Internal.html",
+          "hash": "PMSSHFhNJts49v85yd6VWp7bF40nIiu0NQ5WV2b71Vg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.LogLevel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.LogLevel.html",
+          "hash": "BbNKjIm984U9yqQ45FJB8NBh2HQHmwryiuxakchgKOw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.MessageDest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.MessageDest.html",
+          "hash": "9heoWmZJPpdwFXppKZ2vNS/1MdQJzIMkplEuJKgGtN0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.MessageHandlerInfo.HandlerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.MessageHandlerInfo.HandlerInfo.html",
+          "hash": "ZXOxCvFL2Uc+s2pZJgrfqBu0baZLFZqXHcDc3FNqNbw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.MessageHandlerInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.MessageHandlerInfo.html",
+          "hash": "GtmwqmMJl0euSUjcXHQHz6Q+zegLxjndXF2R6F0HROI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.MessageHookAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.MessageHookAttribute.html",
+          "hash": "3REiQSQOrtJkuS4V9IfOAYlapa6J1nXSpe/T7V+gBTE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.MessageHooks.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.MessageHooks.html",
+          "hash": "pgGQP3Id3uenVCQ31ePGLH5SMoqEm9CKt75IQ8JNsTo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.MessagePackUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.MessagePackUtil.html",
+          "hash": "wzqwaqjQe3qpP/M3jYlilU5psjS/m87kZcX0lqKIob4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.MissingHandlerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.MissingHandlerException.html",
+          "hash": "i1fY/Mq7ilhKZAWRLisyvQXlzw2ElBKA5L7oCtBezfg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.NoAsyncVoidHandlersException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.NoAsyncVoidHandlersException.html",
+          "hash": "P1P3QJqBz2ZVzyy3f+jAiLhTO0v9x4I8KRlkCNTFFdY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.NonDeterministicHandlerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.NonDeterministicHandlerException.html",
+          "hash": "/j1dNcjv2IahJLVOuCpv4G27wBPpyIECjrNJRLySnsg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Outcome.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Outcome.html",
+          "hash": "ejXjWOgvUZrIyeD5Pa1UmXJtjPd1NgXjGAPVxTyVoLE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.PreAccessResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.PreAccessResult.html",
+          "hash": "Jod2wnMn93xGA/cG+MNkXL5CAqMXxFNadoG7O0KLgeA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.RESTException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.RESTException.html",
+          "hash": "6a5PixknEaxqY+6hYZR9w+FhogVlO6kSiIZDHtiT+eg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.RESTRequestMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.RESTRequestMessage.html",
+          "hash": "qe83YVasTykISALQtZdQvSEmmvK125LXu83Kxw7IGwE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.RESTResponseMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.RESTResponseMessage.html",
+          "hash": "Q1I5IBB3lmCkVZ/XvmsJEyAFpup+ReAfqG+hp00z4sU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.RealTimeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.RealTimeService.html",
+          "hash": "Bq4mJTGkS/gGL3LlmQ3efDUiUZe/DNWaW1z25tlaSZw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.RegisterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.RegisterAttribute.html",
+          "hash": "kGQmywDZOe5584X8XeM4Xu0fUrhriSBKQth8XbQQkWw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Registry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Registry.html",
+          "hash": "o+4izTU+jK9iUdIDC2LPT+/3rreocqgK2WVsJ1skZAs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.SOAuth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.SOAuth.html",
+          "hash": "uLR2S181wmNZCDCe2FW0Irzb/I4lcYozyvMq76dYl2s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.SOID-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.SOID-1.html",
+          "hash": "03S/hRnJ63t+PCJQlcrG30avQt0O188SJ0a/SZRRx7Q="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.SOID.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.SOID.html",
+          "hash": "20TUC18HcceL/VexYjPzVkRLEoAuxta7DYEUMIQKv7A="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.SOUpdateResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.SOUpdateResult.html",
+          "hash": "VkJztS2iXk4zQoiDloWR6FvJ8Nctadd+bKIUvXkV/2w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ServerEnv.Included.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ServerEnv.Included.html",
+          "hash": "8/ZJ/scmUviRMRuhd/56J6ZwopY7qUnH5td7ylQxqTI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ServerEnv.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ServerEnv.html",
+          "hash": "qhV7etgdMUSUPajpRPCZ/v77jxCsWkz91zJYQ6Mm9AM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ServerObjInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ServerObjInfo.html",
+          "hash": "Nvki2NLcTfwYd2+zGHPAIz15Lev6HMBMTh+YSI1Gazc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ServerObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ServerObject.html",
+          "hash": "eA8kl93U1bcFC6Yz5QCrN6wxn6U7La1A0pBfHSn4pPM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ServerObjectAuthAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ServerObjectAuthAttribute.html",
+          "hash": "iCDI5rck2g0X2OKhkK9t0giLoFTKW8nViEKsiojVLes="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ServerObjectMessage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ServerObjectMessage.html",
+          "hash": "+n0XTFkOGWKdbtnZLdLt0r0rAfT/qHtUyw5RhOJApNA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.ServerObjectsVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.ServerObjectsVersion.html",
+          "hash": "AZTNH7RlZ3QdhCdZGjpLevDbXEVNu+B80kya9AWo58E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.Startup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.Startup.html",
+          "hash": "D4i459EYMV8QhXQOOWGLDkdmz2kEJEzXquGSSdZ7+io="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.SyncableAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.SyncableAttribute.html",
+          "hash": "T4y3McgQLof7D+mSftYw/kDI1Ogi10J57/1eZDn0qow="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.TimeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.TimeService.html",
+          "hash": "SUMf58M4i0/MR1LyYLsn/1Ildm2E3G5oDIp/3KWl4Kw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.UnpredictableAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.UnpredictableAttribute.html",
+          "hash": "+m/x51bhZkPiBB0lp2QkSqCZV6vMKwJlzDJJQOWPqJQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.UpdateObj.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.UpdateObj.html",
+          "hash": "CmZ87USG+Ues4jdYqGXCDav5uYDscbXWWJagtDXyEB4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.UserAuth.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.UserAuth.html",
+          "hash": "7SwDlu8W1lhUYR1do5FMU7qTNslCaYn+ycxVQS+JGOc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.ServerObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.ServerObjects.html",
+          "hash": "XkP3oy+eIGacEJgJsPdnFT3YE76X1W5NmG6Tp+MHbPs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Settings.BuiltinUriProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Settings.BuiltinUriProvider.html",
+          "hash": "gQ28AaQRd4Yr6Og8+5GkkFOXNFg7vlU7qq7HDaqsfIY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Settings.UriSelectionUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Settings.UriSelectionUtils.html",
+          "hash": "IgmkNhY1SerpIeDr9/Jnh+6dIlBTEzT2b1pcf1FAZc0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Settings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Settings.html",
+          "hash": "wbNpWhVHnGJdhyN6Jh5/si8fMWEdB9jxqqaewqpy+AE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.MockCloud.MockCloudConfigs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.MockCloud.MockCloudConfigs.html",
+          "hash": "96/+wPly+sfKvwkxNORN8pVWj2kf6PAs8aCvR+8iCEQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.MockCloud.SOMeta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.MockCloud.SOMeta.html",
+          "hash": "PoDb1qOm6HiYHiXxgnODFSMCjqQ1gEotaYKmBcsLPXk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.MockCloud.SavedSO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.MockCloud.SavedSO.html",
+          "hash": "+H4leG5W9fkn7P1REbi1mrL1ypcyfEo7nhNpJBac0Ac="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.MockCloud.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.MockCloud.html",
+          "hash": "ZoSUPLjtUNEjLWP/1FUfSnVp73v6IqbxIUVtlpbO5vA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.MockWebSocket.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.MockWebSocket.html",
+          "hash": "nLAeJMdI+gHiFVS/EIdV5n9zvOrG/0W+ihCO5S45FRI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.SimTimeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.SimTimeService.html",
+          "hash": "0syYYsw/LkjWapaEYmR97K2rMdcprC10EK1+kHUIt80="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.WebGLTimeService.TimeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.WebGLTimeService.TimeController.html",
+          "hash": "qUhN2yzWjj1cvknb7kgmBxg0EWQiKJPF+RBlHjVQ+ng="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.WebGLTimeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.WebGLTimeService.html",
+          "hash": "Pn143N92KR6qJcaJjOmE3iN1WHKjXEL4int0duG/MaM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Simulation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Simulation.html",
+          "hash": "VMVw9ZyBDJSzx7BtQ0yBTmSn0JR4lFNhbsWu5H2V/Js="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Syncer.AuthState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Syncer.AuthState.html",
+          "hash": "2IIAsiSPYRyVeaBQUNNovuv/5lk5SKd22/xlc+Q9214="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Syncer.DataStoreVariables.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Syncer.DataStoreVariables.html",
+          "hash": "J7hAhxoVcsmONlch4NvP9BKYcdtBizqZxeU8SiJw5Rg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Syncer.Env.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Syncer.Env.html",
+          "hash": "QusAUquKvofo56WkfNIzmV3FJaENvPaPNsF7Aald7V8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Syncer.State.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Syncer.State.html",
+          "hash": "iW11VyHfSLr8QB0ybzvwfMILKFi2NKo70wAamw7SHkA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Syncer.VersionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Syncer.VersionState.html",
+          "hash": "OTL/bcRohui495Av7jHww/kUyBIC/D26+n4zrNwvuuc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Syncer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Syncer.html",
+          "hash": "f3duQAZNWKrlr98xW7fbmd9l9zl7v9YSjJ2AzEtu/DA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.SyncerConfigs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.SyncerConfigs.html",
+          "hash": "7iy5XsL/rETA76OFkK5oSwTLhhF5baazXVfTkwEq/Dk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.SyncerInternal.FakeLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.SyncerInternal.FakeLogger.html",
+          "hash": "lvqaQt7w2g9EtJPR/r3Urb+FObleCfy5VkhoqFq8r00="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.SyncerInternal.ReceivedUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.SyncerInternal.ReceivedUpdate.html",
+          "hash": "sJhS/EYrwi2KUyxLCGJlBKxKFqlXtppwdRIJn7fwtWo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.SyncerInternal.UnityLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.SyncerInternal.UnityLogger.html",
+          "hash": "Sls/3Y0EylLcFEML+yjq+EeBg4exXnR92a5xpSpMkPE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.SyncerInternal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.SyncerInternal.html",
+          "hash": "eyVyvlwfMHe/u/ai/IOlsZ5jwX41ya7OL7ZXL4xnnuU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.ExpandAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.ExpandAttribute.html",
+          "hash": "gyZpZw7Abju2WQVI+yTwIr+l1RBLcx2MqWXwKJ4TfSw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.FieldAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.FieldAttribute.html",
+          "hash": "80ByVvoNfODoQQZYyaP2YmUZcHs+BBnVIoghsuiOA5E="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.HideAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.HideAttribute.html",
+          "hash": "GwOpvD8G27ZGIH1Aya/TNcBGvJkbVHU/3YYGyjW+25U="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.ItemAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.ItemAttribute.html",
+          "hash": "c6yABZDxIRTYV0B9JOd+NoyV5t6WrjVEaUsp9eW+WRg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.LinkAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.LinkAttribute.html",
+          "hash": "NncbAeX2f2o12TazDyOgRQ8VRHcaqHDPuuk1WnHSueo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.SoAliasAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.SoAliasAttribute.html",
+          "hash": "cBrEpSjBnN9OFx+NL5+T52bMyPGGFx5jzTQ4US2LVsw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.ValueAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.ValueAttribute.html",
+          "hash": "iFuI6g1FCup/XjI5dAy7cQbbKuiF8+c2TXLkvfsRK9g="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.DataPaths.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.DataPaths.html",
+          "hash": "jWaaw+wzRGaBtT6q7BysU7Lz/9MLG8Jyii7nemElrR8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.AutoComplete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.AutoComplete.html",
+          "hash": "KQnoZ/ykzn1DwdE/709s/TPiYI+TXykGpyPgO6bs/3I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.DataPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.DataPath.html",
+          "hash": "2J9i7/Qczs1GbDYwY+FeZLq9BZAP4wX1pr1S+06hpls="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.ExampleAnimationVB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.ExampleAnimationVB.html",
+          "hash": "J3nvn3nKhUJgN9/46BaThzV4OLF3I9KWek4HI8ugmiY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.ExampleImageManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.ExampleImageManager.html",
+          "hash": "+fzOImyq1iB3wzG4OwFShyYyeGVsjQHJl6eyhUV2eng="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.ExampleImageVB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.ExampleImageVB.html",
+          "hash": "RrSX184S5px6woNbctODLaRhjQ91AVHRfwcPotdKjD0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.ExampleListVB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.ExampleListVB.html",
+          "hash": "o1NgPKRQtdxev7V7FrEeVnBeAiYTm+xZjkfGIns4xNQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.ExampleSelectChildVB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.ExampleSelectChildVB.html",
+          "hash": "t8oEHGUanBzZ27Kquhad72MMlfey3hqK0+uOPlTfdCY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.ExampleTextInputVB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.ExampleTextInputVB.html",
+          "hash": "yzgc6sWuOoG31KrpBW4Ae9lI+n6zaA68A4TMir/JCfw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.ExampleTextVB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.ExampleTextVB.html",
+          "hash": "deaCrk9TJ0N0/HafvlPKA7i+TjUN5rMro7aWYYF0HKk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.IPropAutoComplete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.IPropAutoComplete.html",
+          "hash": "h4BHdabHc7xgF7Ge9J3gSb4LFW+ZYg/sNvAC/yRzbNQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.IPropReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.IPropReceiver.html",
+          "hash": "UMIvSEEC1IDwzLXSEOUyVGWuibF4gFRudSvAy3lrBxE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.PropMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.PropMapper.html",
+          "hash": "hnzNnqSzNIupjzA/cRUkgjv0InX7hCW4ehRstDsn3ko="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.PropProvider.Complexity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.PropProvider.Complexity.html",
+          "hash": "M0mOBHnZh+7OVPIS1EG/yyuTdEzbeU95pkLC4PYkLGc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.PropProvider.PropMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.PropProvider.PropMap.html",
+          "hash": "k6Pt8vFlNE7b+tQyarXyuotgPuK1V6rf1mHE6FcONKs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.PropProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.PropProvider.html",
+          "hash": "Eh/KHOhVcX3RT+C0VW/ZEUQjM+llegklyOoAnr6ZuWA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.Props.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.Props.html",
+          "hash": "FOnpaSLlo2W+xW2KP6TvOKts3UYLMrTRDvudSu9V+kg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.UI.html",
+          "hash": "Qy0mGmIPKbdSoAzmgmQT6kS33QLoBgPjDPTLQ0g1bG0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Unity.UnityLogger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Unity.UnityLogger.html",
+          "hash": "DbSFZWMiklYab1FzbhHosJeFRwwwf8KX1g0SmppLOXI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Unity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Unity.html",
+          "hash": "0mAOiQeu/FY3ZHGt6Rbn7v8joFW1IFh2sopAKvld3Os="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.ChangedField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.ChangedField.html",
+          "hash": "+lIFd0U6UXkhmc3qKuDZQQ0zpJ5o2TrWi6CFurul/VI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.CompareSoSerialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.CompareSoSerialization.html",
+          "hash": "BUcOW68NDAkY9gUq01NGr/F7/qzbeH4rAvhX1eOQyFA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.ComparisonResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.ComparisonResult.html",
+          "hash": "x8VmRNuY+EfqFJwqfIo4+fnku0JNkSzu+pon6UzHc3I="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.DescribeSoSerialization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.DescribeSoSerialization.html",
+          "hash": "7WS40BP+C9tJXU2U0WY/KwZ5SJ90LVOA2D0xq8CPXfw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.SerializationComparisonResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.SerializationComparisonResult.html",
+          "hash": "GQuZkfCOmr4MGEsWGXLCv4wVpDtVvKteHv5MBZjrvQc="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.SerializedClassComparison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.SerializedClassComparison.html",
+          "hash": "2jDF/xEQxu2NzezR47r4lTJSyXufxg2OROEFl3qD0kw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.SerializedClassInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.SerializedClassInfo.html",
+          "hash": "uE+t9xGbK9LeZvHZaRNHsuGoOVC51R/y8gldTlIIG7w="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.SerializedInfoComparison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.SerializedInfoComparison.html",
+          "hash": "gELi+gRAmQ2fznb4jJgJy0rsLAdLehfUPzgYPBYnXlk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.SerializedVersionComparison.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.SerializedVersionComparison.html",
+          "hash": "AmEnlnWhUvKj77ogkwuywLZ1SyVsomLW1970+XI6KbQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.ServerObjectSerializationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.ServerObjectSerializationInfo.html",
+          "hash": "KHlGFWAIGWpk0/KwnufA+MLN9DsF8NL8VrkztmV04F4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.ServerObjectVersionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.ServerObjectVersionInfo.html",
+          "hash": "emLtl14ywVYdPavRa2/zdnyrMHOo9Dn1EQImHqgAcY0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.SoSerializationInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.SoSerializationInfo.html",
+          "hash": "QxhvRnpBexU6yeh+NWvhDc3ZkeROZHzd71utYOxTMfg="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.SoSerializationReport.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.SoSerializationReport.html",
+          "hash": "pQe77TT1NShFCAYIO/WEHgrwD5N3x+6ry03tQlQgNmQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.Upgrading.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.Upgrading.html",
+          "hash": "gY7cuUxPJVlCyGqKnYwM6XnsIqFemtYANXIjwbNyhjs="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/GPF.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/GPF.html",
+          "hash": "Wdvq+r4wMbjbMdhPKgUzuqPvcMXsBHyFHkQQEkT0l48="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "PZOWHEGenb8lFoWmOXrI39um/ddNiR4ptu/4wLscDX0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "4Qg+Brl4FVbTw1pryUAARam6qigmwmn8qnKz3spLMAA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "D5ZGUIHPdP6seAACNFVgDHIdbIjQHa6ysyuFUhgehmM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "NzUb8hAV1CaOJGOpCbXUNpmVlXMhdQ9hDKjZ7NpmCHM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "xclirW87Fmvk6+4fvT5Mb2OUFTu5PjXs3QBLDF1LZDM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 220,
+          "skipped_file_count": 220
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
