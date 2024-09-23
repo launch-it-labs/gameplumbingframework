@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -795,7 +762,7 @@
   
   <h1 id="GPF_Syncer" data-uid="GPF.Syncer" class="text-break">Class Syncer
   </h1>
-  <div class="markdown level0 summary"><p>Syncer enables access to the world of Server Objects.</p>
+  <div class="markdown level0 summary"><p>Syncer enables syncing to Server Objects (SOs) as well as sending messages to them.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -831,7 +798,8 @@
     <pre><code class="lang-csharp hljs">public sealed class Syncer</code></pre>
   </div>
   <h5 id="GPF_Syncer_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This class enables syncing to SOs as well as sending messages to them.</p>
+  <div class="markdown level0 remarks"><p>Syncer objects are generally created within a controller or a test script. You will create a single Syncer in your AppController;
+however, you can create multiple Syncer objects in tests to simulate interactions between players.</p>
 </div>
   <h3 id="fields">Fields
   </h3>
@@ -1386,7 +1354,8 @@
   </table>
   <a id="GPF_Syncer_Alias_" data-uid="GPF.Syncer.Alias*"></a>
   <h4 id="GPF_Syncer_Alias_GPF_ServerObjects_SOID_System_String_" data-uid="GPF.Syncer.Alias(GPF.ServerObjects.SOID,System.String)">Alias(SOID, String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates an alias (link) to a ServerObject (SO) in the datastore.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1405,15 +1374,20 @@
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a></td>
         <td><span class="parametername">soID</span></td>
-        <td></td>
+        <td><p>The ID of the SO you want to alias.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">alias</span></td>
-        <td></td>
+        <td><p>The alias to associate with the SO.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_Syncer_Alias_GPF_ServerObjects_SOID_System_String__examples">Examples</h5>
+  <pre><code>syncer.Alias(table, &quot;table&quot;);</code></pre>
+
   <a id="GPF_Syncer_Alias_" data-uid="GPF.Syncer.Alias*"></a>
   <h4 id="GPF_Syncer_Alias_GPF_ServerObjects_SOID_System_String_System_String_" data-uid="GPF.Syncer.Alias(GPF.ServerObjects.SOID,System.String,System.String)">Alias(SOID, String, String)</h4>
   <div class="markdown level1 summary"></div>
@@ -1469,13 +1443,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.Syncer.html">Syncer</a></td>
-        <td></td>
+        <td><p>A reference to the created Syncer</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_Syncer_CreateSyncer_examples">Examples</h5>
+  <pre><code>syncer = Syncer.CreateSyncer();</code></pre>
+
   <a id="GPF_Syncer_CreateSyncer_" data-uid="GPF.Syncer.CreateSyncer*"></a>
   <h4 id="GPF_Syncer_CreateSyncer_GPF_SyncerConfigs_" data-uid="GPF.Syncer.CreateSyncer(GPF.SyncerConfigs)">CreateSyncer(SyncerConfigs)</h4>
-  <div class="markdown level1 summary"><p>Creates a Syncer with the default DataStore.</p>
+  <div class="markdown level1 summary"><p>Creates a Syncer with the specified configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1495,7 +1473,8 @@
       <tr>
         <td><a class="xref" href="GPF.SyncerConfigs.html">SyncerConfigs</a></td>
         <td><span class="parametername">configs</span></td>
-        <td></td>
+        <td><p>Configuration options for the Syncer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1510,14 +1489,14 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.Syncer.html">Syncer</a></td>
-        <td><p>A reference to the created Syncer</p>
+        <td><p>A reference to the created Syncer.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_Syncer_CreateTestSyncer_" data-uid="GPF.Syncer.CreateTestSyncer*"></a>
   <h4 id="GPF_Syncer_CreateTestSyncer_GPF_DataStore_GPF_ServerObjects_ITimeService_GPF_Simulation_MockCloud_GPF_ServerObjects_ServerObjectsVersion_System_Boolean_" data-uid="GPF.Syncer.CreateTestSyncer(GPF.DataStore,GPF.ServerObjects.ITimeService,GPF.Simulation.MockCloud,GPF.ServerObjects.ServerObjectsVersion,System.Boolean)">CreateTestSyncer(DataStore, ITimeService, MockCloud, ServerObjectsVersion, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Creates a syncer that can be used with simulated time.</p>
+  <div class="markdown level1 summary"><p>Creates a Syncer that can be used with simulated time, intended for tests.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1537,27 +1516,32 @@
       <tr>
         <td><a class="xref" href="GPF.DataStore.html">DataStore</a></td>
         <td><span class="parametername">datastore</span></td>
-        <td></td>
+        <td><p>The data store to be used for this Syncer.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ITimeService.html">ITimeService</a></td>
         <td><span class="parametername">timeService</span></td>
-        <td></td>
+        <td><p>The time service for managing time-sensitive operations.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.Simulation.MockCloud.html">MockCloud</a></td>
         <td><span class="parametername">mockCloud</span></td>
-        <td></td>
+        <td><p>A mock cloud for simulated server operations.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectsVersion.html">ServerObjectsVersion</a></td>
         <td><span class="parametername">versions</span></td>
-        <td></td>
+        <td><p>Server object versions used in this environment.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">enableLogging</span></td>
-        <td></td>
+        <td><p>Whether logging is enabled.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1572,7 +1556,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.Syncer.html">Syncer</a></td>
-        <td></td>
+        <td><p>A reference to the created test Syncer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -2081,7 +2066,7 @@
   </table>
   <a id="GPF_Syncer_Pause_" data-uid="GPF.Syncer.Pause*"></a>
   <h4 id="GPF_Syncer_Pause" data-uid="GPF.Syncer.Pause">Pause()</h4>
-  <div class="markdown level1 summary"><p>Temporarily stop syncing ServerObjects with the backend</p>
+  <div class="markdown level1 summary"><p>Temporarily pauses syncing between ServerObjects and the backend.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2089,12 +2074,11 @@
     <pre><code class="lang-csharp hljs">public async void Pause()</code></pre>
   </div>
   <h5 id="GPF_Syncer_Pause_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Server objects you are synced to may be changed by other user or backend actions
-Use Resume to continue syncing and recieve any updated state</p>
+  <div class="markdown level1 remarks"><p>Use <a class="xref" href="GPF.Syncer.html#GPF_Syncer_Resume">Resume()</a> to continue syncing. During the pause, ServerObjects might still be changed by other users or backend actions.</p>
 </div>
   <a id="GPF_Syncer_PreSync_" data-uid="GPF.Syncer.PreSync*"></a>
   <h4 id="GPF_Syncer_PreSync_GPF_ServerObjects_SOID___" data-uid="GPF.Syncer.PreSync(GPF.ServerObjects.SOID[])">PreSync(SOID[])</h4>
-  <div class="markdown level1 summary"><p>Start syncing porcess on multiple server objects.</p>
+  <div class="markdown level1 summary"><p>Starts the syncing process on multiple server objects as a potential optimization to syncing objects sequentially.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2114,21 +2098,23 @@ Use Resume to continue syncing and recieve any updated state</p>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a>[]</td>
         <td><span class="parametername">soIDs</span></td>
-        <td><p>IDs of the SOs you want to sync to.</p>
+        <td><p>IDs of the ServerObjects (SOs) you want to sync.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_Syncer_PreSync_GPF_ServerObjects_SOID____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>You can get a reference to the server object with Syncer.Sync</p>
+  <div class="markdown level1 remarks"><p>You can get a reference to the server object with <code>Syncer.Sync</code>.
+Useful when you want to sync multiple server objects simultaneously for efficiency.</p>
 </div>
   <h5 id="GPF_Syncer_PreSync_GPF_ServerObjects_SOID____examples">Examples</h5>
-  <pre><code>PreSync(hello1SOID,hello2SOID);
+  <pre><code>syncer.PreSync(hello1SOID, hello2SOID);
 HelloSO helloSO1 = await syncer.Sync(hello1SOID);</code></pre>
 
   <a id="GPF_Syncer_RemoveAlias_" data-uid="GPF.Syncer.RemoveAlias*"></a>
   <h4 id="GPF_Syncer_RemoveAlias_System_String_" data-uid="GPF.Syncer.RemoveAlias(System.String)">RemoveAlias(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes an alias (link) from the datastore.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -2147,10 +2133,14 @@ HelloSO helloSO1 = await syncer.Sync(hello1SOID);</code></pre>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">alias</span></td>
-        <td></td>
+        <td><p>The alias to remove.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_Syncer_RemoveAlias_System_String__examples">Examples</h5>
+  <pre><code>syncer.RemoveAlias(&quot;table&quot;);</code></pre>
+
   <a id="GPF_Syncer_RemoveFieldListener_" data-uid="GPF.Syncer.RemoveFieldListener*"></a>
   <h4 id="GPF_Syncer_RemoveFieldListener__2___0_System_String_System_Action___0_System_String___1___1__" data-uid="GPF.Syncer.RemoveFieldListener``2(``0,System.String,System.Action{``0,System.String,``1,``1})">RemoveFieldListener&lt;TServerObjectType, TFieldType&gt;(TServerObjectType, String, Action&lt;TServerObjectType, String, TFieldType, TFieldType&gt;)</h4>
   <div class="markdown level1 summary"></div>
@@ -2461,7 +2451,7 @@ HelloSO helloSO1 = await syncer.Sync(hello1SOID);</code></pre>
   </table>
   <a id="GPF_Syncer_RequestAuth_" data-uid="GPF.Syncer.RequestAuth*"></a>
   <h4 id="GPF_Syncer_RequestAuth" data-uid="GPF.Syncer.RequestAuth">RequestAuth()</h4>
-  <div class="markdown level1 summary"><p>Wait for the connection to be successvully authenticated</p>
+  <div class="markdown level1 summary"><p>Requests authentication using the current <a class="xref" href="GPF.IAuthClient.html">IAuthClient</a> set for this Syncer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2479,13 +2469,25 @@ HelloSO helloSO1 = await syncer.Sync(hello1SOID);</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A Task that completes once the Syncer is authenticated.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_Syncer_RequestAuth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method sends an authentication request to the backend, allowing the Syncer to become authenticated
+before performing further operations that require authentication.
+The task completes when the authentication process finishes.</p>
+</div>
+  <h5 id="GPF_Syncer_RequestAuth_examples">Examples</h5>
+  <pre><code>var syncer = Syncer.CreateSyncer(&quot;default&quot;);
+var authClient = new DemoAuthClient(syncer);
+syncer.SetAuth(authClient);
+await syncer.RequestAuth();</code></pre>
+
   <a id="GPF_Syncer_Resume_" data-uid="GPF.Syncer.Resume*"></a>
   <h4 id="GPF_Syncer_Resume" data-uid="GPF.Syncer.Resume">Resume()</h4>
-  <div class="markdown level1 summary"><p>Continue syncing ServerObjects with the backend</p>
+  <div class="markdown level1 summary"><p>Temporarily pauses syncing between ServerObjects and the backend.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2493,7 +2495,7 @@ HelloSO helloSO1 = await syncer.Sync(hello1SOID);</code></pre>
     <pre><code class="lang-csharp hljs">public void Resume()</code></pre>
   </div>
   <h5 id="GPF_Syncer_Resume_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Server objects will be updated with their current state, and continue to be synced after that</p>
+  <div class="markdown level1 remarks"><p>Use <a class="xref" href="GPF.Syncer.html#GPF_Syncer_Resume">Resume()</a> to continue syncing. During the pause, ServerObjects might still be changed by other users or backend actions.</p>
 </div>
   <a id="GPF_Syncer_Send_" data-uid="GPF.Syncer.Send*"></a>
   <h4 id="GPF_Syncer_Send_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.Syncer.Send(GPF.ServerObjects.ServerObject,GPF.ServerObjects.ServerObjectMessage)">Send(ServerObject, ServerObjectMessage)</h4>
@@ -2533,7 +2535,7 @@ HelloSO helloSO1 = await syncer.Sync(hello1SOID);</code></pre>
 </div>
   <a id="GPF_Syncer_Send_" data-uid="GPF.Syncer.Send*"></a>
   <h4 id="GPF_Syncer_Send_GPF_ServerObjects_SOID_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.Syncer.Send(GPF.ServerObjects.SOID,GPF.ServerObjects.ServerObjectMessage)">Send(SOID, ServerObjectMessage)</h4>
-  <div class="markdown level1 summary"><p>Sends a message to an SO</p>
+  <div class="markdown level1 summary"><p>Sends a message to a Server Object (SO).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2553,20 +2555,23 @@ HelloSO helloSO1 = await syncer.Sync(hello1SOID);</code></pre>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a></td>
         <td><span class="parametername">soID</span></td>
-        <td><p>The ID of the target SO</p>
+        <td><p>The ID of the target SO.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
         <td><span class="parametername">message</span></td>
-        <td><p>The message being sent, should be a custom type that extends ServerObjectMessage</p>
+        <td><p>The message being sent, which should be a custom type that extends ServerObjectMessage.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_Syncer_Send_GPF_ServerObjects_SOID_GPF_ServerObjects_ServerObjectMessage__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>make sure the Handler for the messag has the [FromClient] attribute set, or the message will be ignored.</p>
+  <div class="markdown level1 remarks"><p>Ensure the handler for the message has the [FromClient] attribute set, or the message will be ignored by the server.</p>
 </div>
+  <h5 id="GPF_Syncer_Send_GPF_ServerObjects_SOID_GPF_ServerObjects_ServerObjectMessage__examples">Examples</h5>
+  <pre><code>syncer.Send(player, new CoinPlayerSO.Flip());</code></pre>
+
   <a id="GPF_Syncer_SendSessionMessage_" data-uid="GPF.Syncer.SendSessionMessage*"></a>
   <h4 id="GPF_Syncer_SendSessionMessage__1_GPF_ServerObjects_ServerObject___0_" data-uid="GPF.Syncer.SendSessionMessage``1(GPF.ServerObjects.ServerObject,``0)">SendSessionMessage&lt;T&gt;(ServerObject, T)</h4>
   <div class="markdown level1 summary"><p>Sends a per-session message to an SO.
@@ -2642,10 +2647,7 @@ It is possible this will be sent multiple times if the connection is lost before
 
   <a id="GPF_Syncer_SendSessionMessage_" data-uid="GPF.Syncer.SendSessionMessage*"></a>
   <h4 id="GPF_Syncer_SendSessionMessage__1_GPF_ServerObjects_SOID___0_" data-uid="GPF.Syncer.SendSessionMessage``1(GPF.ServerObjects.SOID,``0)">SendSessionMessage&lt;T&gt;(SOID, T)</h4>
-  <div class="markdown level1 summary"><p>Sends a per-session message to an SO.
-The message will only be returned to this syncer, not others.
-It will have fields set by hooks on the server.
-It is possible this will be sent multiple times if the connection is lost before the server responds.</p>
+  <div class="markdown level1 summary"><p>Sends a per-session message to an SO and returns a task that completes when the server processes the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2666,13 +2668,13 @@ It is possible this will be sent multiple times if the connection is lost before
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a></td>
         <td><span class="parametername">soID</span></td>
-        <td><p>The ID of the target SO</p>
+        <td><p>The ID of the target SO.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">message</span></td>
-        <td><p>The message being sent.</p>
+        <td><p>The message being sent, which should extend <code>ServerObjectMessage</code>.</p>
 </td>
       </tr>
     </tbody>
@@ -2688,7 +2690,7 @@ It is possible this will be sent multiple times if the connection is lost before
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
-        <td><p>A Task that completes once the server has processed the message</p>
+        <td><p>A Task that completes once the server has processed the message.</p>
 </td>
       </tr>
     </tbody>
@@ -2709,14 +2711,16 @@ It is possible this will be sent multiple times if the connection is lost before
     </tbody>
   </table>
   <h5 id="GPF_Syncer_SendSessionMessage__1_GPF_ServerObjects_SOID___0__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This is useful for authentication and device session related features.</p>
+  <div class="markdown level1 remarks"><p>This method is useful for sending session-related messages, such as authentication or device session data.
+The message will only be returned to this syncer, not others. It is possible that the message will be sent multiple times if the connection is lost before the server responds.
+Ensure the message handler on the server allows session messages from the client.</p>
 </div>
   <h5 id="GPF_Syncer_SendSessionMessage__1_GPF_ServerObjects_SOID___0__examples">Examples</h5>
   <pre><code>var mySession = await syncer.SendSessionMessage(sessionSOID, new Session { current = currentSessionID });</code></pre>
 
   <a id="GPF_Syncer_SendWait_" data-uid="GPF.Syncer.SendWait*"></a>
   <h4 id="GPF_Syncer_SendWait_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.Syncer.SendWait(GPF.ServerObjects.ServerObject,GPF.ServerObjects.ServerObjectMessage)">SendWait(ServerObject, ServerObjectMessage)</h4>
-  <div class="markdown level1 summary"><p>Sends a message to an SO and returns a task that doesn't complete until the SO has processed the message.</p>
+  <div class="markdown level1 summary"><p>Sends a message to a Server Object (SO).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2736,13 +2740,12 @@ It is possible this will be sent multiple times if the connection is lost before
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObject.html">ServerObject</a></td>
         <td><span class="parametername">so</span></td>
-        <td><p>The SO target</p>
-</td>
+        <td></td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
         <td><span class="parametername">message</span></td>
-        <td><p>The message being sent.</p>
+        <td><p>The message being sent, which should be a custom type that extends ServerObjectMessage.</p>
 </td>
       </tr>
     </tbody>
@@ -2758,17 +2761,15 @@ It is possible this will be sent multiple times if the connection is lost before
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>A Task that completes once the server has processed the message</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_Syncer_SendWait_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This is useful when sending a message that will happen 1 time per session as it allows the next line of code to assume the message has been processed.
-make sure the Handler for the messag has the [FromClient] attribute set, or the message will be ignored.</p>
+  <div class="markdown level1 remarks"><p>Ensure the handler for the message has the [FromClient] attribute set, or the message will be ignored by the server.</p>
 </div>
   <h5 id="GPF_Syncer_SendWait_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage__examples">Examples</h5>
-  <pre><code>await syncer.SendWait(helloSOID, new HelloSO.MyNameIs { name = &quot;World&quot; });</code></pre>
+  <pre><code>syncer.Send(player, new CoinPlayerSO.Flip());</code></pre>
 
   <a id="GPF_Syncer_SendWait_" data-uid="GPF.Syncer.SendWait*"></a>
   <h4 id="GPF_Syncer_SendWait_GPF_ServerObjects_SOID_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.Syncer.SendWait(GPF.ServerObjects.SOID,GPF.ServerObjects.ServerObjectMessage)">SendWait(SOID, ServerObjectMessage)</h4>
@@ -2828,7 +2829,7 @@ make sure the Handler for the messag has the [FromClient] attribute set, or the 
 
   <a id="GPF_Syncer_SetAuth_" data-uid="GPF.Syncer.SetAuth*"></a>
   <h4 id="GPF_Syncer_SetAuth_GPF_IAuthClient_" data-uid="GPF.Syncer.SetAuth(GPF.IAuthClient)">SetAuth(IAuthClient)</h4>
-  <div class="markdown level1 summary"><p>Authenticate this connection</p>
+  <div class="markdown level1 summary"><p>Sets the authentication context for this Syncer instance.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2848,11 +2849,21 @@ make sure the Handler for the messag has the [FromClient] attribute set, or the 
       <tr>
         <td><a class="xref" href="GPF.IAuthClient.html">IAuthClient</a></td>
         <td><span class="parametername">authContext</span></td>
-        <td><p>Auth functions</p>
+        <td><p>The <a class="xref" href="GPF.IAuthClient.html">IAuthClient</a> implementation to handle authentication.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_Syncer_SetAuth_GPF_IAuthClient__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The authentication state changes to <code>AuthState.AVAILABLE</code> when the authentication context is provided.
+The cloud connection is updated with the provided authentication client, allowing the Syncer to authenticate
+itself with the backend.</p>
+</div>
+  <h5 id="GPF_Syncer_SetAuth_GPF_IAuthClient__examples">Examples</h5>
+  <pre><code>var syncer = Syncer.CreateSyncer(&quot;default&quot;);
+var authClient = new DemoAuthClient(syncer);
+syncer.SetAuth(authClient);</code></pre>
+
   <a id="GPF_Syncer_Sync_" data-uid="GPF.Syncer.Sync*"></a>
   <h4 id="GPF_Syncer_Sync__1_GPF_ServerObjects_SOID___0__" data-uid="GPF.Syncer.Sync``1(GPF.ServerObjects.SOID{``0})">Sync&lt;T&gt;(SOID&lt;T&gt;)</h4>
   <div class="markdown level1 summary"><p>Sync a Server Object between the Client and Server.</p>
@@ -3450,7 +3461,7 @@ A previously valid name might not be valid at the time this function is called.<
   </table>
   <a id="GPF_Syncer_WaitFor_" data-uid="GPF.Syncer.WaitFor*"></a>
   <h4 id="GPF_Syncer_WaitFor_GPF_ServerObjects_ServerObject_System_String_GPF_FieldOperations_IFieldOperation_System_TimeSpan_System_Threading_CancellationToken_" data-uid="GPF.Syncer.WaitFor(GPF.ServerObjects.ServerObject,System.String,GPF.FieldOperations.IFieldOperation,System.TimeSpan,System.Threading.CancellationToken)">WaitFor(ServerObject, String, IFieldOperation, TimeSpan, CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Waits for a field of an so to conform to the operation</p>
+  <div class="markdown level1 summary"><p>Waits for a field of a ServerObject to conform to a specified operation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3470,31 +3481,31 @@ A previously valid name might not be valid at the time this function is called.<
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObject.html">ServerObject</a></td>
         <td><span class="parametername">so</span></td>
-        <td><p>A reference to the SO</p>
+        <td><p>A reference to the ServerObject.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">fieldname</span></td>
-        <td><p>The name of the field, use nameof()</p>
+        <td><p>The name of the field to monitor (use nameof()).</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.FieldOperations.IFieldOperation.html">IFieldOperation</a></td>
         <td><span class="parametername">operation</span></td>
-        <td><p>The operation you want to conform to.  Feel free to implement IFieldOperation to create your own.</p>
+        <td><p>The operation to apply to the field, implementing <code>IFieldOperation</code>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.TimeSpan</span></td>
         <td><span class="parametername">timeout</span></td>
-        <td><p>Set your own timeout as a timspan</p>
+        <td><p>Optional. A timeout period for the operation to complete.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Threading.CancellationToken</span></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Gives you the option to cancel the operation</p>
+        <td><p>Optional. A cancellation token to terminate the wait operation if necessary.</p>
 </td>
       </tr>
     </tbody>
@@ -3510,39 +3521,23 @@ A previously valid name might not be valid at the time this function is called.<
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td><p>A task that is complete when the operation evaluates to true</p>
+        <td><p>A Task that completes when the operation evaluates to true or throws a <code>TimeoutException</code> if it times out.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_Syncer_WaitFor_GPF_ServerObjects_ServerObject_System_String_GPF_FieldOperations_IFieldOperation_System_TimeSpan_System_Threading_CancellationToken__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Uses the timeout you set.</p>
+  <div class="markdown level1 remarks"><p>This method is particularly useful in unit tests to verify state changes over time.
+The task will complete when the field value meets the condition defined by the operation.
+Throws a <code>TimeoutException</code> if the field does not change within the timeout period.</p>
 </div>
   <h5 id="GPF_Syncer_WaitFor_GPF_ServerObjects_ServerObject_System_String_GPF_FieldOperations_IFieldOperation_System_TimeSpan_System_Threading_CancellationToken__examples">Examples</h5>
-  <p>Waits for leaderboardSO.scores.count == Amount</p>
-<pre><code>  await syncer.WaitFor(leaderboardSO, nameof(LeaderboardSO.scores), FieldIs.WithCount(AMOUNT));</code></pre>
-<p>Waits for leaderboarPlayerSO.state ==LeaderboarPlayerSO.State.READY</p>
-<pre><code> await syncer.WaitFor(me, nameof(LeaderboarPlayerSO.state), FieldIs.Equal(LeaderboarPlayerSO.State.READY));</code></pre>
+  <pre><code>await syncer.WaitFor(leaderboardSO, nameof(LeaderboardSO.scores), FieldIs.WithCount(AMOUNT));</code></pre>
+<pre><code>await syncer.WaitFor(me, nameof(CoinPlayerSO.state), FieldIs.Equal(CoinPlayerSO.State.READY));</code></pre>
 
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.TimeoutException</span></td>
-        <td><p>Throws a timeout if the operation does not evaluate to true within the timeout</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
   <a id="GPF_Syncer_WaitForAuth_" data-uid="GPF.Syncer.WaitForAuth*"></a>
   <h4 id="GPF_Syncer_WaitForAuth" data-uid="GPF.Syncer.WaitForAuth">WaitForAuth()</h4>
-  <div class="markdown level1 summary"><p>Wait for the connection to be successvully authenticated</p>
+  <div class="markdown level1 summary"><p>Waits until the Syncer is authenticated.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -3560,10 +3555,21 @@ A previously valid name might not be valid at the time this function is called.<
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A Task that completes once the Syncer is authenticated.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_Syncer_WaitForAuth_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this method if you need to ensure the Syncer is authenticated before proceeding with operations
+that depend on authentication. The task completes when authentication is successful.</p>
+</div>
+  <h5 id="GPF_Syncer_WaitForAuth_examples">Examples</h5>
+  <pre><code>var syncer = Syncer.CreateSyncer(&quot;default&quot;);
+var authClient = new DemoAuthClient(syncer);
+syncer.SetAuth(authClient);
+await syncer.WaitForAuth();</code></pre>
+
   <a id="GPF_Syncer_WaitForVersion_" data-uid="GPF.Syncer.WaitForVersion*"></a>
   <h4 id="GPF_Syncer_WaitForVersion" data-uid="GPF.Syncer.WaitForVersion">WaitForVersion()</h4>
   <div class="markdown level1 summary"><p>Wait for the client version to be confirmed by the server</p>

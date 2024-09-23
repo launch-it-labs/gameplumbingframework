@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -814,7 +781,9 @@
       <h4><a class="xref" href="GPF.ServerObjects.AuthServerConfigs.html">AuthServerConfigs</a></h4>
       <section></section>
       <h4><a class="xref" href="GPF.ServerObjects.BaseSOID.html">BaseSOID</a></h4>
-      <section></section>
+      <section><p>Base class representing the unique identifier (SOID) for a server object. It handles the creation, comparison, and
+serialization of IDs, allowing server objects to be uniquely identified across systems.</p>
+</section>
       <h4><a class="xref" href="GPF.ServerObjects.ClientSessionAttribute.html">ClientSessionAttribute</a></h4>
       <section></section>
       <h4><a class="xref" href="GPF.ServerObjects.DataStoreIgnoreAttribute.html">DataStoreIgnoreAttribute</a></h4>
@@ -849,7 +818,9 @@
       <h4><a class="xref" href="GPF.ServerObjects.InitContext.html">InitContext</a></h4>
       <section></section>
       <h4><a class="xref" href="GPF.ServerObjects.MessageDest.html">MessageDest</a></h4>
-      <section></section>
+      <section><p>Represents the destination of a message within the Game Plumbing Framework.
+A MessageDest can represent a ServerObject (SOID), REST endpoint, or a client syncer.</p>
+</section>
       <h4><a class="xref" href="GPF.ServerObjects.MessageHandlerInfo.html">MessageHandlerInfo</a></h4>
       <section></section>
       <h4><a class="xref" href="GPF.ServerObjects.MessageHandlerInfo.HandlerInfo.html">MessageHandlerInfo.HandlerInfo</a></h4>
@@ -887,7 +858,10 @@
       <h4><a class="xref" href="GPF.ServerObjects.ServerEnv.Included.html">ServerEnv.Included</a></h4>
       <section></section>
       <h4><a class="xref" href="GPF.ServerObjects.ServerObject.html">ServerObject</a></h4>
-      <section></section>
+      <section><p>A base class for all Server Objects (SO) in GPF. ServerObject provides out-of-the-box functionality
+for objects that synchronize between clients and the server. Derived classes can implement specific
+game logic while leveraging SO's synchronization and messaging capabilities.</p>
+</section>
       <h4><a class="xref" href="GPF.ServerObjects.ServerObjectAuthAttribute.html">ServerObjectAuthAttribute</a></h4>
       <section></section>
       <h4><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></h4>
@@ -895,12 +869,16 @@
       <h4><a class="xref" href="GPF.ServerObjects.ServerObjectsVersion.html">ServerObjectsVersion</a></h4>
       <section></section>
       <h4><a class="xref" href="GPF.ServerObjects.ServerObjInfo.html">ServerObjInfo</a></h4>
-      <section></section>
+      <section><p>Holds metadata about a ServerObject, including versioning, message handlers, and security attributes.
+It manages different versions of a ServerObject, and is responsible for upgrading and identifying the
+correct type and version of a ServerObject during runtime.</p>
+</section>
       <h4><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a></h4>
       <section><p>The unique id for a Server Object. Encasulates a string.</p>
 </section>
       <h4><a class="xref" href="GPF.ServerObjects.SOID-1.html">SOID&lt;T&gt;</a></h4>
-      <section><p>The unique id for a Server Object associated with a type. Encasulates a string.</p>
+      <section><p>Represents the unique identifier (SOID) for a specific type of server object (<code>T</code>). Provides methods for creating and
+handling SOIDs specifically tied to server objects.</p>
 </section>
       <h4><a class="xref" href="GPF.ServerObjects.SOUpdateResult.html">SOUpdateResult</a></h4>
       <section></section>

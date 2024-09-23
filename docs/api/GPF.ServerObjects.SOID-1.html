@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -795,7 +762,8 @@
   
   <h1 id="GPF_ServerObjects_SOID_1" data-uid="GPF.ServerObjects.SOID`1" class="text-break">Class SOID&lt;T&gt;
   </h1>
-  <div class="markdown level0 summary"><p>The unique id for a Server Object associated with a type. Encasulates a string.</p>
+  <div class="markdown level0 summary"><p>Represents the unique identifier (SOID) for a specific type of server object (<code>T</code>). Provides methods for creating and
+handling SOIDs specifically tied to server objects.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -889,7 +857,8 @@ public class SOID&lt;T&gt; : BaseSOID, IComparable where T : ServerObject</code>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of server object associated with this SOID.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -957,7 +926,9 @@ public class SOID&lt;T&gt; : BaseSOID, IComparable where T : ServerObject</code>
   </h3>
   <a id="GPF_ServerObjects_SOID_1_CreateUnique_" data-uid="GPF.ServerObjects.SOID`1.CreateUnique*"></a>
   <h4 id="GPF_ServerObjects_SOID_1_CreateUnique" data-uid="GPF.ServerObjects.SOID`1.CreateUnique">CreateUnique()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new unique SOID for the given server object type (<code>T</code>). The prefix is generated based on the server object's type,
+and a unique suffix is appended to ensure uniqueness.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -974,7 +945,8 @@ public class SOID&lt;T&gt; : BaseSOID, IComparable where T : ServerObject</code>
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.SOID-1.html">SOID</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>A unique SOID for the specified server object type.</p>
+</td>
       </tr>
     </tbody>
   </table>

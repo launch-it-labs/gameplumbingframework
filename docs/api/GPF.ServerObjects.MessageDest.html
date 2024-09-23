@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -795,7 +762,9 @@
   
   <h1 id="GPF_ServerObjects_MessageDest" data-uid="GPF.ServerObjects.MessageDest" class="text-break">Class MessageDest
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents the destination of a message within the Game Plumbing Framework.
+A MessageDest can represent a ServerObject (SOID), REST endpoint, or a client syncer.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -834,7 +803,8 @@
   </h3>
   <a id="GPF_ServerObjects_MessageDest_IsClient_" data-uid="GPF.ServerObjects.MessageDest.IsClient*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_IsClient" data-uid="GPF.ServerObjects.MessageDest.IsClient">IsClient</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns whether the destination represents a client syncer (either self or other).</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -857,7 +827,8 @@
   </table>
   <a id="GPF_ServerObjects_MessageDest_IsRest_" data-uid="GPF.ServerObjects.MessageDest.IsRest*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_IsRest" data-uid="GPF.ServerObjects.MessageDest.IsRest">IsRest</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns whether the destination represents a REST API endpoint.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -880,7 +851,8 @@
   </table>
   <a id="GPF_ServerObjects_MessageDest_IsSoid_" data-uid="GPF.ServerObjects.MessageDest.IsSoid*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_IsSoid" data-uid="GPF.ServerObjects.MessageDest.IsSoid">IsSoid</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the destination is a ServerObject (SOID), not a REST or client destination.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -905,7 +877,8 @@
   </h3>
   <a id="GPF_ServerObjects_MessageDest_Clone_" data-uid="GPF.ServerObjects.MessageDest.Clone*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_Clone" data-uid="GPF.ServerObjects.MessageDest.Clone">Clone()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a deep copy of this MessageDest object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -922,13 +895,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Object</span></td>
-        <td></td>
+        <td><p>A cloned instance of the MessageDest.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_MessageDest_CreateFromREST_" data-uid="GPF.ServerObjects.MessageDest.CreateFromREST*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_CreateFromREST" data-uid="GPF.ServerObjects.MessageDest.CreateFromREST">CreateFromREST()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a MessageDest representing a REST endpoint, used for sending messages to RESTful services.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -945,13 +920,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageDest.html">MessageDest</a></td>
-        <td></td>
+        <td><p>A new MessageDest representing a REST destination.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_MessageDest_CreateFromSOID_" data-uid="GPF.ServerObjects.MessageDest.CreateFromSOID*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_CreateFromSOID_GPF_ServerObjects_SOID_" data-uid="GPF.ServerObjects.MessageDest.CreateFromSOID(GPF.ServerObjects.SOID)">CreateFromSOID(SOID)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a MessageDest from a given SOID (Server Object ID), enabling message routing to that object.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -970,7 +947,8 @@
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a></td>
         <td><span class="parametername">soid</span></td>
-        <td></td>
+        <td><p>The SOID of the destination ServerObject.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -985,7 +963,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageDest.html">MessageDest</a></td>
-        <td></td>
+        <td><p>A new MessageDest representing the ServerObject.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1014,7 +993,9 @@
   </table>
   <a id="GPF_ServerObjects_MessageDest_CreateFromString_" data-uid="GPF.ServerObjects.MessageDest.CreateFromString*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_CreateFromString_System_String_" data-uid="GPF.ServerObjects.MessageDest.CreateFromString(System.String)">CreateFromString(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a MessageDest from a serialized string, which could represent a REST endpoint,
+a syncer, or a ServerObject.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1033,7 +1014,8 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">serialized</span></td>
-        <td></td>
+        <td><p>The string representation of the destination.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1048,13 +1030,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageDest.html">MessageDest</a></td>
-        <td></td>
+        <td><p>A new MessageDest representing the serialized destination.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_MessageDest_CreateFromSyncerOther_" data-uid="GPF.ServerObjects.MessageDest.CreateFromSyncerOther*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_CreateFromSyncerOther" data-uid="GPF.ServerObjects.MessageDest.CreateFromSyncerOther">CreateFromSyncerOther()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a MessageDest representing another syncer (client), used for client-to-client message communication.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1071,13 +1055,15 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageDest.html">MessageDest</a></td>
-        <td></td>
+        <td><p>A new MessageDest representing the other syncer.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_MessageDest_CreateFromSyncerSelf_" data-uid="GPF.ServerObjects.MessageDest.CreateFromSyncerSelf*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_CreateFromSyncerSelf" data-uid="GPF.ServerObjects.MessageDest.CreateFromSyncerSelf">CreateFromSyncerSelf()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a MessageDest representing the same syncer (client) as the sender.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1094,7 +1080,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageDest.html">MessageDest</a></td>
-        <td></td>
+        <td><p>A new MessageDest representing the self syncer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1187,7 +1174,9 @@
   </table>
   <a id="GPF_ServerObjects_MessageDest_GetSOID_" data-uid="GPF.ServerObjects.MessageDest.GetSOID*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_GetSOID" data-uid="GPF.ServerObjects.MessageDest.GetSOID">GetSOID()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the SOID (Server Object ID) from this message destination if applicable.
+Returns null if the destination does not represent an SOID.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1204,7 +1193,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a></td>
-        <td></td>
+        <td><p>The SOID associated with this destination, or null if not applicable.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1289,7 +1279,8 @@
   </table>
   <a id="GPF_ServerObjects_MessageDest_ToString_" data-uid="GPF.ServerObjects.MessageDest.ToString*"></a>
   <h4 id="GPF_ServerObjects_MessageDest_ToString" data-uid="GPF.ServerObjects.MessageDest.ToString">ToString()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Converts the destination to its string representation for serialization or logging.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1306,7 +1297,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The string representation of the destination.</p>
+</td>
       </tr>
     </tbody>
   </table>

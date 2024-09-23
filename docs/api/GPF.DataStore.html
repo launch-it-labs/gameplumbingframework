@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -795,7 +762,7 @@
   
   <h1 id="GPF_DataStore" data-uid="GPF.DataStore" class="text-break">Class DataStore
   </h1>
-  <div class="markdown level0 summary"><p>Access and store app state</p>
+  <div class="markdown level0 summary"><p>Singleton instance providing access to the main data store for the app.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -835,8 +802,10 @@
     <pre><code class="lang-csharp hljs">public sealed class DataStore : IDataStore</code></pre>
   </div>
   <h5 id="GPF_DataStore_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Makes app state reliably accessible and bindable by UI elements for a consistent and reactive experience
-Data will never be null. Data is automatically converted to the desired type.</p>
+  <div class="markdown level0 remarks"><p>The DataStore provides a centralized location for managing and accessing app state.
+It ensures that UI elements are bound to a consistent and reactive data source, eliminating race conditions
+during initialization and providing automatic type conversion for data.
+The DataStore is designed for reliability, ensuring data is always available and never null.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -919,7 +888,7 @@ Data will never be null. Data is automatically converted to the desired type.</p
   </h3>
   <a id="GPF_DataStore_AddListener_" data-uid="GPF.DataStore.AddListener*"></a>
   <h4 id="GPF_DataStore_AddListener_System_String_System_Action_System_Boolean_" data-uid="GPF.DataStore.AddListener(System.String,System.Action,System.Boolean)">AddListener(String, Action, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Subscribe to changes in this value</p>
+  <div class="markdown level1 summary"><p>Adds a listener to a specific key in the DataStore. The listener will be triggered whenever the data at that key is modified.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -939,29 +908,29 @@ Data will never be null. Data is automatically converted to the desired type.</p
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore to observe.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">listener</span></td>
-        <td><p>Listener will be run on variable change</p>
+        <td><p>The action to run when the data is changed.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">init</span></td>
-        <td><p>Should the action be run immediately to initialize your class</p>
+        <td><p>If true, the listener will be invoked immediately with the current value to initialize your class.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_AddListener_System_String_System_Action_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The action will be called any time the variable is set or notified</p>
+  <div class="markdown level1 remarks"><p>This is useful for keeping UI elements or other components in sync with the DataStore, ensuring that they react to changes in real time.</p>
 </div>
   <a id="GPF_DataStore_AddListener_" data-uid="GPF.DataStore.AddListener*"></a>
   <h4 id="GPF_DataStore_AddListener__1_System_String_System_Action___0___0__System_Boolean_" data-uid="GPF.DataStore.AddListener``1(System.String,System.Action{``0,``0},System.Boolean)">AddListener&lt;T&gt;(String, Action&lt;T, T&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Subscribe to changes in this value</p>
+  <div class="markdown level1 summary"><p>Adds a listener that receives both the new and the previous value whenever the data at the specified key is modified.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -981,19 +950,19 @@ Data will never be null. Data is automatically converted to the desired type.</p
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore to observe.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;T, T&gt;</td>
         <td><span class="parametername">listener</span></td>
-        <td><p>Listener will be run on variable change and passed the latest and previous value</p>
+        <td><p>The action to run, which receives the updated and previous values as parameters.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">init</span></td>
-        <td><p>Should the action be run immediately to initialize your class</p>
+        <td><p>If true, the listener will be invoked immediately with the current value to initialize your class.</p>
 </td>
       </tr>
     </tbody>
@@ -1009,17 +978,17 @@ Data will never be null. Data is automatically converted to the desired type.</p
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The Type of data the listeners needs</p>
+        <td><p>The type of data to be passed to the listener.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_AddListener__1_System_String_System_Action___0___0__System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The action will be called any time the variable is set or notified and passed the latest value and the previous value that it is changing from</p>
+  <div class="markdown level1 remarks"><p>This is useful for scenarios where you need to compare the previous and new values to handle state transitions or changes more effectively.</p>
 </div>
   <a id="GPF_DataStore_AddListener_" data-uid="GPF.DataStore.AddListener*"></a>
   <h4 id="GPF_DataStore_AddListener__1_System_String_System_Action___0__System_Boolean_" data-uid="GPF.DataStore.AddListener``1(System.String,System.Action{``0},System.Boolean)">AddListener&lt;T&gt;(String, Action&lt;T&gt;, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Subscribe to changes in this value</p>
+  <div class="markdown level1 summary"><p>Adds a listener that receives the latest value whenever the data at the specified key is modified.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1039,19 +1008,19 @@ Data will never be null. Data is automatically converted to the desired type.</p
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore to observe.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span>&lt;T&gt;</td>
         <td><span class="parametername">listener</span></td>
-        <td><p>Listener will be run on variable change and passed the latest value</p>
+        <td><p>The action to run, which receives the updated value as a parameter.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">init</span></td>
-        <td><p>Should the action be run immediately to initialize your class</p>
+        <td><p>If true, the listener will be invoked immediately with the current value to initialize your class.</p>
 </td>
       </tr>
     </tbody>
@@ -1067,13 +1036,13 @@ Data will never be null. Data is automatically converted to the desired type.</p
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The Type of data the listeners needs</p>
+        <td><p>The type of data to be passed to the listener.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_AddListener__1_System_String_System_Action___0__System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The action will be called any time the variable is set or notified and passed the latest value</p>
+  <div class="markdown level1 remarks"><p>This method allows for more granular control by passing the current value to the listener whenever the data changes.</p>
 </div>
   <a id="GPF_DataStore_Clear_" data-uid="GPF.DataStore.Clear*"></a>
   <h4 id="GPF_DataStore_Clear" data-uid="GPF.DataStore.Clear">Clear()</h4>
@@ -1089,7 +1058,7 @@ Data will never be null. Data is automatically converted to the desired type.</p
 </div>
   <a id="GPF_DataStore_Delete_" data-uid="GPF.DataStore.Delete*"></a>
   <h4 id="GPF_DataStore_Delete_System_String_" data-uid="GPF.DataStore.Delete(System.String)">Delete(String)</h4>
-  <div class="markdown level1 summary"><p>Reset variable value and mark for deletion</p>
+  <div class="markdown level1 summary"><p>Marks the variable at the specified path for deletion and resets its value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1109,17 +1078,18 @@ Data will never be null. Data is automatically converted to the desired type.</p
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore to delete.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_Delete_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The variable will be completely removed once all the listeners have unsubscribed</p>
+  <div class="markdown level1 remarks"><p>Once all listeners have unsubscribed, the variable will be completely removed from the DataStore.
+Use this to safely remove unused or obsolete data from the DataStore without breaking references or leaving orphaned data.</p>
 </div>
   <a id="GPF_DataStore_DeleteTree_" data-uid="GPF.DataStore.DeleteTree*"></a>
   <h4 id="GPF_DataStore_DeleteTree_System_String_" data-uid="GPF.DataStore.DeleteTree(System.String)">DeleteTree(String)</h4>
-  <div class="markdown level1 summary"><p>Recursiveley reset and mark all variables under that path for deletion</p>
+  <div class="markdown level1 summary"><p>Recursively marks all variables under the specified path for deletion and resets their values.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1139,13 +1109,14 @@ Data will never be null. Data is automatically converted to the desired type.</p
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The root path within the DataStore to start deletion.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_DeleteTree_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>The variables will be completely removed once all the listeners have unsubscribed</p>
+  <div class="markdown level1 remarks"><p>This is useful when needing to clear a whole section of the DataStore, such as when resetting a part of the app state.
+The variables will be removed once all listeners have unsubscribed.</p>
 </div>
   <a id="GPF_DataStore_ExpandInDataStore_" data-uid="GPF.DataStore.ExpandInDataStore*"></a>
   <h4 id="GPF_DataStore_ExpandInDataStore_System_String_System_Object_GPF_DataStore_System_Boolean_System_Int32_" data-uid="GPF.DataStore.ExpandInDataStore(System.String,System.Object,GPF.DataStore,System.Boolean,System.Int32)">ExpandInDataStore(String, Object, DataStore, Boolean, Int32)</h4>
@@ -1201,7 +1172,7 @@ WARNING: This object cannot contain reference loops</p>
   </table>
   <a id="GPF_DataStore_Get_" data-uid="GPF.DataStore.Get*"></a>
   <h4 id="GPF_DataStore_Get__1_System_String_" data-uid="GPF.DataStore.Get``1(System.String)">Get&lt;T&gt;(String)</h4>
-  <div class="markdown level1 summary"><p>Get a piece of data</p>
+  <div class="markdown level1 summary"><p>Retrieves a piece of data from the DataStore at the given path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1221,7 +1192,7 @@ WARNING: This object cannot contain reference loops</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore where the data is stored.</p>
 </td>
       </tr>
     </tbody>
@@ -1237,7 +1208,7 @@ WARNING: This object cannot contain reference loops</p>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The current value at the key</p>
+        <td><p>The value at the given path, converted to the specified type.</p>
 </td>
       </tr>
     </tbody>
@@ -1253,14 +1224,18 @@ WARNING: This object cannot contain reference loops</p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>Convert data to this Type</p>
+        <td><p>The expected type of the data to be returned. The DataStore will automatically convert the data to this type if possible.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_DataStore_Get__1_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The DataStore guarantees non-null values, even during early initialization stages.
+This eliminates common race conditions and ensures data is always available for use.</p>
+</div>
   <a id="GPF_DataStore_GetAvailableDataStores_" data-uid="GPF.DataStore.GetAvailableDataStores*"></a>
   <h4 id="GPF_DataStore_GetAvailableDataStores" data-uid="GPF.DataStore.GetAvailableDataStores">GetAvailableDataStores()</h4>
-  <div class="markdown level1 summary"><p>Get the names of all active DataStore instances.</p>
+  <div class="markdown level1 summary"><p>Retrieves a list of all active DataStore instances by their names.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1278,11 +1253,15 @@ WARNING: This object cannot contain reference loops</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
-        <td><p>A list of DataStore names</p>
+        <td><p>A list of unique names representing all active DataStore instances that have not been garbage collected.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_DataStore_GetAvailableDataStores_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>DataStores are stored in a weak reference dictionary to allow for garbage collection when no longer referenced.
+This method will remove any DataStores that have been garbage collected and return the names of the remaining active stores.</p>
+</div>
   <a id="GPF_DataStore_GetElementIds_" data-uid="GPF.DataStore.GetElementIds*"></a>
   <h4 id="GPF_DataStore_GetElementIds_System_String_" data-uid="GPF.DataStore.GetElementIds(System.String)">GetElementIds(String)</h4>
   <div class="markdown level1 summary"><p>Get the child element ids set by expanding an item in the datastore</p>
@@ -1546,7 +1525,7 @@ WARNING: This object cannot contain reference loops</p>
   </table>
   <a id="GPF_DataStore_Link_" data-uid="GPF.DataStore.Link*"></a>
   <h4 id="GPF_DataStore_Link_System_String_System_String_" data-uid="GPF.DataStore.Link(System.String,System.String)">Link(String, String)</h4>
-  <div class="markdown level1 summary"><p>Redirect access to a variable (and all children) to another part of the DataStore</p>
+  <div class="markdown level1 summary"><p>Redirects access from one key to another, effectively creating an alias for data in the DataStore.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1566,17 +1545,20 @@ WARNING: This object cannot contain reference loops</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">source</span></td>
-        <td><p>This data will be accessable from the target key</p>
+        <td><p>The original data path.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">alias</span></td>
-        <td><p>This key will now be used to access data stored in the source key</p>
+        <td><p>The new path that will be used to access the same data.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_DataStore_Link_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Aliasing is useful when the same data needs to be accessed from multiple locations. For example, aliasing the active unit to <code>units.current</code> allows for easy swapping of selected units in a game without rewriting UI logic.</p>
+</div>
   <a id="GPF_DataStore_List_" data-uid="GPF.DataStore.List*"></a>
   <h4 id="GPF_DataStore_List_System_String_" data-uid="GPF.DataStore.List(System.String)">List(String)</h4>
   <div class="markdown level1 summary"><p>Get meta data about a DataStore path and it's contents</p>
@@ -1622,7 +1604,7 @@ WARNING: This object cannot contain reference loops</p>
   </table>
   <a id="GPF_DataStore_Notify_" data-uid="GPF.DataStore.Notify*"></a>
   <h4 id="GPF_DataStore_Notify_System_String_" data-uid="GPF.DataStore.Notify(System.String)">Notify(String)</h4>
-  <div class="markdown level1 summary"><p>Run all listeners associated with this variable manually</p>
+  <div class="markdown level1 summary"><p>Notifies all listeners for the specified key manually.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1642,14 +1624,13 @@ WARNING: This object cannot contain reference loops</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore to notify.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_Notify_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>It is not necessary to run Notify() on most data. Listeners will be run automatically any time the variable is changed.
-This can be useful to run listeners on function backed data.</p>
+  <div class="markdown level1 remarks"><p>Normally, listeners are notified automatically when data changes. Use this method to trigger listener actions manually, especially for function-backed data.</p>
 </div>
   <a id="GPF_DataStore_PauseListeners_" data-uid="GPF.DataStore.PauseListeners*"></a>
   <h4 id="GPF_DataStore_PauseListeners" data-uid="GPF.DataStore.PauseListeners">PauseListeners()</h4>
@@ -1662,7 +1643,7 @@ This can be useful to run listeners on function backed data.</p>
   </div>
   <a id="GPF_DataStore_RemoveListener_" data-uid="GPF.DataStore.RemoveListener*"></a>
   <h4 id="GPF_DataStore_RemoveListener_System_String_System_Action_" data-uid="GPF.DataStore.RemoveListener(System.String,System.Action)">RemoveListener(String, Action)</h4>
-  <div class="markdown level1 summary"><p>Unsubscribe to changes in this variable</p>
+  <div class="markdown level1 summary"><p>Removes a previously added listener from the DataStore.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1682,17 +1663,20 @@ This can be useful to run listeners on function backed data.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Action</span></td>
         <td><span class="parametername">listener</span></td>
-        <td><p>The listener action</p>
+        <td><p>The listener action to remove.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_DataStore_RemoveListener_System_String_System_Action__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use this method to clean up listeners and prevent memory leaks or unintended behavior when the listener is no longer needed.</p>
+</div>
   <a id="GPF_DataStore_RemoveListener_" data-uid="GPF.DataStore.RemoveListener*"></a>
   <h4 id="GPF_DataStore_RemoveListener__1_System_String_System_Action___0___0__" data-uid="GPF.DataStore.RemoveListener``1(System.String,System.Action{``0,``0})">RemoveListener&lt;T&gt;(String, Action&lt;T, T&gt;)</h4>
   <div class="markdown level1 summary"><p>Unsubscribe to changes in this variable</p>
@@ -1800,7 +1784,7 @@ This can be useful to run listeners on function backed data.</p>
   </div>
   <a id="GPF_DataStore_Set_" data-uid="GPF.DataStore.Set*"></a>
   <h4 id="GPF_DataStore_Set_System_String_System_Object_" data-uid="GPF.DataStore.Set(System.String,System.Object)">Set(String, Object)</h4>
-  <div class="markdown level1 summary"><p>Store a piece of data</p>
+  <div class="markdown level1 summary"><p>Stores a piece of data in the DataStore at the specified path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1820,20 +1804,23 @@ This can be useful to run listeners on function backed data.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore where the data should be stored.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Object</span></td>
         <td><span class="parametername">value</span></td>
-        <td><p>Value of data to store</p>
+        <td><p>The value to store.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GPF_DataStore_Set_System_String_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method allows arbitrary values to be stored in the DataStore, which can later be retrieved or bound to UI elements.</p>
+</div>
   <a id="GPF_DataStore_Set_" data-uid="GPF.DataStore.Set*"></a>
   <h4 id="GPF_DataStore_Set__1_System_String_System_Func___0__" data-uid="GPF.DataStore.Set``1(System.String,System.Func{``0})">Set&lt;T&gt;(String, Func&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"><p>Store function backed data</p>
+  <div class="markdown level1 summary"><p>Stores function-backed data at the specified path. The function will be executed when the data is accessed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1853,13 +1840,13 @@ This can be useful to run listeners on function backed data.</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>Path within the DataStore</p>
+        <td><p>The path within the DataStore where the function-backed data should be stored.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Func</span>&lt;T&gt;</td>
         <td><span class="parametername">value</span></td>
-        <td><p>Function that will provide data</p>
+        <td><p>The function that provides the data when accessed.</p>
 </td>
       </tr>
     </tbody>
@@ -1875,13 +1862,13 @@ This can be useful to run listeners on function backed data.</p>
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The return type of the function</p>
+        <td><p>The return type of the function.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_Set__1_System_String_System_Func___0___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Reading data at this key will execute the function and return the result</p>
+  <div class="markdown level1 remarks"><p>Useful for dynamic data that needs to be computed on-demand when accessed.</p>
 </div>
   <a id="GPF_DataStore_SetAndExpand_" data-uid="GPF.DataStore.SetAndExpand*"></a>
   <h4 id="GPF_DataStore_SetAndExpand_System_String_System_Object_System_Boolean_System_Int32_" data-uid="GPF.DataStore.SetAndExpand(System.String,System.Object,System.Boolean,System.Int32)">SetAndExpand(String, Object, Boolean, Int32)</h4>
@@ -1956,7 +1943,7 @@ WARNING: This object cannot contain reference loops</p>
   <div><span class="xref">System.Object.ToString()</span></div>
   <a id="GPF_DataStore_TryGetDataStore_" data-uid="GPF.DataStore.TryGetDataStore*"></a>
   <h4 id="GPF_DataStore_TryGetDataStore_System_String_GPF_DataStore__" data-uid="GPF.DataStore.TryGetDataStore(System.String,GPF.DataStore@)">TryGetDataStore(String, out DataStore)</h4>
-  <div class="markdown level1 summary"><p>Get an existing DataStore by name</p>
+  <div class="markdown level1 summary"><p>Attempts to retrieve an existing DataStore by name.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1976,13 +1963,13 @@ WARNING: This object cannot contain reference loops</p>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>Name of DataStore</p>
+        <td><p>The unique name of the DataStore.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.DataStore.html">DataStore</a></td>
         <td><span class="parametername">datastore</span></td>
-        <td><p>Reference will be valid if DataStore with name is found</p>
+        <td><p>Out parameter providing the reference to the DataStore if found.</p>
 </td>
       </tr>
     </tbody>
@@ -1998,18 +1985,18 @@ WARNING: This object cannot contain reference loops</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>True if the DataStore was found and datastore parameter is a valid reference</p>
+        <td><p>True if the DataStore was found and is still valid, otherwise false.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_TryGetDataStore_System_String_GPF_DataStore___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>DataStores can be garbage collected if there are no references to them.
-A previously valid name might not be valid at the time this function is called.</p>
+  <div class="markdown level1 remarks"><p>The method checks if the requested DataStore is still alive in memory.
+DataStores may be garbage collected if no references to them exist.</p>
 </div>
   <a id="GPF_DataStore_Unlink_" data-uid="GPF.DataStore.Unlink*"></a>
   <h4 id="GPF_DataStore_Unlink_System_String_" data-uid="GPF.DataStore.Unlink(System.String)">Unlink(String)</h4>
-  <div class="markdown level1 summary"><p>Remove a link created at the target</p>
+  <div class="markdown level1 summary"><p>Removes a previously created alias, restoring access to the original data at the target path.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2029,13 +2016,13 @@ A previously valid name might not be valid at the time this function is called.<
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">alias</span></td>
-        <td><p>The previously created link</p>
+        <td><p>The alias path to remove.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_DataStore_Unlink_System_String__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Restore access to target variable (and children) as completely separate data</p>
+  <div class="markdown level1 remarks"><p>After unlinking, the alias path will no longer point to the source path and will be treated as independent data within the DataStore.</p>
 </div>
   <h3 id="implements">Implements</h3>
   <div>

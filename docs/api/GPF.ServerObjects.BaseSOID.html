@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -795,7 +762,9 @@
   
   <h1 id="GPF_ServerObjects_BaseSOID" data-uid="GPF.ServerObjects.BaseSOID" class="text-break">Class BaseSOID
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Base class representing the unique identifier (SOID) for a server object. It handles the creation, comparison, and
+serialization of IDs, allowing server objects to be uniquely identified across systems.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -969,7 +938,9 @@ public class BaseSOID : IComparable</code></pre>
   </table>
   <a id="GPF_ServerObjects_BaseSOID_IsValid_" data-uid="GPF.ServerObjects.BaseSOID.IsValid*"></a>
   <h4 id="GPF_ServerObjects_BaseSOID_IsValid" data-uid="GPF.ServerObjects.BaseSOID.IsValid">IsValid</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks whether the SOID is valid based on the current prefix and suffix values. It verifies that both parts are non-null
+and checks against the registry to ensure the ID is properly registered.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1038,7 +1009,7 @@ public class BaseSOID : IComparable</code></pre>
   </table>
   <a id="GPF_ServerObjects_BaseSOID_ReadableID_" data-uid="GPF.ServerObjects.BaseSOID.ReadableID*"></a>
   <h4 id="GPF_ServerObjects_BaseSOID_ReadableID" data-uid="GPF.ServerObjects.BaseSOID.ReadableID">ReadableID</h4>
-  <div class="markdown level1 summary"><p>Sometimes IDs can be very long and confusing to follow.  This is a handy function for logging something readable.</p>
+  <div class="markdown level1 summary"><p>Returns a human-readable version of the server object ID, truncating long suffixes for easier readability in logs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>

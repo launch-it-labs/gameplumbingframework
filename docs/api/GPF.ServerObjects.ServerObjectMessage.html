@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -837,7 +804,8 @@
   <h3 id="fields">Fields
   </h3>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_enumSerializationMethod" data-uid="GPF.ServerObjects.ServerObjectMessage.enumSerializationMethod">enumSerializationMethod</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The serialization method for enumerations within messages, using the underlying integer value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -859,7 +827,8 @@
     </tbody>
   </table>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_msgPackContext" data-uid="GPF.ServerObjects.ServerObjectMessage.msgPackContext">msgPackContext</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The context for message serialization, configured to ensure consistent serialization across platforms.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -881,7 +850,8 @@
     </tbody>
   </table>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_remainingHops" data-uid="GPF.ServerObjects.ServerObjectMessage.remainingHops">remainingHops</h4>
-  <div class="markdown level1 summary"><p>A message limit to protect against accidental infinite loops in the backend</p>
+  <div class="markdown level1 summary"><p>A safeguard to prevent infinite message loops in the backend.
+Specifies the number of hops (retries) remaining for this message to reach its destination.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -904,7 +874,9 @@
     </tbody>
   </table>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_serializationMethod" data-uid="GPF.ServerObjects.ServerObjectMessage.serializationMethod">serializationMethod</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The serialization method used for ServerObjectMessage instances.
+This ensures that messages are serialized as arrays for efficient transmission.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -929,7 +901,9 @@
   </h3>
   <a id="GPF_ServerObjects_ServerObjectMessage_Source_" data-uid="GPF.ServerObjects.ServerObjectMessage.Source*"></a>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_Source" data-uid="GPF.ServerObjects.ServerObjectMessage.Source">Source</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The source from which the message originated.
+This is set during deserialization and is used to track the origin of the message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1054,7 +1028,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjectMessage_Copy_" data-uid="GPF.ServerObjects.ServerObjectMessage.Copy*"></a>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_Copy_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.ServerObjects.ServerObjectMessage.Copy(GPF.ServerObjects.ServerObjectMessage)">Copy(ServerObjectMessage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a copy of a given ServerObjectMessage. The copy includes the same message content,
+but a new source can be assigned after deserialization.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1073,7 +1049,8 @@
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The original message to copy.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1088,7 +1065,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
-        <td></td>
+        <td><p>A deep copy of the original ServerObjectMessage.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1134,7 +1112,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjectMessage_DeserializeFromBytes_" data-uid="GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes*"></a>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_DeserializeFromBytes_System_Byte___GPF_ServerObjects_MessageDest_" data-uid="GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[],GPF.ServerObjects.MessageDest)">DeserializeFromBytes(Byte[], MessageDest)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Deserializes a message from a byte array, reconstituting the original message object.
+The message source is not serialized and must be set manually after deserialization.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1153,12 +1133,14 @@
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
         <td><span class="parametername">data</span></td>
-        <td></td>
+        <td><p>The byte array containing the serialized message data.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageDest.html">MessageDest</a></td>
         <td><span class="parametername">source</span></td>
-        <td></td>
+        <td><p>The source of the message.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1173,7 +1155,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
-        <td></td>
+        <td><p>The deserialized message object.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1314,7 +1297,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjectMessage_SerializeToBytes_" data-uid="GPF.ServerObjects.ServerObjectMessage.SerializeToBytes*"></a>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_SerializeToBytes_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.ServerObjects.ServerObjectMessage.SerializeToBytes(GPF.ServerObjects.ServerObjectMessage)">SerializeToBytes(ServerObjectMessage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the message object into a byte array for transmission or storage.
+This method includes metadata for the message type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1333,7 +1318,8 @@
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The message object to serialize.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1348,13 +1334,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
-        <td></td>
+        <td><p>A byte array representation of the message.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_ServerObjectMessage_SerializeToString_" data-uid="GPF.ServerObjects.ServerObjectMessage.SerializeToString*"></a>
   <h4 id="GPF_ServerObjects_ServerObjectMessage_SerializeToString_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.ServerObjects.ServerObjectMessage.SerializeToString(GPF.ServerObjects.ServerObjectMessage)">SerializeToString(ServerObjectMessage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Serializes the message object to a Base64-encoded string for transmission or storage.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1373,7 +1361,8 @@
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
         <td><span class="parametername">obj</span></td>
-        <td></td>
+        <td><p>The message object to serialize.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1388,7 +1377,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>A Base64 string representation of the message.</p>
+</td>
       </tr>
     </tbody>
   </table>

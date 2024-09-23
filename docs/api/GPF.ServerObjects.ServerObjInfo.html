@@ -575,24 +575,6 @@
                         </ul>  </li>
                     <li class="">
                       <span class="expand-stub"></span>
-                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
                       <a href="GPF.Settings.html" title="GPF.Settings" class="">GPF.Settings</a>
                         
                         <ul class="nav level2">
@@ -631,21 +613,6 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
-                          </li>
-                        </ul>  </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
-                        
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -795,7 +762,10 @@
   
   <h1 id="GPF_ServerObjects_ServerObjInfo" data-uid="GPF.ServerObjects.ServerObjInfo" class="text-break">Class ServerObjInfo
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Holds metadata about a ServerObject, including versioning, message handlers, and security attributes.
+It manages different versions of a ServerObject, and is responsible for upgrading and identifying the
+correct type and version of a ServerObject during runtime.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -835,7 +805,9 @@
   <h3 id="fields">Fields
   </h3>
   <h4 id="GPF_ServerObjects_ServerObjInfo_messageHandlerInfo" data-uid="GPF.ServerObjects.ServerObjInfo.messageHandlerInfo">messageHandlerInfo</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Contains information about all message handlers defined for this ServerObject.
+This is populated during the runtime setup of a ServerObject and used for routing incoming messages.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -857,7 +829,9 @@
     </tbody>
   </table>
   <h4 id="GPF_ServerObjects_ServerObjInfo_types" data-uid="GPF.ServerObjects.ServerObjInfo.types">types</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A list of all types (versions) of the ServerObject that have been registered.
+These types represent different versions of the same ServerObject throughout its lifecycle.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -879,7 +853,9 @@
     </tbody>
   </table>
   <h4 id="GPF_ServerObjects_ServerObjInfo_versions" data-uid="GPF.ServerObjects.ServerObjInfo.versions">versions</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>A list of all registered version numbers corresponding to the ServerObject.
+Each version number in this list corresponds to a specific type in the <a class="xref" href="GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_types">types</a> list.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -904,7 +880,9 @@
   </h3>
   <a id="GPF_ServerObjects_ServerObjInfo_AuthGroups_" data-uid="GPF.ServerObjects.ServerObjInfo.AuthGroups*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_AuthGroups" data-uid="GPF.ServerObjects.ServerObjInfo.AuthGroups">AuthGroups</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the list of groups that this ServerObject is authorized for. This allows for
+granular control over which users or roles can access or modify this ServerObject.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -927,7 +905,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_AuthGroupsSuffix_" data-uid="GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_AuthGroupsSuffix" data-uid="GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix">AuthGroupsSuffix</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the suffix used to identify groups that this ServerObject is authorized for.
+This is derived from the <a class="xref" href="GPF.ServerObjects.ServerObjectAuthAttribute.html">ServerObjectAuthAttribute</a> and is cached for efficiency.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -973,7 +953,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_ImplicitLatestType_" data-uid="GPF.ServerObjects.ServerObjInfo.ImplicitLatestType*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_ImplicitLatestType" data-uid="GPF.ServerObjects.ServerObjInfo.ImplicitLatestType">ImplicitLatestType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The type representing the latest version of the ServerObject when
+<a class="xref" href="GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitVersion">ImplicitVersion</a> is true.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -996,7 +978,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_ImplicitVersion_" data-uid="GPF.ServerObjects.ServerObjInfo.ImplicitVersion*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_ImplicitVersion" data-uid="GPF.ServerObjects.ServerObjInfo.ImplicitVersion">ImplicitVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the latest version of the ServerObject is implicitly defined.
+When true, <a class="xref" href="GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitLatestType">ImplicitLatestType</a> is used as the latest version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1019,7 +1003,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_isSyncable_" data-uid="GPF.ServerObjects.ServerObjInfo.isSyncable*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_isSyncable" data-uid="GPF.ServerObjects.ServerObjInfo.isSyncable">isSyncable</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the ServerObject is marked as syncable, allowing its state to be
+synchronized between the client and server. This value is cached after the first check.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1042,7 +1028,10 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_isUnpredictable_" data-uid="GPF.ServerObjects.ServerObjInfo.isUnpredictable*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_isUnpredictable" data-uid="GPF.ServerObjects.ServerObjInfo.isUnpredictable">isUnpredictable</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Indicates whether the ServerObject is marked as unpredictable. Unpredictable objects
+may have behaviors or states that are difficult to predict due to external factors
+(e.g., random events, user input). This value is cached after the first check.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1065,7 +1054,10 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_LatestType_" data-uid="GPF.ServerObjects.ServerObjInfo.LatestType*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_LatestType" data-uid="GPF.ServerObjects.ServerObjInfo.LatestType">LatestType</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The type representing the most recent version of the ServerObject.
+If <a class="xref" href="GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitVersion">ImplicitVersion</a> is true, <a class="xref" href="GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitLatestType">ImplicitLatestType</a> is returned.
+Otherwise, the type corresponding to <a class="xref" href="GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_LatestVersion">LatestVersion</a> is returned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1088,7 +1080,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_LatestVersion_" data-uid="GPF.ServerObjects.ServerObjInfo.LatestVersion*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_LatestVersion" data-uid="GPF.ServerObjects.ServerObjInfo.LatestVersion">LatestVersion</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The version number of the most recent version of the ServerObject.
+This is automatically calculated when versions are registered.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1111,7 +1105,9 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_Prefix_" data-uid="GPF.ServerObjects.ServerObjInfo.Prefix*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_Prefix" data-uid="GPF.ServerObjects.ServerObjInfo.Prefix">Prefix</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the identifier prefix for this ServerObject, which is used to differentiate
+objects of the same type by category or context.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1136,7 +1132,9 @@
   </h3>
   <a id="GPF_ServerObjects_ServerObjInfo_GetMessageHandlerInfo_" data-uid="GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_GetMessageHandlerInfo_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(GPF.ServerObjects.ServerObjectMessage)">GetMessageHandlerInfo(ServerObjectMessage)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the message handler information for a given message instance.
+This is used to determine how the ServerObject should process a specific incoming message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1155,7 +1153,8 @@
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
         <td><span class="parametername">msg</span></td>
-        <td></td>
+        <td><p>The message instance for which to retrieve the handler information.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1170,13 +1169,17 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageHandlerInfo.HandlerInfo.html">MessageHandlerInfo.HandlerInfo</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="GPF.ServerObjects.MessageHandlerInfo.HandlerInfo.html">MessageHandlerInfo.HandlerInfo</a> object that contains details about the handler
+method responsible for processing the given message.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_GetMessageHandlerInfo_" data-uid="GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_GetMessageHandlerInfo_System_Type_" data-uid="GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(System.Type)">GetMessageHandlerInfo(Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the message handler information for a specific message type.
+This is used to determine how the ServerObject should process incoming messages of that type.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1195,7 +1198,8 @@
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">msgType</span></td>
-        <td></td>
+        <td><p>The type of the message to retrieve the handler information for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1210,13 +1214,16 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.MessageHandlerInfo.HandlerInfo.html">MessageHandlerInfo.HandlerInfo</a></td>
-        <td></td>
+        <td><p>A <a class="xref" href="GPF.ServerObjects.MessageHandlerInfo.HandlerInfo.html">MessageHandlerInfo.HandlerInfo</a> object that contains details about the handler
+method responsible for processing messages of the specified type.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_GetSoType_" data-uid="GPF.ServerObjects.ServerObjInfo.GetSoType*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_GetSoType_System_Int32_" data-uid="GPF.ServerObjects.ServerObjInfo.GetSoType(System.Int32)">GetSoType(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the type associated with a specific version number.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1235,7 +1242,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The version number to look up.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1250,13 +1258,16 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Type</span></td>
-        <td></td>
+        <td><p>The type corresponding to the version.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_GetVersion_" data-uid="GPF.ServerObjects.ServerObjInfo.GetVersion*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_GetVersion_System_Type_" data-uid="GPF.ServerObjects.ServerObjInfo.GetVersion(System.Type)">GetVersion(Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the version number associated with a specific ServerObject type.
+If the type corresponds to the implicit latest version, the <a class="xref" href="GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_LatestVersion">LatestVersion</a> is returned.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1275,7 +1286,8 @@
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">t</span></td>
-        <td></td>
+        <td><p>The type of the ServerObject.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1290,7 +1302,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The version number associated with the type.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1336,7 +1349,8 @@
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_HasVersion_" data-uid="GPF.ServerObjects.ServerObjInfo.HasVersion*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_HasVersion_System_Int32_" data-uid="GPF.ServerObjects.ServerObjInfo.HasVersion(System.Int32)">HasVersion(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Checks whether a specific version number is registered for this ServerObject.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1355,7 +1369,8 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The version number to check.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1370,13 +1385,17 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if the version exists, otherwise false.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_SetImplicitLatest_" data-uid="GPF.ServerObjects.ServerObjInfo.SetImplicitLatest*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_SetImplicitLatest_System_Type_" data-uid="GPF.ServerObjects.ServerObjInfo.SetImplicitLatest(System.Type)">SetImplicitLatest(Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the latest version of the ServerObject implicitly.
+This method is used when a ServerObject does not explicitly define versioning but
+has an implicit latest type that should be treated as the most recent version.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1395,13 +1414,16 @@
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
-        <td></td>
+        <td><p>The type to be set as the implicit latest version.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <a id="GPF_ServerObjects_ServerObjInfo_SetVersion_" data-uid="GPF.ServerObjects.ServerObjInfo.SetVersion*"></a>
   <h4 id="GPF_ServerObjects_ServerObjInfo_SetVersion_System_Int32_System_Type_" data-uid="GPF.ServerObjects.ServerObjInfo.SetVersion(System.Int32,System.Type)">SetVersion(Int32, Type)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers a specific version of the ServerObject with its corresponding type.
+This allows the framework to track and reference different versions of the object during runtime.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1420,12 +1442,14 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">version</span></td>
-        <td></td>
+        <td><p>The version number of the ServerObject.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Type</span></td>
         <td><span class="parametername">type</span></td>
-        <td></td>
+        <td><p>The type representing the specified version.</p>
+</td>
       </tr>
     </tbody>
   </table>
