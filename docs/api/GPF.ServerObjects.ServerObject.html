@@ -534,13 +534,7 @@
                             <a href="GPF.ServerObjects.ServerObjectAuthAttribute.html" title="ServerObjectAuthAttribute" class="">ServerObjectAuthAttribute</a>
                           </li>
                           <li class="">
-                            <a href="GPF.ServerObjects.ServerObjectMessage.html" title="ServerObjectMessage" class="">ServerObjectMessage</a>
-                          </li>
-                          <li class="">
                             <a href="GPF.ServerObjects.ServerObjectsVersion.html" title="ServerObjectsVersion" class="">ServerObjectsVersion</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.ServerObjInfo.html" title="ServerObjInfo" class="">ServerObjInfo</a>
                           </li>
                           <li class="">
                             <a href="GPF.ServerObjects.SOAuth.html" title="SOAuth" class="">SOAuth</a>
@@ -571,6 +565,24 @@
                           </li>
                           <li class="">
                             <a href="GPF.ServerObjects.UserAuth.html" title="UserAuth" class="">UserAuth</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -613,6 +625,21 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -802,208 +829,11 @@ game logic while leveraging SO's synchronization and messaging capabilities.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class ServerObject</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <h4 id="GPF_ServerObjects_ServerObject_DefaultMaxHops" data-uid="GPF.ServerObjects.ServerObject.DefaultMaxHops">DefaultMaxHops</h4>
-  <div class="markdown level1 summary"><p>The default maximum number of message hops (retries) allowed when sending messages
-between clients and the server. Helps prevent infinite message loops.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const int DefaultMaxHops = 10</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="GPF_ServerObjects_ServerObject_Logger" data-uid="GPF.ServerObjects.ServerObject.Logger">Logger</h4>
-  <div class="markdown level1 summary"><p>A logging instance used to record events, errors, and general output from this server object.
-Set internally when the server object is instantiated or updated.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataStoreIgnore]
-protected IGPFLogger Logger</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GPF.ServerObjects.IGPFLogger.html">IGPFLogger</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="GPF_ServerObjects_ServerObject_MessageHandlerFunctionName" data-uid="GPF.ServerObjects.ServerObject.MessageHandlerFunctionName">MessageHandlerFunctionName</h4>
-  <div class="markdown level1 summary"><p>The standard method name used to handle messages in derived classes.
-All handlers should be named &quot;Handler&quot; followed by the message type.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string MessageHandlerFunctionName = &quot;Handler&quot;</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="GPF_ServerObjects_ServerObject_msgPackContext" data-uid="GPF.ServerObjects.ServerObject.msgPackContext">msgPackContext</h4>
-  <div class="markdown level1 summary"><p>The context used for message pack serialization across the server object.
-Set up during class initialization to ensure consistent serialization across platforms.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SerializationContext msgPackContext</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">SerializationContext</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="GPF_ServerObjects_ServerObject_SoEnumSerializationMethod" data-uid="GPF.ServerObjects.ServerObject.SoEnumSerializationMethod">SoEnumSerializationMethod</h4>
-  <div class="markdown level1 summary"><p>The serialization method used for enumerations within the server object.
-By default, enumerations are serialized by their string name.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const EnumSerializationMethod SoEnumSerializationMethod = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">EnumSerializationMethod</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="GPF_ServerObjects_ServerObject_SoSerializationMethod" data-uid="GPF.ServerObjects.ServerObject.SoSerializationMethod">SoSerializationMethod</h4>
-  <div class="markdown level1 summary"><p>The default serialization method used for the server object.
-Ensures the object is serialized as a map structure.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const SerializationMethod SoSerializationMethod = null</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">SerializationMethod</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h4 id="GPF_ServerObjects_ServerObject_UpdateOrder" data-uid="GPF.ServerObjects.ServerObject.UpdateOrder">UpdateOrder</h4>
-  <div class="markdown level1 summary"><p>The order in which this server object should be updated, relative to other server objects.
-Higher values are updated after lower values.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataStoreIgnore]
-public ulong UpdateOrder</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.UInt64</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="properties">Properties
   </h3>
-  <a id="GPF_ServerObjects_ServerObject_Id_" data-uid="GPF.ServerObjects.ServerObject.Id*"></a>
-  <h4 id="GPF_ServerObjects_ServerObject_Id" data-uid="GPF.ServerObjects.ServerObject.Id">Id</h4>
-  <div class="markdown level1 summary"><p>The unique SOID (Server Object ID) assigned to this ServerObject instance.
-This ID is used to track and reference this object across the server-client architecture.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SOID Id { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GPF.ServerObjects.SOID.html">SOID</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <a id="GPF_ServerObjects_ServerObject_RemainingHops_" data-uid="GPF.ServerObjects.ServerObject.RemainingHops*"></a>
   <h4 id="GPF_ServerObjects_ServerObject_RemainingHops" data-uid="GPF.ServerObjects.ServerObject.RemainingHops">RemainingHops</h4>
-  <div class="markdown level1 summary"><p>The number of remaining hops (or retries) allowed for message forwarding or execution.
+  <div class="markdown level1 summary"><p>GPF Users should not need to be aware of this. It is only public because of serialization requirements and should be considered internal.
 This property is adjusted when messages are sent or received to avoid infinite loops.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1031,7 +861,8 @@ This property is adjusted when messages are sent or received to avoid infinite l
   <a id="GPF_ServerObjects_ServerObject_AddOutcome_" data-uid="GPF.ServerObjects.ServerObject.AddOutcome*"></a>
   <h4 id="GPF_ServerObjects_ServerObject_AddOutcome_GPF_ServerObjects_Outcome_" data-uid="GPF.ServerObjects.ServerObject.AddOutcome(GPF.ServerObjects.Outcome)">AddOutcome(Outcome)</h4>
   <div class="markdown level1 summary"><p>Adds an outcome for this server object. Outcomes typically involve sending
-messages to other server objects or executing specific actions.</p>
+messages to other server objects or executing specific actions.
+GPF Users should not need to be aware of this.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -1163,7 +994,8 @@ messages to other server objects or executing specific actions.</p>
   </table>
   <a id="GPF_ServerObjects_ServerObject_Copy_" data-uid="GPF.ServerObjects.ServerObject.Copy*"></a>
   <h4 id="GPF_ServerObjects_ServerObject_Copy_GPF_ServerObjects_ServerObject_" data-uid="GPF.ServerObjects.ServerObject.Copy(GPF.ServerObjects.ServerObject)">Copy(ServerObject)</h4>
-  <div class="markdown level1 summary"><p>Creates a deep copy of the provided ServerObject, including its current state,
+  <div class="markdown level1 summary"><p>GPF Users should not need to be aware of this method.
+Creates a deep copy of the provided ServerObject, including its current state,
 excluding the SOID (which will need to be reassigned for the new instance).</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1269,7 +1101,7 @@ excluding the SOID (which will need to be reassigned for the new instance).</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjInfo.html">ServerObjInfo</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjInfo</span></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
@@ -1517,7 +1349,7 @@ Override this method in derived classes to handle custom initialization logic.</
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1547,7 +1379,7 @@ Override this method in derived classes to handle custom initialization logic.</
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1572,7 +1404,7 @@ Override this method in derived classes to handle custom initialization logic.</
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1612,7 +1444,7 @@ Override this method in derived classes to handle custom initialization logic.</
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1637,7 +1469,7 @@ Override this method in derived classes to handle custom initialization logic.</
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
@@ -1685,7 +1517,7 @@ Ensures that the message is serialized and queued for delivery, considering hop 
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">obj</span></td>
         <td><p>The message object to send.</p>
 </td>
@@ -1725,7 +1557,7 @@ Includes an optional delay for sending the message.</p>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">obj</span></td>
         <td><p>The message to send.</p>
 </td>
@@ -1762,7 +1594,7 @@ Includes an optional delay for sending the message.</p>
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjInfo.html">ServerObjInfo</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjInfo</span></td>
         <td><span class="parametername">info</span></td>
         <td></td>
       </tr>
@@ -1785,7 +1617,8 @@ Includes an optional delay for sending the message.</p>
   </table>
   <a id="GPF_ServerObjects_ServerObject_SetID_" data-uid="GPF.ServerObjects.ServerObject.SetID*"></a>
   <h4 id="GPF_ServerObjects_ServerObject_SetID_GPF_ServerObjects_ServerObject_GPF_ServerObjects_SOID_" data-uid="GPF.ServerObjects.ServerObject.SetID(GPF.ServerObjects.ServerObject,GPF.ServerObjects.SOID)">SetID(ServerObject, SOID)</h4>
-  <div class="markdown level1 summary"><p>Sets the SOID (Server Object ID) for a given ServerObject. This is required
+  <div class="markdown level1 summary"><p>GPF Users should not need to be aware of this method.
+Sets the SOID (Server Object ID) for a given ServerObject. This is required
 after deserialization or instantiation to track the object across the system.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -1841,7 +1674,7 @@ after deserialization or instantiation to track the object across the system.</p
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">msg</span></td>
         <td></td>
       </tr>
@@ -1891,7 +1724,7 @@ after deserialization or instantiation to track the object across the system.</p
         <td></td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">msg</span></td>
         <td></td>
       </tr>

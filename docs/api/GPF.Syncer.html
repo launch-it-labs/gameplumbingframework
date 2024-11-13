@@ -534,13 +534,7 @@
                             <a href="GPF.ServerObjects.ServerObjectAuthAttribute.html" title="ServerObjectAuthAttribute" class="">ServerObjectAuthAttribute</a>
                           </li>
                           <li class="">
-                            <a href="GPF.ServerObjects.ServerObjectMessage.html" title="ServerObjectMessage" class="">ServerObjectMessage</a>
-                          </li>
-                          <li class="">
                             <a href="GPF.ServerObjects.ServerObjectsVersion.html" title="ServerObjectsVersion" class="">ServerObjectsVersion</a>
-                          </li>
-                          <li class="">
-                            <a href="GPF.ServerObjects.ServerObjInfo.html" title="ServerObjInfo" class="">ServerObjInfo</a>
                           </li>
                           <li class="">
                             <a href="GPF.ServerObjects.SOAuth.html" title="SOAuth" class="">SOAuth</a>
@@ -571,6 +565,24 @@
                           </li>
                           <li class="">
                             <a href="GPF.ServerObjects.UserAuth.html" title="UserAuth" class="">UserAuth</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="GPF.ServerObjects.Internal.html" title="GPF.ServerObjects.Internal" class="">GPF.ServerObjects.Internal</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html" title="DeterministicSuffixGenerator" class="">DeterministicSuffixGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.IdAffixJsonSerializer.html" title="IdAffixJsonSerializer" class="">IdAffixJsonSerializer</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.SecureSuffixGenerator.html" title="SecureSuffixGenerator" class="">SecureSuffixGenerator</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.ServerObjects.Internal.SoidJsonSerializer.html" title="SoidJsonSerializer" class="">SoidJsonSerializer</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -613,6 +625,21 @@
                           </li>
                           <li class="">
                             <a href="GPF.Simulation.WebGLTimeService.TimeController.html" title="WebGLTimeService.TimeController" class="">WebGLTimeService.TimeController</a>
+                          </li>
+                        </ul>  </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="GPF.SyncerInternal.html" title="GPF.SyncerInternal" class="">GPF.SyncerInternal</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="GPF.SyncerInternal.FakeLogger.html" title="FakeLogger" class="">FakeLogger</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.SyncerInternal.ReceivedUpdate.html" title="ReceivedUpdate" class="">ReceivedUpdate</a>
+                          </li>
+                          <li class="">
+                            <a href="GPF.SyncerInternal.UnityLogger.html" title="UnityLogger" class="">UnityLogger</a>
                           </li>
                         </ul>  </li>
                     <li class="">
@@ -2487,7 +2514,7 @@ await syncer.RequestAuth();</code></pre>
 
   <a id="GPF_Syncer_Resume_" data-uid="GPF.Syncer.Resume*"></a>
   <h4 id="GPF_Syncer_Resume" data-uid="GPF.Syncer.Resume">Resume()</h4>
-  <div class="markdown level1 summary"><p>Temporarily pauses syncing between ServerObjects and the backend.</p>
+  <div class="markdown level1 summary"><p>resumes paused syncing between ServerObjects and the backend.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2523,7 +2550,7 @@ await syncer.RequestAuth();</code></pre>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td><p>The message being sent, should be a custom type that extends ServerObjectMessage</p>
 </td>
@@ -2559,7 +2586,7 @@ await syncer.RequestAuth();</code></pre>
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td><p>The message being sent, which should be a custom type that extends ServerObjectMessage.</p>
 </td>
@@ -2712,15 +2739,18 @@ It is possible this will be sent multiple times if the connection is lost before
   </table>
   <h5 id="GPF_Syncer_SendSessionMessage__1_GPF_ServerObjects_SOID___0__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is useful for sending session-related messages, such as authentication or device session data.
-The message will only be returned to this syncer, not others. It is possible that the message will be sent multiple times if the connection is lost before the server responds.
+The message will only be returned to this syncer, not others.
 Ensure the message handler on the server allows session messages from the client.</p>
 </div>
   <h5 id="GPF_Syncer_SendSessionMessage__1_GPF_ServerObjects_SOID___0__examples">Examples</h5>
-  <pre><code>var mySession = await syncer.SendSessionMessage(sessionSOID, new Session { current = currentSessionID });</code></pre>
+  <pre><code>var mySession = await syncer.SendSessionMessage(authSoid, new DemoAuthSO.AuthRequest
+{
+       UserSecret = IdSuffix.GenerateUnique().ToString()
+});</code></pre>
 
   <a id="GPF_Syncer_SendWait_" data-uid="GPF.Syncer.SendWait*"></a>
   <h4 id="GPF_Syncer_SendWait_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.Syncer.SendWait(GPF.ServerObjects.ServerObject,GPF.ServerObjects.ServerObjectMessage)">SendWait(ServerObject, ServerObjectMessage)</h4>
-  <div class="markdown level1 summary"><p>Sends a message to a Server Object (SO).</p>
+  <div class="markdown level1 summary"><p>Sends a message to an SO and returns a task that doesn't complete until the SO has processed the message.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -2740,12 +2770,13 @@ Ensure the message handler on the server allows session messages from the client
       <tr>
         <td><a class="xref" href="GPF.ServerObjects.ServerObject.html">ServerObject</a></td>
         <td><span class="parametername">so</span></td>
-        <td></td>
+        <td><p>The target SO</p>
+</td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
-        <td><p>The message being sent, which should be a custom type that extends ServerObjectMessage.</p>
+        <td><p>The message being sent.</p>
 </td>
       </tr>
     </tbody>
@@ -2761,15 +2792,17 @@ Ensure the message handler on the server allows session messages from the client
     <tbody>
       <tr>
         <td><span class="xref">System.Threading.Tasks.Task</span></td>
-        <td></td>
+        <td><p>A Task that completes once the server has processed the message</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 id="GPF_Syncer_SendWait_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Ensure the handler for the message has the [FromClient] attribute set, or the message will be ignored by the server.</p>
+  <div class="markdown level1 remarks"><p>This is useful when sending a message that will happen 1 time per session as it allows the next line of code to assume the message has been processed.
+make sure the Handler for the messag has the [FromClient] attribute set, or the message will be ignored.</p>
 </div>
   <h5 id="GPF_Syncer_SendWait_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage__examples">Examples</h5>
-  <pre><code>syncer.Send(player, new CoinPlayerSO.Flip());</code></pre>
+  <pre><code>await syncer.SendWait(helloSOID, new HelloSO.MyNameIs { name = &quot;World&quot; });</code></pre>
 
   <a id="GPF_Syncer_SendWait_" data-uid="GPF.Syncer.SendWait*"></a>
   <h4 id="GPF_Syncer_SendWait_GPF_ServerObjects_SOID_GPF_ServerObjects_ServerObjectMessage_" data-uid="GPF.Syncer.SendWait(GPF.ServerObjects.SOID,GPF.ServerObjects.ServerObjectMessage)">SendWait(SOID, ServerObjectMessage)</h4>
@@ -2797,7 +2830,7 @@ Ensure the message handler on the server allows session messages from the client
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="GPF.ServerObjects.ServerObjectMessage.html">ServerObjectMessage</a></td>
+        <td><span class="xref">GPF.ServerObjects.ServerObjectMessage</span></td>
         <td><span class="parametername">message</span></td>
         <td><p>The message being sent.</p>
 </td>
@@ -3083,7 +3116,7 @@ A previously valid name might not be valid at the time this function is called.<
     </tbody>
   </table>
   <h5 id="GPF_Syncer_UnSync_GPF_ServerObjects_ServerObject__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This could be useful if you are certain you no longer need to use the SO reference and want to cut down on server costs.</p>
+  <div class="markdown level1 remarks"><p>This could be useful if you are certain you no longer need to use the SO reference.</p>
 </div>
   <a id="GPF_Syncer_UnSync_" data-uid="GPF.Syncer.UnSync*"></a>
   <h4 id="GPF_Syncer_UnSync_GPF_ServerObjects_SOID_" data-uid="GPF.Syncer.UnSync(GPF.ServerObjects.SOID)">UnSync(SOID)</h4>
@@ -3113,7 +3146,7 @@ A previously valid name might not be valid at the time this function is called.<
     </tbody>
   </table>
   <h5 id="GPF_Syncer_UnSync_GPF_ServerObjects_SOID__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This could be useful if you are certain you no longer need to use the SO reference and want to cut down on server costs.</p>
+  <div class="markdown level1 remarks"><p>This could be useful if you are certain you no longer need to use the SO reference.</p>
 </div>
   <a id="GPF_Syncer_UnSyncWait_" data-uid="GPF.Syncer.UnSyncWait*"></a>
   <h4 id="GPF_Syncer_UnSyncWait_GPF_ServerObjects_ServerObject_" data-uid="GPF.Syncer.UnSyncWait(GPF.ServerObjects.ServerObject)">UnSyncWait(ServerObject)</h4>
@@ -3159,7 +3192,7 @@ A previously valid name might not be valid at the time this function is called.<
     </tbody>
   </table>
   <h5 id="GPF_Syncer_UnSyncWait_GPF_ServerObjects_ServerObject__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This could be useful if you are certain you no longer need to use the SO reference and want to cut down on server costs.</p>
+  <div class="markdown level1 remarks"><p>This could be useful if you are certain you no longer need to use the SO reference.</p>
 </div>
   <a id="GPF_Syncer_UnSyncWait_" data-uid="GPF.Syncer.UnSyncWait*"></a>
   <h4 id="GPF_Syncer_UnSyncWait_GPF_ServerObjects_SOID_" data-uid="GPF.Syncer.UnSyncWait(GPF.ServerObjects.SOID)">UnSyncWait(SOID)</h4>
@@ -3205,7 +3238,7 @@ A previously valid name might not be valid at the time this function is called.<
     </tbody>
   </table>
   <h5 id="GPF_Syncer_UnSyncWait_GPF_ServerObjects_SOID__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This could be useful if you are certain you no longer need to use the SO reference and want to cut down on server costs.</p>
+  <div class="markdown level1 remarks"><p>Useful when you are no longer interested in the state of a particular SO (eg you leave a match and enter another)</p>
 </div>
   <a id="GPF_Syncer_WaitFor_" data-uid="GPF.Syncer.WaitFor*"></a>
   <h4 id="GPF_Syncer_WaitFor_GPF_ServerObjects_ServerObject_System_String_GPF_FieldOperations_IFieldOperation_" data-uid="GPF.Syncer.WaitFor(GPF.ServerObjects.ServerObject,System.String,GPF.FieldOperations.IFieldOperation)">WaitFor(ServerObject, String, IFieldOperation)</h4>

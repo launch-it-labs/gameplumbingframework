@@ -5242,6 +5242,192 @@ references:
   commentId: F:GPF.ServerObjects.InitContext.timeService
   fullName: GPF.ServerObjects.InitContext.timeService
   nameWithType: InitContext.timeService
+- uid: GPF.ServerObjects.Internal
+  name: GPF.ServerObjects.Internal
+  href: api/GPF.ServerObjects.Internal.html
+  commentId: N:GPF.ServerObjects.Internal
+  fullName: GPF.ServerObjects.Internal
+  nameWithType: GPF.ServerObjects.Internal
+- uid: GPF.ServerObjects.Internal.DeterministicSuffixGenerator
+  name: DeterministicSuffixGenerator
+  href: api/GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html
+  commentId: T:GPF.ServerObjects.Internal.DeterministicSuffixGenerator
+  fullName: GPF.ServerObjects.Internal.DeterministicSuffixGenerator
+  nameWithType: DeterministicSuffixGenerator
+- uid: GPF.ServerObjects.Internal.DeterministicSuffixGenerator.GetSuffix
+  name: GetSuffix()
+  href: api/GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html#GPF_ServerObjects_Internal_DeterministicSuffixGenerator_GetSuffix
+  commentId: M:GPF.ServerObjects.Internal.DeterministicSuffixGenerator.GetSuffix
+  fullName: GPF.ServerObjects.Internal.DeterministicSuffixGenerator.GetSuffix()
+  nameWithType: DeterministicSuffixGenerator.GetSuffix()
+- uid: GPF.ServerObjects.Internal.DeterministicSuffixGenerator.GetSuffix*
+  name: GetSuffix
+  href: api/GPF.ServerObjects.Internal.DeterministicSuffixGenerator.html#GPF_ServerObjects_Internal_DeterministicSuffixGenerator_GetSuffix_
+  commentId: Overload:GPF.ServerObjects.Internal.DeterministicSuffixGenerator.GetSuffix
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.DeterministicSuffixGenerator.GetSuffix
+  nameWithType: DeterministicSuffixGenerator.GetSuffix
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer
+  name: IdAffixJsonSerializer
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html
+  commentId: T:GPF.ServerObjects.Internal.IdAffixJsonSerializer
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer
+  nameWithType: IdAffixJsonSerializer
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_CanConvert_System_Type_
+  commentId: M:GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanConvert(System.Type)
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanConvert(System.Type)
+  nameWithType: IdAffixJsonSerializer.CanConvert(Type)
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanConvert*
+  name: CanConvert
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_CanConvert_
+  commentId: Overload:GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanConvert
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanConvert
+  nameWithType: IdAffixJsonSerializer.CanConvert
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanRead
+  name: CanRead
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_CanRead
+  commentId: P:GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanRead
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanRead
+  nameWithType: IdAffixJsonSerializer.CanRead
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanRead*
+  name: CanRead
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_CanRead_
+  commentId: Overload:GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanRead
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanRead
+  nameWithType: IdAffixJsonSerializer.CanRead
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanWrite
+  name: CanWrite
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_CanWrite
+  commentId: P:GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanWrite
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanWrite
+  nameWithType: IdAffixJsonSerializer.CanWrite
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanWrite*
+  name: CanWrite
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_CanWrite_
+  commentId: Overload:GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanWrite
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.CanWrite
+  nameWithType: IdAffixJsonSerializer.CanWrite
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.ReadJson(JsonReader,System.Type,System.Object,JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_ReadJson_JsonReader_System_Type_System_Object_JsonSerializer_
+  commentId: M:GPF.ServerObjects.Internal.IdAffixJsonSerializer.ReadJson(JsonReader,System.Type,System.Object,JsonSerializer)
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.ReadJson(JsonReader, System.Type, System.Object, JsonSerializer)
+  nameWithType: IdAffixJsonSerializer.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.ReadJson*
+  name: ReadJson
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_ReadJson_
+  commentId: Overload:GPF.ServerObjects.Internal.IdAffixJsonSerializer.ReadJson
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.ReadJson
+  nameWithType: IdAffixJsonSerializer.ReadJson
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_WriteJson_JsonWriter_System_Object_JsonSerializer_
+  commentId: M:GPF.ServerObjects.Internal.IdAffixJsonSerializer.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.WriteJson(JsonWriter, System.Object, JsonSerializer)
+  nameWithType: IdAffixJsonSerializer.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: GPF.ServerObjects.Internal.IdAffixJsonSerializer.WriteJson*
+  name: WriteJson
+  href: api/GPF.ServerObjects.Internal.IdAffixJsonSerializer.html#GPF_ServerObjects_Internal_IdAffixJsonSerializer_WriteJson_
+  commentId: Overload:GPF.ServerObjects.Internal.IdAffixJsonSerializer.WriteJson
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.IdAffixJsonSerializer.WriteJson
+  nameWithType: IdAffixJsonSerializer.WriteJson
+- uid: GPF.ServerObjects.Internal.SecureSuffixGenerator
+  name: SecureSuffixGenerator
+  href: api/GPF.ServerObjects.Internal.SecureSuffixGenerator.html
+  commentId: T:GPF.ServerObjects.Internal.SecureSuffixGenerator
+  fullName: GPF.ServerObjects.Internal.SecureSuffixGenerator
+  nameWithType: SecureSuffixGenerator
+- uid: GPF.ServerObjects.Internal.SecureSuffixGenerator.GetSuffix
+  name: GetSuffix()
+  href: api/GPF.ServerObjects.Internal.SecureSuffixGenerator.html#GPF_ServerObjects_Internal_SecureSuffixGenerator_GetSuffix
+  commentId: M:GPF.ServerObjects.Internal.SecureSuffixGenerator.GetSuffix
+  fullName: GPF.ServerObjects.Internal.SecureSuffixGenerator.GetSuffix()
+  nameWithType: SecureSuffixGenerator.GetSuffix()
+- uid: GPF.ServerObjects.Internal.SecureSuffixGenerator.GetSuffix*
+  name: GetSuffix
+  href: api/GPF.ServerObjects.Internal.SecureSuffixGenerator.html#GPF_ServerObjects_Internal_SecureSuffixGenerator_GetSuffix_
+  commentId: Overload:GPF.ServerObjects.Internal.SecureSuffixGenerator.GetSuffix
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.SecureSuffixGenerator.GetSuffix
+  nameWithType: SecureSuffixGenerator.GetSuffix
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer
+  name: SoidJsonSerializer
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html
+  commentId: T:GPF.ServerObjects.Internal.SoidJsonSerializer
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer
+  nameWithType: SoidJsonSerializer
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.CanConvert(System.Type)
+  name: CanConvert(Type)
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_CanConvert_System_Type_
+  commentId: M:GPF.ServerObjects.Internal.SoidJsonSerializer.CanConvert(System.Type)
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.CanConvert(System.Type)
+  nameWithType: SoidJsonSerializer.CanConvert(Type)
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.CanConvert*
+  name: CanConvert
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_CanConvert_
+  commentId: Overload:GPF.ServerObjects.Internal.SoidJsonSerializer.CanConvert
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.CanConvert
+  nameWithType: SoidJsonSerializer.CanConvert
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.CanRead
+  name: CanRead
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_CanRead
+  commentId: P:GPF.ServerObjects.Internal.SoidJsonSerializer.CanRead
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.CanRead
+  nameWithType: SoidJsonSerializer.CanRead
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.CanRead*
+  name: CanRead
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_CanRead_
+  commentId: Overload:GPF.ServerObjects.Internal.SoidJsonSerializer.CanRead
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.CanRead
+  nameWithType: SoidJsonSerializer.CanRead
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.CanWrite
+  name: CanWrite
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_CanWrite
+  commentId: P:GPF.ServerObjects.Internal.SoidJsonSerializer.CanWrite
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.CanWrite
+  nameWithType: SoidJsonSerializer.CanWrite
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.CanWrite*
+  name: CanWrite
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_CanWrite_
+  commentId: Overload:GPF.ServerObjects.Internal.SoidJsonSerializer.CanWrite
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.CanWrite
+  nameWithType: SoidJsonSerializer.CanWrite
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.ReadJson(JsonReader,System.Type,System.Object,JsonSerializer)
+  name: ReadJson(JsonReader, Type, Object, JsonSerializer)
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_ReadJson_JsonReader_System_Type_System_Object_JsonSerializer_
+  commentId: M:GPF.ServerObjects.Internal.SoidJsonSerializer.ReadJson(JsonReader,System.Type,System.Object,JsonSerializer)
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.ReadJson(JsonReader, System.Type, System.Object, JsonSerializer)
+  nameWithType: SoidJsonSerializer.ReadJson(JsonReader, Type, Object, JsonSerializer)
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.ReadJson*
+  name: ReadJson
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_ReadJson_
+  commentId: Overload:GPF.ServerObjects.Internal.SoidJsonSerializer.ReadJson
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.ReadJson
+  nameWithType: SoidJsonSerializer.ReadJson
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  name: WriteJson(JsonWriter, Object, JsonSerializer)
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_WriteJson_JsonWriter_System_Object_JsonSerializer_
+  commentId: M:GPF.ServerObjects.Internal.SoidJsonSerializer.WriteJson(JsonWriter,System.Object,JsonSerializer)
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.WriteJson(JsonWriter, System.Object, JsonSerializer)
+  nameWithType: SoidJsonSerializer.WriteJson(JsonWriter, Object, JsonSerializer)
+- uid: GPF.ServerObjects.Internal.SoidJsonSerializer.WriteJson*
+  name: WriteJson
+  href: api/GPF.ServerObjects.Internal.SoidJsonSerializer.html#GPF_ServerObjects_Internal_SoidJsonSerializer_WriteJson_
+  commentId: Overload:GPF.ServerObjects.Internal.SoidJsonSerializer.WriteJson
+  isSpec: "True"
+  fullName: GPF.ServerObjects.Internal.SoidJsonSerializer.WriteJson
+  nameWithType: SoidJsonSerializer.WriteJson
 - uid: GPF.ServerObjects.ISetVariablesInDataStore
   name: ISetVariablesInDataStore
   href: api/GPF.ServerObjects.ISetVariablesInDataStore.html
@@ -6930,12 +7116,6 @@ references:
   isSpec: "True"
   fullName: GPF.ServerObjects.ServerObject.CreateDefault
   nameWithType: ServerObject.CreateDefault
-- uid: GPF.ServerObjects.ServerObject.DefaultMaxHops
-  name: DefaultMaxHops
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_DefaultMaxHops
-  commentId: F:GPF.ServerObjects.ServerObject.DefaultMaxHops
-  fullName: GPF.ServerObjects.ServerObject.DefaultMaxHops
-  nameWithType: ServerObject.DefaultMaxHops
 - uid: GPF.ServerObjects.ServerObject.Deserialize(System.Byte[],GPF.ServerObjects.ServerObjInfo,GPF.ServerObjects.IGPFLogger)
   name: Deserialize(Byte[], ServerObjInfo, IGPFLogger)
   href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_Deserialize_System_Byte___GPF_ServerObjects_ServerObjInfo_GPF_ServerObjects_IGPFLogger_
@@ -7004,19 +7184,6 @@ references:
   isSpec: "True"
   fullName: GPF.ServerObjects.ServerObject.HasOverridenHandler
   nameWithType: ServerObject.HasOverridenHandler
-- uid: GPF.ServerObjects.ServerObject.Id
-  name: Id
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_Id
-  commentId: P:GPF.ServerObjects.ServerObject.Id
-  fullName: GPF.ServerObjects.ServerObject.Id
-  nameWithType: ServerObject.Id
-- uid: GPF.ServerObjects.ServerObject.Id*
-  name: Id
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_Id_
-  commentId: Overload:GPF.ServerObjects.ServerObject.Id
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObject.Id
-  nameWithType: ServerObject.Id
 - uid: GPF.ServerObjects.ServerObject.Init(GPF.ServerObjects.InitContext)
   name: Init(InitContext)
   href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_Init_GPF_ServerObjects_InitContext_
@@ -7030,24 +7197,6 @@ references:
   isSpec: "True"
   fullName: GPF.ServerObjects.ServerObject.Init
   nameWithType: ServerObject.Init
-- uid: GPF.ServerObjects.ServerObject.Logger
-  name: Logger
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_Logger
-  commentId: F:GPF.ServerObjects.ServerObject.Logger
-  fullName: GPF.ServerObjects.ServerObject.Logger
-  nameWithType: ServerObject.Logger
-- uid: GPF.ServerObjects.ServerObject.MessageHandlerFunctionName
-  name: MessageHandlerFunctionName
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_MessageHandlerFunctionName
-  commentId: F:GPF.ServerObjects.ServerObject.MessageHandlerFunctionName
-  fullName: GPF.ServerObjects.ServerObject.MessageHandlerFunctionName
-  nameWithType: ServerObject.MessageHandlerFunctionName
-- uid: GPF.ServerObjects.ServerObject.msgPackContext
-  name: msgPackContext
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_msgPackContext
-  commentId: F:GPF.ServerObjects.ServerObject.msgPackContext
-  fullName: GPF.ServerObjects.ServerObject.msgPackContext
-  nameWithType: ServerObject.msgPackContext
 - uid: GPF.ServerObjects.ServerObject.OnMessageException(GPF.ServerObjects.ServerObjectMessage,System.Exception)
   name: OnMessageException(ServerObjectMessage, Exception)
   href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_OnMessageException_GPF_ServerObjects_ServerObjectMessage_System_Exception_
@@ -7171,18 +7320,6 @@ references:
   isSpec: "True"
   fullName: GPF.ServerObjects.ServerObject.SetID
   nameWithType: ServerObject.SetID
-- uid: GPF.ServerObjects.ServerObject.SoEnumSerializationMethod
-  name: SoEnumSerializationMethod
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_SoEnumSerializationMethod
-  commentId: F:GPF.ServerObjects.ServerObject.SoEnumSerializationMethod
-  fullName: GPF.ServerObjects.ServerObject.SoEnumSerializationMethod
-  nameWithType: ServerObject.SoEnumSerializationMethod
-- uid: GPF.ServerObjects.ServerObject.SoSerializationMethod
-  name: SoSerializationMethod
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_SoSerializationMethod
-  commentId: F:GPF.ServerObjects.ServerObject.SoSerializationMethod
-  fullName: GPF.ServerObjects.ServerObject.SoSerializationMethod
-  nameWithType: ServerObject.SoSerializationMethod
 - uid: GPF.ServerObjects.ServerObject.UpdateAsync(GPF.ServerObjects.ServerObject,GPF.ServerObjects.ServerObjectMessage,GPF.ServerObjects.IGPFLogger)
   name: UpdateAsync(ServerObject, ServerObjectMessage, IGPFLogger)
   href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_UpdateAsync_GPF_ServerObjects_ServerObject_GPF_ServerObjects_ServerObjectMessage_GPF_ServerObjects_IGPFLogger_
@@ -7209,12 +7346,6 @@ references:
   isSpec: "True"
   fullName: GPF.ServerObjects.ServerObject.UpdateBlocking
   nameWithType: ServerObject.UpdateBlocking
-- uid: GPF.ServerObjects.ServerObject.UpdateOrder
-  name: UpdateOrder
-  href: api/GPF.ServerObjects.ServerObject.html#GPF_ServerObjects_ServerObject_UpdateOrder
-  commentId: F:GPF.ServerObjects.ServerObject.UpdateOrder
-  fullName: GPF.ServerObjects.ServerObject.UpdateOrder
-  nameWithType: ServerObject.UpdateOrder
 - uid: GPF.ServerObjects.ServerObjectAuthAttribute
   name: ServerObjectAuthAttribute
   href: api/GPF.ServerObjects.ServerObjectAuthAttribute.html
@@ -7255,195 +7386,6 @@ references:
   commentId: F:GPF.ServerObjects.ServerObjectAuthAttribute.soAuthType
   fullName: GPF.ServerObjects.ServerObjectAuthAttribute.soAuthType
   nameWithType: ServerObjectAuthAttribute.soAuthType
-- uid: GPF.ServerObjects.ServerObjectMessage
-  name: ServerObjectMessage
-  href: api/GPF.ServerObjects.ServerObjectMessage.html
-  commentId: T:GPF.ServerObjects.ServerObjectMessage
-  fullName: GPF.ServerObjects.ServerObjectMessage
-  nameWithType: ServerObjectMessage
-- uid: GPF.ServerObjects.ServerObjectMessage.ApplyMessageHooks(System.Byte[],GPF.ServerObjects.ServerObject,GPF.ServerObjects.IGPFLogger,GPF.ServerObjects.ITimeService)
-  name: ApplyMessageHooks(Byte[], ServerObject, IGPFLogger, ITimeService)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_ApplyMessageHooks_System_Byte___GPF_ServerObjects_ServerObject_GPF_ServerObjects_IGPFLogger_GPF_ServerObjects_ITimeService_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.ApplyMessageHooks(System.Byte[],GPF.ServerObjects.ServerObject,GPF.ServerObjects.IGPFLogger,GPF.ServerObjects.ITimeService)
-  name.vb: ApplyMessageHooks(Byte(), ServerObject, IGPFLogger, ITimeService)
-  fullName: GPF.ServerObjects.ServerObjectMessage.ApplyMessageHooks(System.Byte[], GPF.ServerObjects.ServerObject, GPF.ServerObjects.IGPFLogger, GPF.ServerObjects.ITimeService)
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.ApplyMessageHooks(System.Byte(), GPF.ServerObjects.ServerObject, GPF.ServerObjects.IGPFLogger, GPF.ServerObjects.ITimeService)
-  nameWithType: ServerObjectMessage.ApplyMessageHooks(Byte[], ServerObject, IGPFLogger, ITimeService)
-  nameWithType.vb: ServerObjectMessage.ApplyMessageHooks(Byte(), ServerObject, IGPFLogger, ITimeService)
-- uid: GPF.ServerObjects.ServerObjectMessage.ApplyMessageHooks*
-  name: ApplyMessageHooks
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_ApplyMessageHooks_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.ApplyMessageHooks
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.ApplyMessageHooks
-  nameWithType: ServerObjectMessage.ApplyMessageHooks
-- uid: GPF.ServerObjects.ServerObjectMessage.ConvertToType(System.Byte[],System.Type)
-  name: ConvertToType(Byte[], Type)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_ConvertToType_System_Byte___System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.ConvertToType(System.Byte[],System.Type)
-  name.vb: ConvertToType(Byte(), Type)
-  fullName: GPF.ServerObjects.ServerObjectMessage.ConvertToType(System.Byte[], System.Type)
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.ConvertToType(System.Byte(), System.Type)
-  nameWithType: ServerObjectMessage.ConvertToType(Byte[], Type)
-  nameWithType.vb: ServerObjectMessage.ConvertToType(Byte(), Type)
-- uid: GPF.ServerObjects.ServerObjectMessage.ConvertToType*
-  name: ConvertToType
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_ConvertToType_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.ConvertToType
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.ConvertToType
-  nameWithType: ServerObjectMessage.ConvertToType
-- uid: GPF.ServerObjects.ServerObjectMessage.Copy(GPF.ServerObjects.ServerObjectMessage)
-  name: Copy(ServerObjectMessage)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_Copy_GPF_ServerObjects_ServerObjectMessage_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.Copy(GPF.ServerObjects.ServerObjectMessage)
-  fullName: GPF.ServerObjects.ServerObjectMessage.Copy(GPF.ServerObjects.ServerObjectMessage)
-  nameWithType: ServerObjectMessage.Copy(ServerObjectMessage)
-- uid: GPF.ServerObjects.ServerObjectMessage.Copy*
-  name: Copy
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_Copy_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.Copy
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.Copy
-  nameWithType: ServerObjectMessage.Copy
-- uid: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[])
-  name: DeserializeFromBytes(Byte[])
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_DeserializeFromBytes_System_Byte___
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[])
-  name.vb: DeserializeFromBytes(Byte())
-  fullName: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[])
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte())
-  nameWithType: ServerObjectMessage.DeserializeFromBytes(Byte[])
-  nameWithType.vb: ServerObjectMessage.DeserializeFromBytes(Byte())
-- uid: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[],GPF.ServerObjects.MessageDest)
-  name: DeserializeFromBytes(Byte[], MessageDest)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_DeserializeFromBytes_System_Byte___GPF_ServerObjects_MessageDest_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[],GPF.ServerObjects.MessageDest)
-  name.vb: DeserializeFromBytes(Byte(), MessageDest)
-  fullName: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[], GPF.ServerObjects.MessageDest)
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte(), GPF.ServerObjects.MessageDest)
-  nameWithType: ServerObjectMessage.DeserializeFromBytes(Byte[], MessageDest)
-  nameWithType.vb: ServerObjectMessage.DeserializeFromBytes(Byte(), MessageDest)
-- uid: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[],GPF.ServerObjects.MessageDest,System.Type)
-  name: DeserializeFromBytes(Byte[], MessageDest, Type)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_DeserializeFromBytes_System_Byte___GPF_ServerObjects_MessageDest_System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[],GPF.ServerObjects.MessageDest,System.Type)
-  name.vb: DeserializeFromBytes(Byte(), MessageDest, Type)
-  fullName: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[], GPF.ServerObjects.MessageDest, System.Type)
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte(), GPF.ServerObjects.MessageDest, System.Type)
-  nameWithType: ServerObjectMessage.DeserializeFromBytes(Byte[], MessageDest, Type)
-  nameWithType.vb: ServerObjectMessage.DeserializeFromBytes(Byte(), MessageDest, Type)
-- uid: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[],System.Type)
-  name: DeserializeFromBytes(Byte[], Type)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_DeserializeFromBytes_System_Byte___System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[],System.Type)
-  name.vb: DeserializeFromBytes(Byte(), Type)
-  fullName: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte[], System.Type)
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes(System.Byte(), System.Type)
-  nameWithType: ServerObjectMessage.DeserializeFromBytes(Byte[], Type)
-  nameWithType.vb: ServerObjectMessage.DeserializeFromBytes(Byte(), Type)
-- uid: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes*
-  name: DeserializeFromBytes
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_DeserializeFromBytes_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.DeserializeFromBytes
-  nameWithType: ServerObjectMessage.DeserializeFromBytes
-- uid: GPF.ServerObjects.ServerObjectMessage.enumSerializationMethod
-  name: enumSerializationMethod
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_enumSerializationMethod
-  commentId: F:GPF.ServerObjects.ServerObjectMessage.enumSerializationMethod
-  fullName: GPF.ServerObjects.ServerObjectMessage.enumSerializationMethod
-  nameWithType: ServerObjectMessage.enumSerializationMethod
-- uid: GPF.ServerObjects.ServerObjectMessage.GetMessageType(System.Byte[])
-  name: GetMessageType(Byte[])
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_GetMessageType_System_Byte___
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.GetMessageType(System.Byte[])
-  name.vb: GetMessageType(Byte())
-  fullName: GPF.ServerObjects.ServerObjectMessage.GetMessageType(System.Byte[])
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.GetMessageType(System.Byte())
-  nameWithType: ServerObjectMessage.GetMessageType(Byte[])
-  nameWithType.vb: ServerObjectMessage.GetMessageType(Byte())
-- uid: GPF.ServerObjects.ServerObjectMessage.GetMessageType*
-  name: GetMessageType
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_GetMessageType_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.GetMessageType
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.GetMessageType
-  nameWithType: ServerObjectMessage.GetMessageType
-- uid: GPF.ServerObjects.ServerObjectMessage.msgPackContext
-  name: msgPackContext
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_msgPackContext
-  commentId: F:GPF.ServerObjects.ServerObjectMessage.msgPackContext
-  fullName: GPF.ServerObjects.ServerObjectMessage.msgPackContext
-  nameWithType: ServerObjectMessage.msgPackContext
-- uid: GPF.ServerObjects.ServerObjectMessage.remainingHops
-  name: remainingHops
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_remainingHops
-  commentId: F:GPF.ServerObjects.ServerObjectMessage.remainingHops
-  fullName: GPF.ServerObjects.ServerObjectMessage.remainingHops
-  nameWithType: ServerObjectMessage.remainingHops
-- uid: GPF.ServerObjects.ServerObjectMessage.serializationMethod
-  name: serializationMethod
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_serializationMethod
-  commentId: F:GPF.ServerObjects.ServerObjectMessage.serializationMethod
-  fullName: GPF.ServerObjects.ServerObjectMessage.serializationMethod
-  nameWithType: ServerObjectMessage.serializationMethod
-- uid: GPF.ServerObjects.ServerObjectMessage.SerializeToBytes(GPF.ServerObjects.ServerObjectMessage)
-  name: SerializeToBytes(ServerObjectMessage)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_SerializeToBytes_GPF_ServerObjects_ServerObjectMessage_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.SerializeToBytes(GPF.ServerObjects.ServerObjectMessage)
-  fullName: GPF.ServerObjects.ServerObjectMessage.SerializeToBytes(GPF.ServerObjects.ServerObjectMessage)
-  nameWithType: ServerObjectMessage.SerializeToBytes(ServerObjectMessage)
-- uid: GPF.ServerObjects.ServerObjectMessage.SerializeToBytes*
-  name: SerializeToBytes
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_SerializeToBytes_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.SerializeToBytes
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.SerializeToBytes
-  nameWithType: ServerObjectMessage.SerializeToBytes
-- uid: GPF.ServerObjects.ServerObjectMessage.SerializeToString(GPF.ServerObjects.ServerObjectMessage)
-  name: SerializeToString(ServerObjectMessage)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_SerializeToString_GPF_ServerObjects_ServerObjectMessage_
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.SerializeToString(GPF.ServerObjects.ServerObjectMessage)
-  fullName: GPF.ServerObjects.ServerObjectMessage.SerializeToString(GPF.ServerObjects.ServerObjectMessage)
-  nameWithType: ServerObjectMessage.SerializeToString(ServerObjectMessage)
-- uid: GPF.ServerObjects.ServerObjectMessage.SerializeToString*
-  name: SerializeToString
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_SerializeToString_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.SerializeToString
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.SerializeToString
-  nameWithType: ServerObjectMessage.SerializeToString
-- uid: GPF.ServerObjects.ServerObjectMessage.SetOrderedMessageTypes(System.Collections.Generic.List{System.Type})
-  name: SetOrderedMessageTypes(List<Type>)
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_SetOrderedMessageTypes_System_Collections_Generic_List_System_Type__
-  commentId: M:GPF.ServerObjects.ServerObjectMessage.SetOrderedMessageTypes(System.Collections.Generic.List{System.Type})
-  name.vb: SetOrderedMessageTypes(List(Of Type))
-  fullName: GPF.ServerObjects.ServerObjectMessage.SetOrderedMessageTypes(System.Collections.Generic.List<System.Type>)
-  fullName.vb: GPF.ServerObjects.ServerObjectMessage.SetOrderedMessageTypes(System.Collections.Generic.List(Of System.Type))
-  nameWithType: ServerObjectMessage.SetOrderedMessageTypes(List<Type>)
-  nameWithType.vb: ServerObjectMessage.SetOrderedMessageTypes(List(Of Type))
-- uid: GPF.ServerObjects.ServerObjectMessage.SetOrderedMessageTypes*
-  name: SetOrderedMessageTypes
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_SetOrderedMessageTypes_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.SetOrderedMessageTypes
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.SetOrderedMessageTypes
-  nameWithType: ServerObjectMessage.SetOrderedMessageTypes
-- uid: GPF.ServerObjects.ServerObjectMessage.Source
-  name: Source
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_Source
-  commentId: P:GPF.ServerObjects.ServerObjectMessage.Source
-  fullName: GPF.ServerObjects.ServerObjectMessage.Source
-  nameWithType: ServerObjectMessage.Source
-- uid: GPF.ServerObjects.ServerObjectMessage.Source*
-  name: Source
-  href: api/GPF.ServerObjects.ServerObjectMessage.html#GPF_ServerObjects_ServerObjectMessage_Source_
-  commentId: Overload:GPF.ServerObjects.ServerObjectMessage.Source
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjectMessage.Source
-  nameWithType: ServerObjectMessage.Source
 - uid: GPF.ServerObjects.ServerObjectsVersion
   name: ServerObjectsVersion
   href: api/GPF.ServerObjects.ServerObjectsVersion.html
@@ -7462,257 +7404,6 @@ references:
   commentId: F:GPF.ServerObjects.ServerObjectsVersion.Storage
   fullName: GPF.ServerObjects.ServerObjectsVersion.Storage
   nameWithType: ServerObjectsVersion.Storage
-- uid: GPF.ServerObjects.ServerObjInfo
-  name: ServerObjInfo
-  href: api/GPF.ServerObjects.ServerObjInfo.html
-  commentId: T:GPF.ServerObjects.ServerObjInfo
-  fullName: GPF.ServerObjects.ServerObjInfo
-  nameWithType: ServerObjInfo
-- uid: GPF.ServerObjects.ServerObjInfo.AuthGroups
-  name: AuthGroups
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_AuthGroups
-  commentId: P:GPF.ServerObjects.ServerObjInfo.AuthGroups
-  fullName: GPF.ServerObjects.ServerObjInfo.AuthGroups
-  nameWithType: ServerObjInfo.AuthGroups
-- uid: GPF.ServerObjects.ServerObjInfo.AuthGroups*
-  name: AuthGroups
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_AuthGroups_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.AuthGroups
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.AuthGroups
-  nameWithType: ServerObjInfo.AuthGroups
-- uid: GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix
-  name: AuthGroupsSuffix
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_AuthGroupsSuffix
-  commentId: P:GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix
-  fullName: GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix
-  nameWithType: ServerObjInfo.AuthGroupsSuffix
-- uid: GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix*
-  name: AuthGroupsSuffix
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_AuthGroupsSuffix_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.AuthGroupsSuffix
-  nameWithType: ServerObjInfo.AuthGroupsSuffix
-- uid: GPF.ServerObjects.ServerObjInfo.AuthType
-  name: AuthType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_AuthType
-  commentId: P:GPF.ServerObjects.ServerObjInfo.AuthType
-  fullName: GPF.ServerObjects.ServerObjInfo.AuthType
-  nameWithType: ServerObjInfo.AuthType
-- uid: GPF.ServerObjects.ServerObjInfo.AuthType*
-  name: AuthType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_AuthType_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.AuthType
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.AuthType
-  nameWithType: ServerObjInfo.AuthType
-- uid: GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(GPF.ServerObjects.ServerObjectMessage)
-  name: GetMessageHandlerInfo(ServerObjectMessage)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_GetMessageHandlerInfo_GPF_ServerObjects_ServerObjectMessage_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(GPF.ServerObjects.ServerObjectMessage)
-  fullName: GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(GPF.ServerObjects.ServerObjectMessage)
-  nameWithType: ServerObjInfo.GetMessageHandlerInfo(ServerObjectMessage)
-- uid: GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(System.Type)
-  name: GetMessageHandlerInfo(Type)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_GetMessageHandlerInfo_System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(System.Type)
-  fullName: GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo(System.Type)
-  nameWithType: ServerObjInfo.GetMessageHandlerInfo(Type)
-- uid: GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo*
-  name: GetMessageHandlerInfo
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_GetMessageHandlerInfo_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.GetMessageHandlerInfo
-  nameWithType: ServerObjInfo.GetMessageHandlerInfo
-- uid: GPF.ServerObjects.ServerObjInfo.GetSoType(System.Int32)
-  name: GetSoType(Int32)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_GetSoType_System_Int32_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.GetSoType(System.Int32)
-  fullName: GPF.ServerObjects.ServerObjInfo.GetSoType(System.Int32)
-  nameWithType: ServerObjInfo.GetSoType(Int32)
-- uid: GPF.ServerObjects.ServerObjInfo.GetSoType*
-  name: GetSoType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_GetSoType_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.GetSoType
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.GetSoType
-  nameWithType: ServerObjInfo.GetSoType
-- uid: GPF.ServerObjects.ServerObjInfo.GetVersion(System.Type)
-  name: GetVersion(Type)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_GetVersion_System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.GetVersion(System.Type)
-  fullName: GPF.ServerObjects.ServerObjInfo.GetVersion(System.Type)
-  nameWithType: ServerObjInfo.GetVersion(Type)
-- uid: GPF.ServerObjects.ServerObjInfo.GetVersion*
-  name: GetVersion
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_GetVersion_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.GetVersion
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.GetVersion
-  nameWithType: ServerObjInfo.GetVersion
-- uid: GPF.ServerObjects.ServerObjInfo.HasType(System.Type)
-  name: HasType(Type)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_HasType_System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.HasType(System.Type)
-  fullName: GPF.ServerObjects.ServerObjInfo.HasType(System.Type)
-  nameWithType: ServerObjInfo.HasType(Type)
-- uid: GPF.ServerObjects.ServerObjInfo.HasType*
-  name: HasType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_HasType_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.HasType
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.HasType
-  nameWithType: ServerObjInfo.HasType
-- uid: GPF.ServerObjects.ServerObjInfo.HasVersion(System.Int32)
-  name: HasVersion(Int32)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_HasVersion_System_Int32_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.HasVersion(System.Int32)
-  fullName: GPF.ServerObjects.ServerObjInfo.HasVersion(System.Int32)
-  nameWithType: ServerObjInfo.HasVersion(Int32)
-- uid: GPF.ServerObjects.ServerObjInfo.HasVersion*
-  name: HasVersion
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_HasVersion_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.HasVersion
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.HasVersion
-  nameWithType: ServerObjInfo.HasVersion
-- uid: GPF.ServerObjects.ServerObjInfo.ImplicitLatestType
-  name: ImplicitLatestType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitLatestType
-  commentId: P:GPF.ServerObjects.ServerObjInfo.ImplicitLatestType
-  fullName: GPF.ServerObjects.ServerObjInfo.ImplicitLatestType
-  nameWithType: ServerObjInfo.ImplicitLatestType
-- uid: GPF.ServerObjects.ServerObjInfo.ImplicitLatestType*
-  name: ImplicitLatestType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitLatestType_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.ImplicitLatestType
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.ImplicitLatestType
-  nameWithType: ServerObjInfo.ImplicitLatestType
-- uid: GPF.ServerObjects.ServerObjInfo.ImplicitVersion
-  name: ImplicitVersion
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitVersion
-  commentId: P:GPF.ServerObjects.ServerObjInfo.ImplicitVersion
-  fullName: GPF.ServerObjects.ServerObjInfo.ImplicitVersion
-  nameWithType: ServerObjInfo.ImplicitVersion
-- uid: GPF.ServerObjects.ServerObjInfo.ImplicitVersion*
-  name: ImplicitVersion
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_ImplicitVersion_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.ImplicitVersion
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.ImplicitVersion
-  nameWithType: ServerObjInfo.ImplicitVersion
-- uid: GPF.ServerObjects.ServerObjInfo.isSyncable
-  name: isSyncable
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_isSyncable
-  commentId: P:GPF.ServerObjects.ServerObjInfo.isSyncable
-  fullName: GPF.ServerObjects.ServerObjInfo.isSyncable
-  nameWithType: ServerObjInfo.isSyncable
-- uid: GPF.ServerObjects.ServerObjInfo.isSyncable*
-  name: isSyncable
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_isSyncable_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.isSyncable
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.isSyncable
-  nameWithType: ServerObjInfo.isSyncable
-- uid: GPF.ServerObjects.ServerObjInfo.isUnpredictable
-  name: isUnpredictable
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_isUnpredictable
-  commentId: P:GPF.ServerObjects.ServerObjInfo.isUnpredictable
-  fullName: GPF.ServerObjects.ServerObjInfo.isUnpredictable
-  nameWithType: ServerObjInfo.isUnpredictable
-- uid: GPF.ServerObjects.ServerObjInfo.isUnpredictable*
-  name: isUnpredictable
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_isUnpredictable_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.isUnpredictable
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.isUnpredictable
-  nameWithType: ServerObjInfo.isUnpredictable
-- uid: GPF.ServerObjects.ServerObjInfo.LatestType
-  name: LatestType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_LatestType
-  commentId: P:GPF.ServerObjects.ServerObjInfo.LatestType
-  fullName: GPF.ServerObjects.ServerObjInfo.LatestType
-  nameWithType: ServerObjInfo.LatestType
-- uid: GPF.ServerObjects.ServerObjInfo.LatestType*
-  name: LatestType
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_LatestType_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.LatestType
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.LatestType
-  nameWithType: ServerObjInfo.LatestType
-- uid: GPF.ServerObjects.ServerObjInfo.LatestVersion
-  name: LatestVersion
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_LatestVersion
-  commentId: P:GPF.ServerObjects.ServerObjInfo.LatestVersion
-  fullName: GPF.ServerObjects.ServerObjInfo.LatestVersion
-  nameWithType: ServerObjInfo.LatestVersion
-- uid: GPF.ServerObjects.ServerObjInfo.LatestVersion*
-  name: LatestVersion
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_LatestVersion_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.LatestVersion
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.LatestVersion
-  nameWithType: ServerObjInfo.LatestVersion
-- uid: GPF.ServerObjects.ServerObjInfo.messageHandlerInfo
-  name: messageHandlerInfo
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_messageHandlerInfo
-  commentId: F:GPF.ServerObjects.ServerObjInfo.messageHandlerInfo
-  fullName: GPF.ServerObjects.ServerObjInfo.messageHandlerInfo
-  nameWithType: ServerObjInfo.messageHandlerInfo
-- uid: GPF.ServerObjects.ServerObjInfo.Prefix
-  name: Prefix
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_Prefix
-  commentId: P:GPF.ServerObjects.ServerObjInfo.Prefix
-  fullName: GPF.ServerObjects.ServerObjInfo.Prefix
-  nameWithType: ServerObjInfo.Prefix
-- uid: GPF.ServerObjects.ServerObjInfo.Prefix*
-  name: Prefix
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_Prefix_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.Prefix
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.Prefix
-  nameWithType: ServerObjInfo.Prefix
-- uid: GPF.ServerObjects.ServerObjInfo.SetImplicitLatest(System.Type)
-  name: SetImplicitLatest(Type)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_SetImplicitLatest_System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.SetImplicitLatest(System.Type)
-  fullName: GPF.ServerObjects.ServerObjInfo.SetImplicitLatest(System.Type)
-  nameWithType: ServerObjInfo.SetImplicitLatest(Type)
-- uid: GPF.ServerObjects.ServerObjInfo.SetImplicitLatest*
-  name: SetImplicitLatest
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_SetImplicitLatest_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.SetImplicitLatest
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.SetImplicitLatest
-  nameWithType: ServerObjInfo.SetImplicitLatest
-- uid: GPF.ServerObjects.ServerObjInfo.SetVersion(System.Int32,System.Type)
-  name: SetVersion(Int32, Type)
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_SetVersion_System_Int32_System_Type_
-  commentId: M:GPF.ServerObjects.ServerObjInfo.SetVersion(System.Int32,System.Type)
-  fullName: GPF.ServerObjects.ServerObjInfo.SetVersion(System.Int32, System.Type)
-  nameWithType: ServerObjInfo.SetVersion(Int32, Type)
-- uid: GPF.ServerObjects.ServerObjInfo.SetVersion*
-  name: SetVersion
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_SetVersion_
-  commentId: Overload:GPF.ServerObjects.ServerObjInfo.SetVersion
-  isSpec: "True"
-  fullName: GPF.ServerObjects.ServerObjInfo.SetVersion
-  nameWithType: ServerObjInfo.SetVersion
-- uid: GPF.ServerObjects.ServerObjInfo.types
-  name: types
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_types
-  commentId: F:GPF.ServerObjects.ServerObjInfo.types
-  fullName: GPF.ServerObjects.ServerObjInfo.types
-  nameWithType: ServerObjInfo.types
-- uid: GPF.ServerObjects.ServerObjInfo.versions
-  name: versions
-  href: api/GPF.ServerObjects.ServerObjInfo.html#GPF_ServerObjects_ServerObjInfo_versions
-  commentId: F:GPF.ServerObjects.ServerObjInfo.versions
-  fullName: GPF.ServerObjects.ServerObjInfo.versions
-  nameWithType: ServerObjInfo.versions
 - uid: GPF.ServerObjects.SOAuth
   name: SOAuth
   href: api/GPF.ServerObjects.SOAuth.html
@@ -9894,6 +9585,182 @@ references:
   isSpec: "True"
   fullName: GPF.SyncerConfigs.UriProvider
   nameWithType: SyncerConfigs.UriProvider
+- uid: GPF.SyncerInternal
+  name: GPF.SyncerInternal
+  href: api/GPF.SyncerInternal.html
+  commentId: N:GPF.SyncerInternal
+  fullName: GPF.SyncerInternal
+  nameWithType: GPF.SyncerInternal
+- uid: GPF.SyncerInternal.FakeLogger
+  name: FakeLogger
+  href: api/GPF.SyncerInternal.FakeLogger.html
+  commentId: T:GPF.SyncerInternal.FakeLogger
+  fullName: GPF.SyncerInternal.FakeLogger
+  nameWithType: FakeLogger
+- uid: GPF.SyncerInternal.FakeLogger.Error(System.String)
+  name: Error(String)
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Error_System_String_
+  commentId: M:GPF.SyncerInternal.FakeLogger.Error(System.String)
+  fullName: GPF.SyncerInternal.FakeLogger.Error(System.String)
+  nameWithType: FakeLogger.Error(String)
+- uid: GPF.SyncerInternal.FakeLogger.Error*
+  name: Error
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Error_
+  commentId: Overload:GPF.SyncerInternal.FakeLogger.Error
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.FakeLogger.Error
+  nameWithType: FakeLogger.Error
+- uid: GPF.SyncerInternal.FakeLogger.Exception(System.Exception)
+  name: Exception(Exception)
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Exception_System_Exception_
+  commentId: M:GPF.SyncerInternal.FakeLogger.Exception(System.Exception)
+  fullName: GPF.SyncerInternal.FakeLogger.Exception(System.Exception)
+  nameWithType: FakeLogger.Exception(Exception)
+- uid: GPF.SyncerInternal.FakeLogger.Exception*
+  name: Exception
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Exception_
+  commentId: Overload:GPF.SyncerInternal.FakeLogger.Exception
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.FakeLogger.Exception
+  nameWithType: FakeLogger.Exception
+- uid: GPF.SyncerInternal.FakeLogger.Log(System.String)
+  name: Log(String)
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Log_System_String_
+  commentId: M:GPF.SyncerInternal.FakeLogger.Log(System.String)
+  fullName: GPF.SyncerInternal.FakeLogger.Log(System.String)
+  nameWithType: FakeLogger.Log(String)
+- uid: GPF.SyncerInternal.FakeLogger.Log*
+  name: Log
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Log_
+  commentId: Overload:GPF.SyncerInternal.FakeLogger.Log
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.FakeLogger.Log
+  nameWithType: FakeLogger.Log
+- uid: GPF.SyncerInternal.FakeLogger.Warning(System.String)
+  name: Warning(String)
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Warning_System_String_
+  commentId: M:GPF.SyncerInternal.FakeLogger.Warning(System.String)
+  fullName: GPF.SyncerInternal.FakeLogger.Warning(System.String)
+  nameWithType: FakeLogger.Warning(String)
+- uid: GPF.SyncerInternal.FakeLogger.Warning*
+  name: Warning
+  href: api/GPF.SyncerInternal.FakeLogger.html#GPF_SyncerInternal_FakeLogger_Warning_
+  commentId: Overload:GPF.SyncerInternal.FakeLogger.Warning
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.FakeLogger.Warning
+  nameWithType: FakeLogger.Warning
+- uid: GPF.SyncerInternal.ReceivedUpdate
+  name: ReceivedUpdate
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html
+  commentId: T:GPF.SyncerInternal.ReceivedUpdate
+  fullName: GPF.SyncerInternal.ReceivedUpdate
+  nameWithType: ReceivedUpdate
+- uid: GPF.SyncerInternal.ReceivedUpdate.Id
+  name: Id
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_Id
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.Id
+  fullName: GPF.SyncerInternal.ReceivedUpdate.Id
+  nameWithType: ReceivedUpdate.Id
+- uid: GPF.SyncerInternal.ReceivedUpdate.message
+  name: message
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_message
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.message
+  fullName: GPF.SyncerInternal.ReceivedUpdate.message
+  nameWithType: ReceivedUpdate.message
+- uid: GPF.SyncerInternal.ReceivedUpdate.Order
+  name: Order
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_Order
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.Order
+  fullName: GPF.SyncerInternal.ReceivedUpdate.Order
+  nameWithType: ReceivedUpdate.Order
+- uid: GPF.SyncerInternal.ReceivedUpdate.SerializedMessage
+  name: SerializedMessage
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_SerializedMessage
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.SerializedMessage
+  fullName: GPF.SyncerInternal.ReceivedUpdate.SerializedMessage
+  nameWithType: ReceivedUpdate.SerializedMessage
+- uid: GPF.SyncerInternal.ReceivedUpdate.SerializedState
+  name: SerializedState
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_SerializedState
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.SerializedState
+  fullName: GPF.SyncerInternal.ReceivedUpdate.SerializedState
+  nameWithType: ReceivedUpdate.SerializedState
+- uid: GPF.SyncerInternal.ReceivedUpdate.Source
+  name: Source
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_Source
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.Source
+  fullName: GPF.SyncerInternal.ReceivedUpdate.Source
+  nameWithType: ReceivedUpdate.Source
+- uid: GPF.SyncerInternal.ReceivedUpdate.SourceAlias
+  name: SourceAlias
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_SourceAlias
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.SourceAlias
+  fullName: GPF.SyncerInternal.ReceivedUpdate.SourceAlias
+  nameWithType: ReceivedUpdate.SourceAlias
+- uid: GPF.SyncerInternal.ReceivedUpdate.success
+  name: success
+  href: api/GPF.SyncerInternal.ReceivedUpdate.html#GPF_SyncerInternal_ReceivedUpdate_success
+  commentId: F:GPF.SyncerInternal.ReceivedUpdate.success
+  fullName: GPF.SyncerInternal.ReceivedUpdate.success
+  nameWithType: ReceivedUpdate.success
+- uid: GPF.SyncerInternal.UnityLogger
+  name: UnityLogger
+  href: api/GPF.SyncerInternal.UnityLogger.html
+  commentId: T:GPF.SyncerInternal.UnityLogger
+  fullName: GPF.SyncerInternal.UnityLogger
+  nameWithType: UnityLogger
+- uid: GPF.SyncerInternal.UnityLogger.Error(System.String)
+  name: Error(String)
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Error_System_String_
+  commentId: M:GPF.SyncerInternal.UnityLogger.Error(System.String)
+  fullName: GPF.SyncerInternal.UnityLogger.Error(System.String)
+  nameWithType: UnityLogger.Error(String)
+- uid: GPF.SyncerInternal.UnityLogger.Error*
+  name: Error
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Error_
+  commentId: Overload:GPF.SyncerInternal.UnityLogger.Error
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.UnityLogger.Error
+  nameWithType: UnityLogger.Error
+- uid: GPF.SyncerInternal.UnityLogger.Exception(System.Exception)
+  name: Exception(Exception)
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Exception_System_Exception_
+  commentId: M:GPF.SyncerInternal.UnityLogger.Exception(System.Exception)
+  fullName: GPF.SyncerInternal.UnityLogger.Exception(System.Exception)
+  nameWithType: UnityLogger.Exception(Exception)
+- uid: GPF.SyncerInternal.UnityLogger.Exception*
+  name: Exception
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Exception_
+  commentId: Overload:GPF.SyncerInternal.UnityLogger.Exception
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.UnityLogger.Exception
+  nameWithType: UnityLogger.Exception
+- uid: GPF.SyncerInternal.UnityLogger.Log(System.String)
+  name: Log(String)
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Log_System_String_
+  commentId: M:GPF.SyncerInternal.UnityLogger.Log(System.String)
+  fullName: GPF.SyncerInternal.UnityLogger.Log(System.String)
+  nameWithType: UnityLogger.Log(String)
+- uid: GPF.SyncerInternal.UnityLogger.Log*
+  name: Log
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Log_
+  commentId: Overload:GPF.SyncerInternal.UnityLogger.Log
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.UnityLogger.Log
+  nameWithType: UnityLogger.Log
+- uid: GPF.SyncerInternal.UnityLogger.Warning(System.String)
+  name: Warning(String)
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Warning_System_String_
+  commentId: M:GPF.SyncerInternal.UnityLogger.Warning(System.String)
+  fullName: GPF.SyncerInternal.UnityLogger.Warning(System.String)
+  nameWithType: UnityLogger.Warning(String)
+- uid: GPF.SyncerInternal.UnityLogger.Warning*
+  name: Warning
+  href: api/GPF.SyncerInternal.UnityLogger.html#GPF_SyncerInternal_UnityLogger_Warning_
+  commentId: Overload:GPF.SyncerInternal.UnityLogger.Warning
+  isSpec: "True"
+  fullName: GPF.SyncerInternal.UnityLogger.Warning
+  nameWithType: UnityLogger.Warning
 - uid: GPF.UI
   name: GPF.UI
   href: api/GPF.UI.html
