@@ -1,12 +1,12 @@
 # Game Plumbing Framework (GPF)
 
-**Game Plumbing Framework (GPF)** is a server-authoritative framework for building games and high-performance, real-time applications in C#. It empowers developers with a backend infrastructure and a reactive user interface, allowing them to focus on game logic by inheriting the infrastructure. We call this coding style **"infraless."** and it typically results in the reduction of 80% of code, thereby significantly reducing engineering cost, time to market, and code complexity.
+**Game Plumbing Framework (GPF)** is a server-authoritative framework for building games and high-performance, real-time applications in C#. It empowers developers with a backend infrastructure and a reactive user interface, allowing them to focus on game logic by inheriting the infrastructure. We call this coding style **"infraless."** and it typically results in a reduction of the code by 80%, thereby significantly reducing engineering cost, time to market, and code complexity.
 
-Every Backend built ontop of GPF will automatically be consistent, horizontally scalable and all communication is low latency.  Building a backend that accomplishes just 2 of these 3 requirements costs over a million dollars, but with GPF it can be one at less than one tenth the cost.
+Every backend built on top of GPF will automatically be consistent, be horizontally scalable, and have all its communication be low latency.  Building a backend that accomplishes just 2 of these 3 requirements costs over a million dollars, but GPF can achieve all three requirements at less than one tenth the cost.
 
 GPF has integrated support with Unity but can be adapted to work with other C# frontends such as Godot Mono, Stride3D, Unreal with UnrealCLR, Blazor (WebAssembly), Xamarin (MAUI), and Avalonia.
 
-GPF is not a BAAS, you host your data where ever you want, we just made the whole process as easy as possible.
+GPF is not a BAAS; you host your data whereever you want: we just made the whole process as easy as possible.
 
 ## Key Components of GPF
 
@@ -66,7 +66,7 @@ Once the SO is functioning, our `ViewBindings` let you easily connect SO fields 
 
 The `CoinLeaderboardSO` is an example of a leaderboard used in our Coin Flipper game.
 
-In this example, the state consists of a `Dictionary` called `scores`, which GPF automatically persists. The `Handler` functions handle messages and do so by updating the state and/or send messages.
+In this example, the state consists of a `Dictionary` called `scores`, which GPF automatically persists. The `Handler` functions handle messages and do so by updating the state and/or sending messages.
 
 ```csharp
 // This class is not [Syncable] because the client should not have a copy of this class.
@@ -126,7 +126,7 @@ public class CoinLeaderboardSO : ServerObject
     }
 
     /// <summary>
-    /// This SO is not syncable. Players see the scores through a separate, sysncable, view SO
+    /// This SO is not syncable. Players see the scores through a separate, syncable, view SO
     /// This allows us to rate limit the updates that get sent to players
     /// It also allows us to keep player secret data hidden
     /// </summary>
@@ -197,8 +197,8 @@ GPF also makes developing SOs easy in a number of ways:
 - `MockCloud` enables `SOs` to be developed within Unity and without waiting for deploys
 - `MockCloud` enables the debugger to oversee the full stack, so breakpoints in your `ServerObjects` can be triggered from gameplay
 - `SOs` can be tested independently
-- Auto-generate diagrams to illustrate how they are interact
-- `SO's` can be deployed to a serverless AWS backend through the Unity Editor
+- Auto-generate diagrams to illustrate how they interact
+- `SOs` can be deployed to a serverless AWS backend through the Unity Editor
 - UI inspector that uses autocomplete to find game state
 
 Finally, GPF handles deployment for you by including a stack management panel from inside of Unity.  Developers can easily spin up a stack for their branch and test multiplayer functionality with others.
