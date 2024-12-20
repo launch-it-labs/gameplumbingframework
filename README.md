@@ -1,8 +1,8 @@
 # Game Plumbing Framework (GPF)
 
-**Game Plumbing Framework (GPF)** is a server-authoritative framework for building games and high-performance, real-time applications in C#. It empowers developers with a backend infrastructure and a reactive user interface, allowing them to focus on game logic by inheriting the infrastructure. We call this coding style **"infraless."** and it typically results in a reduction of the code by 80%, thereby significantly reducing engineering cost, time to market, and code complexity.
+**Game Plumbing Framework (GPF)** is a server-authoritative framework for building games and high-performance, real-time applications in C#. It is the only technology that provides developers a fully extensible tripple A backend.  The backend is scalable, distributed, low latency, consistentent, and our middle where provides client side prediction.  These features are under the hood, so the developer can benifit from them without even thinking about it. GPF allows developers to focus on game logic while inheriting the infrastructure. We call this coding style **"infraless."** and it typically results in a reduction of the code by 80%, thereby significantly reducing engineering cost, time to market, and code complexity.
 
-Every backend built on top of GPF will automatically be consistent, be horizontally scalable, and have all its communication be low latency.  Building a backend that accomplishes just 2 of these 3 requirements costs over a million dollars, but GPF can achieve all three requirements at less than one tenth the cost.
+Every backend built on top of GPF will automatically be consistent, be horizontally scalable, with all communication being low latency.  Building a backend that accomplishes just 2 of these 3 requirements costs over a million dollars, but GPF achieves all three requirements while providing an easy way to tap into world data as well as robust testing tools.
 
 GPF has integrated support with Unity but can be adapted to work with other C# frontends such as Godot Mono, Stride3D, Unreal with UnrealCLR, Blazor (WebAssembly), Xamarin (MAUI), and Avalonia.
 
